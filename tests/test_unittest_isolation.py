@@ -31,7 +31,10 @@ UNITTEST_ARGV0 = r"C:\Python312\Lib\unittest\__main__.py"
 def _is_inside(path, directory):
     path = os.path.normcase(os.path.abspath(path))
     directory = os.path.normcase(os.path.abspath(directory))
-    return os.path.commonpath([path, directory]) == directory
+    try:
+        return os.path.commonpath([path, directory]) == directory
+    except ValueError:  # different drives on Windows: not inside
+        return False
 
 
 def _clean_env(temp_root):

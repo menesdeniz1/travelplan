@@ -449,7 +449,8 @@ class ResourceStatusTests(_Base):
             self.assertIsInstance(rss, float)
             self.assertGreater(rss, 0.0)
         else:
-            self.assertIsNone(rss)
+            # POSIX reads `ps -o rss=`; None only when ps is unavailable.
+            self.assertTrue(rss is None or (isinstance(rss, float) and rss > 0.0))
 
 
 class RequestBlockingTests(unittest.TestCase):
