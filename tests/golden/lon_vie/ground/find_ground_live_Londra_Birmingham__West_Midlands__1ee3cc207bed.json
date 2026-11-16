@@ -1,0 +1,18 @@
+{
+  "provider": "ground",
+  "method": "find_ground_live",
+  "params": {
+    "date_str": "2026-11-12",
+    "dest": "Birmingham, West Midlands",
+    "from_coord": [
+      51.5074,
+      -0.1278
+    ],
+    "origin": "Londra",
+    "to_coord": [
+      52.4539,
+      -1.748
+    ]
+  },
+  "response": []
+}

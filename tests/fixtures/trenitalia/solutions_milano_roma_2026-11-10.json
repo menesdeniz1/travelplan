@@ -1,0 +1,313 @@
+{
+ "searchId": "830001700-830008409-one_way-2026-11-10T07:00:00.000---rewq-fdsa-iokm-ttno-vcxz-FBN-iuyt-S",
+ "solutions": [
+  {
+   "solution": {
+    "_type": "TICKET",
+    "id": "x7a43ec19-3333-45ec-b487-4356428e6919",
+    "origin": "Milano Centrale",
+    "destination": "Roma Termini",
+    "departureTime": "2026-11-10T07:00:00.000+01:00",
+    "arrivalTime": "2026-11-10T10:11:00.000+01:00",
+    "duration": "3h 11min",
+    "status": "SALEABLE",
+    "trains": [
+     {
+      "description": "9607",
+      "trainCategory": "Frecciarossa",
+      "acronym": "FR",
+      "denomination": "FRECCIAROSSA",
+      "name": "9607",
+      "logoId": "FR",
+      "urban": false
+     }
+    ],
+    "price": {
+     "currency": "€",
+     "amount": 37.9,
+     "amountCrypto": "l69aTIyTw7MzlvF3tbGgow==",
+     "originalAmount": null,
+     "indicative": false,
+     "hideAmount": false
+    },
+    "discounts": [],
+    "nodes": [
+     {
+      "id": "x2764005f-14d7-4d44-afb5-4adf0349ef94",
+      "origin": "Milano Centrale",
+      "bdoOrigin": "S00219",
+      "destination": "Roma Termini",
+      "departureTime": "2026-11-10T07:00:00.000+01:00",
+      "arrivalTime": "2026-11-10T10:11:00.000+01:00",
+      "salable": false,
+      "train": {
+       "description": "9607",
+       "trainCategory": "Frecciarossa",
+       "acronym": "FR",
+       "denomination": "FRECCIAROSSA",
+       "name": "9607",
+       "logoId": "FR",
+       "urban": false
+      },
+      "bluJetMessage": null,
+      "blueJet": false
+     }
+    ],
+    "additionalPrice": null,
+    "description": null,
+    "validities": null
+   }
+  },
+  {
+   "solution": {
+    "_type": "TICKET",
+    "id": "x13b164ba-ccb1-4321-951d-f042ac11c08b",
+    "origin": "Milano Centrale",
+    "destination": "Roma Termini",
+    "departureTime": "2026-11-10T07:20:00.000+01:00",
+    "arrivalTime": "2026-11-10T16:20:00.000+01:00",
+    "duration": "9h 00min",
+    "status": "SALEABLE",
+    "trains": [
+     {
+      "description": "2455",
+      "trainCategory": "Regionale Veloce",
+      "acronym": "RV",
+      "denomination": "Regionale Veloce TTPER",
+      "name": "2455",
+      "logoId": "TTPER",
+      "urban": false
+     },
+     {
+      "description": "584",
+      "trainCategory": "Intercity",
+      "acronym": "IC",
+      "denomination": "Intercity",
+      "name": "584",
+      "logoId": "IC",
+      "urban": false
+     }
+    ],
+    "price": {
+     "currency": "€",
+     "amount": 42.0,
+     "amountCrypto": "VERCVnQLR8EYuJIKcncfig==",
+     "originalAmount": null,
+     "indicative": false,
+     "hideAmount": false
+    },
+    "discounts": [],
+    "nodes": [
+     {
+      "id": "xc4de142f-c32c-4e9e-bc53-4dd52563a5bb",
+      "origin": "Milano Centrale",
+      "bdoOrigin": "S01700",
+      "destination": "Bologna Centrale",
+      "departureTime": "2026-11-10T07:20:00.000+01:00",
+      "arrivalTime": "2026-11-10T10:13:00.000+01:00",
+      "salable": false,
+      "train": {
+       "description": "2455",
+       "trainCategory": "Regionale Veloce",
+       "acronym": "RV",
+       "denomination": "Regionale Veloce TTPER",
+       "name": "2455",
+       "logoId": "TTPER",
+       "urban": false
+      },
+      "bluJetMessage": null,
+      "blueJet": false
+     },
+     {
+      "id": "x4128245d-0167-4e9f-9d8f-1ae2c985adf2",
+      "origin": "Bologna Centrale",
+      "bdoOrigin": "S03317",
+      "destination": "Roma Termini",
+      "departureTime": "2026-11-10T11:21:00.000+01:00",
+      "arrivalTime": "2026-11-10T16:20:00.000+01:00",
+      "salable": false,
+      "train": {
+       "description": "584",
+       "trainCategory": "Intercity",
+       "acronym": "IC",
+       "denomination": "Intercity",
+       "name": "584",
+       "logoId": "IC",
+       "urban": false
+      },
+      "bluJetMessage": null,
+      "blueJet": false
+     }
+    ],
+    "additionalPrice": null,
+    "description": null,
+    "validities": null
+   }
+  },
+  {
+   "solution": {
+    "_type": "TICKET",
+    "id": "xb1a915a7-2db0-49f0-bc99-ff9f47227100",
+    "origin": "Milano Centrale",
+    "destination": "Roma Termini",
+    "departureTime": "2026-11-10T07:20:00.000+01:00",
+    "arrivalTime": "2026-11-10T18:10:00.000+01:00",
+    "duration": "10h 50min",
+    "status": "SALEABLE",
+    "trains": [
+     {
+      "description": "2455",
+      "trainCategory": "Regionale Veloce",
+      "acronym": "RV",
+      "denomination": "Regionale Veloce TTPER",
+      "name": "2455",
+      "logoId": "TTPER",
+      "urban": false
+     },
+     {
+      "description": "3911",
+      "trainCategory": "Regionale Veloce",
+      "acronym": "RV",
+      "denomination": "Regionale Veloce TTPER",
+      "name": "3911",
+      "logoId": "TTPER",
+      "urban": false
+     },
+     {
+      "description": "4155",
+      "trainCategory": "Regionale Veloce",
+      "acronym": "RV",
+      "denomination": "Fast Regional",
+      "name": "4155",
+      "logoId": "RV",
+      "urban": false
+     }
+    ],
+    "price": null,
+    "discounts": [],
+    "nodes": [
+     {
+      "id": "x04d56a78-1e2e-4815-8dbf-4724e2ce2680",
+      "origin": "Milano Centrale",
+      "bdoOrigin": "S01700",
+      "destination": "Piacenza",
+      "departureTime": "2026-11-10T07:20:00.000+01:00",
+      "arrivalTime": "2026-11-10T08:12:00.000+01:00",
+      "salable": false,
+      "train": {
+       "description": "2455",
+       "trainCategory": "Regionale Veloce",
+       "acronym": "RV",
+       "denomination": "Regionale Veloce TTPER",
+       "name": "2455",
+       "logoId": "TTPER",
+       "urban": false
+      },
+      "bluJetMessage": null,
+      "blueJet": false
+     },
+     {
+      "id": "xbbf46bc2-bb7e-435c-89f6-6119d2392c71",
+      "origin": "Piacenza",
+      "bdoOrigin": "S05000",
+      "destination": "Falconara Marittima",
+      "departureTime": "2026-11-10T08:46:00.000+01:00",
+      "arrivalTime": "2026-11-10T13:30:00.000+01:00",
+      "salable": false,
+      "train": {
+       "description": "3911",
+       "trainCategory": "Regionale Veloce",
+       "acronym": "RV",
+       "denomination": "Regionale Veloce TTPER",
+       "name": "3911",
+       "logoId": "TTPER",
+       "urban": false
+      },
+      "bluJetMessage": null,
+      "blueJet": false
+     },
+     {
+      "id": "xeef41fa9-e7d1-4991-b184-f87f14e2f39c",
+      "origin": "Falconara Marittima",
+      "bdoOrigin": "S07113",
+      "destination": "Roma Termini",
+      "departureTime": "2026-11-10T14:03:00.000+01:00",
+      "arrivalTime": "2026-11-10T18:10:00.000+01:00",
+      "salable": false,
+      "train": {
+       "description": "4155",
+       "trainCategory": "Regionale Veloce",
+       "acronym": "RV",
+       "denomination": "Fast Regional",
+       "name": "4155",
+       "logoId": "RV",
+       "urban": false
+      },
+      "bluJetMessage": null,
+      "blueJet": false
+     }
+    ],
+    "additionalPrice": null,
+    "description": null,
+    "validities": null
+   }
+  },
+  {
+   "solution": {
+    "_type": "TICKET",
+    "id": "xa8d1c8ef-f022-451a-b1a6-43202018e1b5",
+    "origin": "Milano Centrale",
+    "destination": "Roma Termini",
+    "departureTime": "2026-11-10T08:00:00.000+01:00",
+    "arrivalTime": "2026-11-10T11:10:00.000+01:00",
+    "duration": "3h 10min",
+    "status": "SALEABLE",
+    "trains": [
+     {
+      "description": "9611",
+      "trainCategory": "Frecciarossa",
+      "acronym": "FR",
+      "denomination": "FRECCIAROSSA",
+      "name": "9611",
+      "logoId": "FR",
+      "urban": false
+     }
+    ],
+    "price": {
+     "currency": "€",
+     "amount": 56.9,
+     "amountCrypto": "vUqKoHbRlX85Hug8r4Ui4Q==",
+     "originalAmount": null,
+     "indicative": false,
+     "hideAmount": false
+    },
+    "discounts": [],
+    "nodes": [
+     {
+      "id": "xcdf75920-7046-4f04-bb55-320a101f8646",
+      "origin": "Milano Centrale",
+      "bdoOrigin": "S00219",
+      "destination": "Roma Termini",
+      "departureTime": "2026-11-10T08:00:00.000+01:00",
+      "arrivalTime": "2026-11-10T11:10:00.000+01:00",
+      "salable": false,
+      "train": {
+       "description": "9611",
+       "trainCategory": "Frecciarossa",
+       "acronym": "FR",
+       "denomination": "FRECCIAROSSA",
+       "name": "9611",
+       "logoId": "FR",
+       "urban": false
+      },
+      "bluJetMessage": null,
+      "blueJet": false
+     }
+    ],
+    "additionalPrice": null,
+    "description": null,
+    "validities": null
+   }
+  }
+ ]
+}

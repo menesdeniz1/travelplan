@@ -1,0 +1,17 @@
+{
+  "provider": "ground",
+  "method": "ground_distance_km",
+  "params": {
+    "from_coord": [
+      48.2085,
+      16.3731
+    ],
+    "from_place": "Viyana",
+    "to_coord": [
+      45.6484,
+      12.1944
+    ],
+    "to_place": "Treviso (TV)"
+  },
+  "response": 532.7232497097979
+}

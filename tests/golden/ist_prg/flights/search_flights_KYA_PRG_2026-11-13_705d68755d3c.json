@@ -1,0 +1,30 @@
+{
+  "provider": "flights",
+  "method": "search_flights",
+  "params": {
+    "departure_date": "2026-11-13",
+    "destination": "PRG",
+    "origin": "KYA",
+    "return_date": null,
+    "trip_type": "oneway"
+  },
+  "response": [
+    {
+      "source": "Google Flights (Canlı)",
+      "airline": "AJet",
+      "times": "04:30 – 12:05",
+      "duration": "9 sa. 35 dk.",
+      "airports": "KYA ➔ PRG",
+      "stops": "1 aktarma",
+      "stops_count": 1,
+      "is_direct": false,
+      "layover_info": "",
+      "total_price_try": 8758.0,
+      "currency": "TRY",
+      "trip_type": "Tek Yön",
+      "badge": "🏷️ En Uygun Fiyat",
+      "google_flights_url": "https://www.google.com/travel/flights?q=one-way%20flights%20from%20KYA%20to%20PRG%20on%202026-11-13&hl=tr&gl=tr&curr=TRY",
+      "observed_at": "2026-10-22T12:12:42+00:00"
+    }
+  ]
+}

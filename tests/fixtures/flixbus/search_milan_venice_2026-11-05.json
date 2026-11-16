@@ -1,0 +1,664 @@
+{
+ "response_uuid": "2ea92720-92d6-495c-8992-e7765d0d0b7f",
+ "trips": [
+  {
+   "departure_city_id": "40ddcc6e-8646-11e6-9066-549f350fcb0c",
+   "arrival_city_id": "40dea03b-8646-11e6-9066-549f350fcb0c",
+   "date": "2026-11-05T00:00:00+01:00",
+   "means_of_transport": [
+    "bus"
+   ],
+   "departure": {
+    "earliest_date": "2026-11-05T00:10:00+01:00",
+    "latest_date": "2026-11-06T02:40:00+01:00",
+    "stations": [
+     "dcbc484a-9603-11e6-9066-549f350fcb0c",
+     "dcc2fd0d-9603-11e6-9066-549f350fcb0c",
+     "bda607fc-95c6-41e6-b8fa-04761d771b5d",
+     "590c812c-ceb2-417b-b53d-08d9e423143a",
+     "dcc455fa-9603-11e6-9066-549f350fcb0c"
+    ]
+   },
+   "arrival": {
+    "earliest_date": "2026-11-05T04:45:00+01:00",
+    "latest_date": "2026-11-06T08:10:00+01:00",
+    "stations": [
+     "dcc0139d-9603-11e6-9066-549f350fcb0c",
+     "dcbdacd2-9603-11e6-9066-549f350fcb0c"
+    ]
+   },
+   "results": {
+    "direct:085d9710-385e-4781-8a91-62be3bcd2495:dcbc484a-9603-11e6-9066-549f350fcb0c:dcc0139d-9603-11e6-9066-549f350fcb0c": {
+     "uid": "direct:085d9710-385e-4781-8a91-62be3bcd2495:dcbc484a-9603-11e6-9066-549f350fcb0c:dcc0139d-9603-11e6-9066-549f350fcb0c",
+     "status": "available",
+     "transfer_type": "Direct",
+     "transfer_type_key": "direct",
+     "provider": "flixbus",
+     "departure": {
+      "date": "2026-11-05T00:10:00+01:00",
+      "city_id": "40ddcc6e-8646-11e6-9066-549f350fcb0c",
+      "station_id": "dcbc484a-9603-11e6-9066-549f350fcb0c"
+     },
+     "arrival": {
+      "date": "2026-11-05T04:45:00+01:00",
+      "city_id": "40dea03b-8646-11e6-9066-549f350fcb0c",
+      "station_id": "dcc0139d-9603-11e6-9066-549f350fcb0c"
+     },
+     "duration": {
+      "hours": 4,
+      "minutes": 35
+     },
+     "price": {
+      "total": 16.49,
+      "original": 16.49,
+      "average": 16.49,
+      "total_with_platform_fee": 17.48,
+      "average_with_platform_fee": 17.48
+     },
+     "remaining": {
+      "seats_left_at_price": 1,
+      "seats": null,
+      "bike_slots": 0,
+      "capacity": null
+     },
+     "available": {
+      "seats": 42,
+      "bike_slots": 0
+     },
+     "legs": [
+      {
+       "ride_id": "085d9710-385e-4781-8a91-62be3bcd2495",
+       "departure": {
+        "date": "2026-11-05T00:10:00+01:00",
+        "city_id": "40ddcc6e-8646-11e6-9066-549f350fcb0c",
+        "station_id": "dcbc484a-9603-11e6-9066-549f350fcb0c"
+       },
+       "arrival": {
+        "date": "2026-11-05T04:45:00+01:00",
+        "city_id": "40dea03b-8646-11e6-9066-549f350fcb0c",
+        "station_id": "dcc0139d-9603-11e6-9066-549f350fcb0c"
+       },
+       "means_of_transport": "bus",
+       "amenities": [
+        "WIFI",
+        "POWER_SOCKETS"
+       ],
+       "is_marketplace": false,
+       "operator_id": "flixital",
+       "brand_id": "a18f138c-68fa-4b45-a42f-adb0378e10d3",
+       "sub_brand_id": null,
+       "vehicle_details": [],
+       "layout_configuration": [
+        {
+         "column_layout": "TWO_TWO",
+         "deck": 0
+        }
+       ],
+       "cheapest_seat": "SEATER",
+       "seat_types": [
+        {
+         "seat_type_key": "SEATER",
+         "seat_type": "SEATER"
+        }
+       ]
+      }
+     ],
+     "messages": [],
+     "restrictions": {
+      "sale_restriction": false,
+      "info_title": "",
+      "info_title_hint": "",
+      "info_message": "",
+      "bikes_allowed": true,
+      "wheelchair_status": "unknown"
+     },
+     "intermediate_stations_count": 0
+    },
+    "direct:085d9710-385e-4781-8a91-62be3bcd2495:dcbc484a-9603-11e6-9066-549f350fcb0c:dcbdacd2-9603-11e6-9066-549f350fcb0c": {
+     "uid": "direct:085d9710-385e-4781-8a91-62be3bcd2495:dcbc484a-9603-11e6-9066-549f350fcb0c:dcbdacd2-9603-11e6-9066-549f350fcb0c",
+     "status": "available",
+     "transfer_type": "Direct",
+     "transfer_type_key": "direct",
+     "provider": "flixbus",
+     "departure": {
+      "date": "2026-11-05T00:10:00+01:00",
+      "city_id": "40ddcc6e-8646-11e6-9066-549f350fcb0c",
+      "station_id": "dcbc484a-9603-11e6-9066-549f350fcb0c"
+     },
+     "arrival": {
+      "date": "2026-11-05T05:00:00+01:00",
+      "city_id": "40dea03b-8646-11e6-9066-549f350fcb0c",
+      "station_id": "dcbdacd2-9603-11e6-9066-549f350fcb0c"
+     },
+     "duration": {
+      "hours": 4,
+      "minutes": 50
+     },
+     "price": {
+      "total": 16.49,
+      "original": 16.49,
+      "average": 16.49,
+      "total_with_platform_fee": 17.48,
+      "average_with_platform_fee": 17.48
+     },
+     "remaining": {
+      "seats_left_at_price": 1,
+      "seats": null,
+      "bike_slots": 0,
+      "capacity": null
+     },
+     "available": {
+      "seats": 42,
+      "bike_slots": 0
+     },
+     "legs": [
+      {
+       "ride_id": "085d9710-385e-4781-8a91-62be3bcd2495",
+       "departure": {
+        "date": "2026-11-05T00:10:00+01:00",
+        "city_id": "40ddcc6e-8646-11e6-9066-549f350fcb0c",
+        "station_id": "dcbc484a-9603-11e6-9066-549f350fcb0c"
+       },
+       "arrival": {
+        "date": "2026-11-05T05:00:00+01:00",
+        "city_id": "40dea03b-8646-11e6-9066-549f350fcb0c",
+        "station_id": "dcbdacd2-9603-11e6-9066-549f350fcb0c"
+       },
+       "means_of_transport": "bus",
+       "amenities": [
+        "WIFI",
+        "POWER_SOCKETS"
+       ],
+       "is_marketplace": false,
+       "operator_id": "flixital",
+       "brand_id": "a18f138c-68fa-4b45-a42f-adb0378e10d3",
+       "sub_brand_id": null,
+       "vehicle_details": [],
+       "layout_configuration": [
+        {
+         "column_layout": "TWO_TWO",
+         "deck": 0
+        }
+       ],
+       "cheapest_seat": "SEATER",
+       "seat_types": [
+        {
+         "seat_type_key": "SEATER",
+         "seat_type": "SEATER"
+        }
+       ]
+      }
+     ],
+     "messages": [],
+     "restrictions": {
+      "sale_restriction": false,
+      "info_title": "",
+      "info_title_hint": "",
+      "info_message": "",
+      "bikes_allowed": true,
+      "wheelchair_status": "unknown"
+     },
+     "intermediate_stations_count": 0
+    },
+    "direct:5f84710c-300c-4018-9c5f-825a7bceee08:dcbc484a-9603-11e6-9066-549f350fcb0c:dcc0139d-9603-11e6-9066-549f350fcb0c": {
+     "uid": "direct:5f84710c-300c-4018-9c5f-825a7bceee08:dcbc484a-9603-11e6-9066-549f350fcb0c:dcc0139d-9603-11e6-9066-549f350fcb0c",
+     "status": "available",
+     "transfer_type": "Direct",
+     "transfer_type_key": "direct",
+     "provider": "flixbus",
+     "departure": {
+      "date": "2026-11-05T02:40:00+01:00",
+      "city_id": "40ddcc6e-8646-11e6-9066-549f350fcb0c",
+      "station_id": "dcbc484a-9603-11e6-9066-549f350fcb0c"
+     },
+     "arrival": {
+      "date": "2026-11-05T06:45:00+01:00",
+      "city_id": "40dea03b-8646-11e6-9066-549f350fcb0c",
+      "station_id": "dcc0139d-9603-11e6-9066-549f350fcb0c"
+     },
+     "duration": {
+      "hours": 4,
+      "minutes": 5
+     },
+     "price": {
+      "total": 17.49,
+      "original": 17.49,
+      "average": 17.49,
+      "total_with_platform_fee": 18.48,
+      "average_with_platform_fee": 18.48
+     },
+     "remaining": {
+      "seats_left_at_price": 1,
+      "seats": null,
+      "bike_slots": 0,
+      "capacity": null
+     },
+     "available": {
+      "seats": 52,
+      "bike_slots": 0
+     },
+     "legs": [
+      {
+       "ride_id": "5f84710c-300c-4018-9c5f-825a7bceee08",
+       "departure": {
+        "date": "2026-11-05T02:40:00+01:00",
+        "city_id": "40ddcc6e-8646-11e6-9066-549f350fcb0c",
+        "station_id": "dcbc484a-9603-11e6-9066-549f350fcb0c"
+       },
+       "arrival": {
+        "date": "2026-11-05T06:45:00+01:00",
+        "city_id": "40dea03b-8646-11e6-9066-549f350fcb0c",
+        "station_id": "dcc0139d-9603-11e6-9066-549f350fcb0c"
+       },
+       "means_of_transport": "bus",
+       "amenities": [
+        "WIFI",
+        "POWER_SOCKETS"
+       ],
+       "is_marketplace": false,
+       "operator_id": "flixital",
+       "brand_id": "a18f138c-68fa-4b45-a42f-adb0378e10d3",
+       "sub_brand_id": null,
+       "vehicle_details": [],
+       "layout_configuration": [
+        {
+         "column_layout": "TWO_TWO",
+         "deck": 0
+        },
+        {
+         "column_layout": "TWO_TWO",
+         "deck": 1
+        }
+       ],
+       "cheapest_seat": "SEATER",
+       "seat_types": [
+        {
+         "seat_type_key": "SEATER",
+         "seat_type": "SEATER"
+        }
+       ]
+      }
+     ],
+     "messages": [],
+     "restrictions": {
+      "sale_restriction": false,
+      "info_title": "",
+      "info_title_hint": "",
+      "info_message": "",
+      "bikes_allowed": true,
+      "wheelchair_status": "unknown"
+     },
+     "intermediate_stations_count": 0
+    },
+    "direct:5f84710c-300c-4018-9c5f-825a7bceee08:dcbc484a-9603-11e6-9066-549f350fcb0c:dcbdacd2-9603-11e6-9066-549f350fcb0c": {
+     "uid": "direct:5f84710c-300c-4018-9c5f-825a7bceee08:dcbc484a-9603-11e6-9066-549f350fcb0c:dcbdacd2-9603-11e6-9066-549f350fcb0c",
+     "status": "available",
+     "transfer_type": "Direct",
+     "transfer_type_key": "direct",
+     "provider": "flixbus",
+     "departure": {
+      "date": "2026-11-05T02:40:00+01:00",
+      "city_id": "40ddcc6e-8646-11e6-9066-549f350fcb0c",
+      "station_id": "dcbc484a-9603-11e6-9066-549f350fcb0c"
+     },
+     "arrival": {
+      "date": "2026-11-05T07:05:00+01:00",
+      "city_id": "40dea03b-8646-11e6-9066-549f350fcb0c",
+      "station_id": "dcbdacd2-9603-11e6-9066-549f350fcb0c"
+     },
+     "duration": {
+      "hours": 4,
+      "minutes": 25
+     },
+     "price": {
+      "total": 17.49,
+      "original": 17.49,
+      "average": 17.49,
+      "total_with_platform_fee": 18.48,
+      "average_with_platform_fee": 18.48
+     },
+     "remaining": {
+      "seats_left_at_price": 1,
+      "seats": null,
+      "bike_slots": 0,
+      "capacity": null
+     },
+     "available": {
+      "seats": 52,
+      "bike_slots": 0
+     },
+     "legs": [
+      {
+       "ride_id": "5f84710c-300c-4018-9c5f-825a7bceee08",
+       "departure": {
+        "date": "2026-11-05T02:40:00+01:00",
+        "city_id": "40ddcc6e-8646-11e6-9066-549f350fcb0c",
+        "station_id": "dcbc484a-9603-11e6-9066-549f350fcb0c"
+       },
+       "arrival": {
+        "date": "2026-11-05T07:05:00+01:00",
+        "city_id": "40dea03b-8646-11e6-9066-549f350fcb0c",
+        "station_id": "dcbdacd2-9603-11e6-9066-549f350fcb0c"
+       },
+       "means_of_transport": "bus",
+       "amenities": [
+        "WIFI",
+        "POWER_SOCKETS"
+       ],
+       "is_marketplace": false,
+       "operator_id": "flixital",
+       "brand_id": "a18f138c-68fa-4b45-a42f-adb0378e10d3",
+       "sub_brand_id": null,
+       "vehicle_details": [],
+       "layout_configuration": [
+        {
+         "column_layout": "TWO_TWO",
+         "deck": 0
+        },
+        {
+         "column_layout": "TWO_TWO",
+         "deck": 1
+        }
+       ],
+       "cheapest_seat": "SEATER",
+       "seat_types": [
+        {
+         "seat_type_key": "SEATER",
+         "seat_type": "SEATER"
+        }
+       ]
+      }
+     ],
+     "messages": [],
+     "restrictions": {
+      "sale_restriction": false,
+      "info_title": "",
+      "info_title_hint": "",
+      "info_message": "",
+      "bikes_allowed": true,
+      "wheelchair_status": "unknown"
+     },
+     "intermediate_stations_count": 0
+    },
+    "ic:bda607fc-95c6-41e6-b8fa-04761d771b5d:dcc0139d-9603-11e6-9066-549f350fcb0c/a740a0d4-3038-4a6f-8ecb-987b41a81fd0:dcc45a6f-9603-11e6-9066-549f350fcb0c:dcc45a6f-9603-11e6-9066-549f350fcb0c:1ec955c1-13cb-40f8-9683-92a9f648f771": {
+     "uid": "ic:bda607fc-95c6-41e6-b8fa-04761d771b5d:dcc0139d-9603-11e6-9066-549f350fcb0c/a740a0d4-3038-4a6f-8ecb-987b41a81fd0:dcc45a6f-9603-11e6-9066-549f350fcb0c:dcc45a6f-9603-11e6-9066-549f350fcb0c:1ec955c1-13cb-40f8-9683-92a9f648f771",
+     "status": "available",
+     "transfer_type": "Transfer",
+     "transfer_type_key": "direct#direct",
+     "provider": "flixbus",
+     "departure": {
+      "date": "2026-11-05T12:35:00+01:00",
+      "city_id": "40ddcc6e-8646-11e6-9066-549f350fcb0c",
+      "station_id": "bda607fc-95c6-41e6-b8fa-04761d771b5d"
+     },
+     "arrival": {
+      "date": "2026-11-05T16:50:00+01:00",
+      "city_id": "40dea03b-8646-11e6-9066-549f350fcb0c",
+      "station_id": "dcc0139d-9603-11e6-9066-549f350fcb0c"
+     },
+     "duration": {
+      "hours": 4,
+      "minutes": 15
+     },
+     "price": {
+      "total": 21.99,
+      "original": 21.99,
+      "average": 21.99,
+      "total_with_platform_fee": 22.98,
+      "average_with_platform_fee": 22.98
+     },
+     "remaining": {
+      "seats_left_at_price": null,
+      "seats": null,
+      "bike_slots": 0,
+      "capacity": null
+     },
+     "available": {
+      "seats": 48,
+      "bike_slots": 0
+     },
+     "legs": [
+      {
+       "ride_id": "a740a0d4-3038-4a6f-8ecb-987b41a81fd0",
+       "departure": {
+        "date": "2026-11-05T12:35:00+01:00",
+        "city_id": "40ddcc6e-8646-11e6-9066-549f350fcb0c",
+        "station_id": "bda607fc-95c6-41e6-b8fa-04761d771b5d"
+       },
+       "arrival": {
+        "date": "2026-11-05T13:25:00+01:00",
+        "city_id": "e66b26bd-758d-4c59-ad1f-eddf72800f3e",
+        "station_id": "dcc45a6f-9603-11e6-9066-549f350fcb0c"
+       },
+       "means_of_transport": "bus",
+       "amenities": [],
+       "is_marketplace": true,
+       "operator_id": "flibcoit",
+       "brand_id": "97c9cbea-8e42-44ad-90ec-6db4b9545ed5",
+       "sub_brand_id": null,
+       "vehicle_details": [],
+       "layout_configuration": [],
+       "cheapest_seat": null,
+       "seat_types": []
+      },
+      {
+       "ride_id": "1ec955c1-13cb-40f8-9683-92a9f648f771",
+       "departure": {
+        "date": "2026-11-05T13:55:00+01:00",
+        "city_id": "e66b26bd-758d-4c59-ad1f-eddf72800f3e",
+        "station_id": "dcc45a6f-9603-11e6-9066-549f350fcb0c"
+       },
+       "arrival": {
+        "date": "2026-11-05T16:50:00+01:00",
+        "city_id": "40dea03b-8646-11e6-9066-549f350fcb0c",
+        "station_id": "dcc0139d-9603-11e6-9066-549f350fcb0c"
+       },
+       "means_of_transport": "bus",
+       "amenities": [
+        "WIFI",
+        "POWER_SOCKETS"
+       ],
+       "is_marketplace": false,
+       "operator_id": "flixital",
+       "brand_id": "a18f138c-68fa-4b45-a42f-adb0378e10d3",
+       "sub_brand_id": null,
+       "vehicle_details": [],
+       "layout_configuration": [
+        {
+         "column_layout": "TWO_TWO",
+         "deck": 0
+        },
+        {
+         "column_layout": "TWO_TWO",
+         "deck": 1
+        }
+       ],
+       "cheapest_seat": "SEATER",
+       "seat_types": [
+        {
+         "seat_type_key": "SEATER",
+         "seat_type": "SEATER"
+        }
+       ]
+      }
+     ],
+     "messages": [
+      "Many departures every day. Your ticket is valid for the selected day until 04:00 the next day."
+     ],
+     "restrictions": {
+      "sale_restriction": false,
+      "info_title": "",
+      "info_title_hint": "",
+      "info_message": "",
+      "bikes_allowed": true,
+      "wheelchair_status": "unknown"
+     }
+    },
+    "direct:42d9bf0c-0fcb-4418-9443-989fc402fd23:dcbc484a-9603-11e6-9066-549f350fcb0c:dcc0139d-9603-11e6-9066-549f350fcb0c": {
+     "uid": "direct:42d9bf0c-0fcb-4418-9443-989fc402fd23:dcbc484a-9603-11e6-9066-549f350fcb0c:dcc0139d-9603-11e6-9066-549f350fcb0c",
+     "status": "available",
+     "transfer_type": "Direct",
+     "transfer_type_key": "direct",
+     "provider": "flixbus",
+     "departure": {
+      "date": "2026-11-06T00:10:00+01:00",
+      "city_id": "40ddcc6e-8646-11e6-9066-549f350fcb0c",
+      "station_id": "dcbc484a-9603-11e6-9066-549f350fcb0c"
+     },
+     "arrival": {
+      "date": "2026-11-06T04:45:00+01:00",
+      "city_id": "40dea03b-8646-11e6-9066-549f350fcb0c",
+      "station_id": "dcc0139d-9603-11e6-9066-549f350fcb0c"
+     },
+     "duration": {
+      "hours": 4,
+      "minutes": 35
+     },
+     "price": {
+      "total": 24.99,
+      "original": 24.99,
+      "average": 24.99,
+      "total_with_platform_fee": 25.98,
+      "average_with_platform_fee": 25.98
+     },
+     "remaining": {
+      "seats_left_at_price": null,
+      "seats": null,
+      "bike_slots": 0,
+      "capacity": null
+     },
+     "available": {
+      "seats": 35,
+      "bike_slots": 0
+     },
+     "legs": [
+      {
+       "ride_id": "42d9bf0c-0fcb-4418-9443-989fc402fd23",
+       "departure": {
+        "date": "2026-11-06T00:10:00+01:00",
+        "city_id": "40ddcc6e-8646-11e6-9066-549f350fcb0c",
+        "station_id": "dcbc484a-9603-11e6-9066-549f350fcb0c"
+       },
+       "arrival": {
+        "date": "2026-11-06T04:45:00+01:00",
+        "city_id": "40dea03b-8646-11e6-9066-549f350fcb0c",
+        "station_id": "dcc0139d-9603-11e6-9066-549f350fcb0c"
+       },
+       "means_of_transport": "bus",
+       "amenities": [
+        "WIFI",
+        "POWER_SOCKETS"
+       ],
+       "is_marketplace": false,
+       "operator_id": "flixital",
+       "brand_id": "a18f138c-68fa-4b45-a42f-adb0378e10d3",
+       "sub_brand_id": null,
+       "vehicle_details": [],
+       "layout_configuration": [
+        {
+         "column_layout": "TWO_TWO",
+         "deck": 0
+        }
+       ],
+       "cheapest_seat": "SEATER",
+       "seat_types": [
+        {
+         "seat_type_key": "SEATER",
+         "seat_type": "SEATER"
+        }
+       ]
+      }
+     ],
+     "messages": [],
+     "restrictions": {
+      "sale_restriction": false,
+      "info_title": "",
+      "info_title_hint": "",
+      "info_message": "",
+      "bikes_allowed": true,
+      "wheelchair_status": "unknown"
+     },
+     "intermediate_stations_count": 0
+    }
+   }
+  }
+ ],
+ "operators": {
+  "flixital": {
+   "label": "FlixBus Italia S.r.l.",
+   "key": "flixital",
+   "id": "flixital"
+  },
+  "flibcoit": {
+   "label": "FlibTravel International Italy SRL",
+   "key": "flibcoit",
+   "id": "flibcoit"
+  }
+ },
+ "brands": {
+  "a18f138c-68fa-4b45-a42f-adb0378e10d3": {
+   "name": "FlixBus",
+   "type": "core"
+  },
+  "97c9cbea-8e42-44ad-90ec-6db4b9545ed5": {
+   "name": "Flibco",
+   "type": "partner"
+  }
+ },
+ "cities": {
+  "40ddcc6e-8646-11e6-9066-549f350fcb0c": {
+   "name": "Milan",
+   "slug": "milan",
+   "legacy_id": 1194,
+   "id": "40ddcc6e-8646-11e6-9066-549f350fcb0c"
+  },
+  "40dea03b-8646-11e6-9066-549f350fcb0c": {
+   "name": "Venice",
+   "slug": "venice",
+   "legacy_id": 2155,
+   "id": "40dea03b-8646-11e6-9066-549f350fcb0c"
+  }
+ },
+ "stations": {
+  "dcbc484a-9603-11e6-9066-549f350fcb0c": {
+   "id": "dcbc484a-9603-11e6-9066-549f350fcb0c",
+   "legacy_id": 1304,
+   "name": "Milan (Lampugnano bus station)",
+   "slug": "milano",
+   "is_train": false,
+   "importance": 100
+  },
+  "dcbdacd2-9603-11e6-9066-549f350fcb0c": {
+   "id": "dcbdacd2-9603-11e6-9066-549f350fcb0c",
+   "legacy_id": 2555,
+   "name": "Venice (Tronchetto)",
+   "slug": "venezia",
+   "is_train": false,
+   "importance": 95
+  },
+  "dcc0139d-9603-11e6-9066-549f350fcb0c": {
+   "id": "dcc0139d-9603-11e6-9066-549f350fcb0c",
+   "legacy_id": 3758,
+   "name": "Venice Mestre (Stazione FS)",
+   "slug": "mestre",
+   "is_train": false,
+   "importance": 100
+  },
+  "dcc45a6f-9603-11e6-9066-549f350fcb0c": {
+   "id": "dcc45a6f-9603-11e6-9066-549f350fcb0c",
+   "legacy_id": 10168,
+   "name": "Bergamo (Orio al Serio Airport - BGY)",
+   "slug": "orio-al-serio-aeroporto",
+   "is_train": false,
+   "importance": 100
+  },
+  "bda607fc-95c6-41e6-b8fa-04761d771b5d": {
+   "id": "bda607fc-95c6-41e6-b8fa-04761d771b5d",
+   "legacy_id": 36102,
+   "name": "Milan (Stazione Centrale - Shuttle BGY)",
+   "slug": "milan-stazione-centrale-shuttle-bgy",
+   "is_train": false,
+   "importance": 90
+  }
+ }
+}

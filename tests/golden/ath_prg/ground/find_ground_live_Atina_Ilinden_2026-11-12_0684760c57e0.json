@@ -1,0 +1,18 @@
+{
+  "provider": "ground",
+  "method": "find_ground_live",
+  "params": {
+    "date_str": "2026-11-12",
+    "dest": "Ilinden",
+    "from_coord": [
+      37.9755,
+      23.7348
+    ],
+    "origin": "Atina",
+    "to_coord": [
+      41.9581,
+      21.6226
+    ]
+  },
+  "response": []
+}

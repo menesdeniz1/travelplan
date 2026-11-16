@@ -1,0 +1,17 @@
+{
+  "provider": "ground",
+  "method": "ground_distance_km",
+  "params": {
+    "from_coord": [
+      51.5074,
+      -0.1278
+    ],
+    "from_place": "Londra",
+    "to_coord": [
+      49.009,
+      2.5541
+    ],
+    "to_place": "Paris (Roissy-en-France, Val-d'Oise)"
+  },
+  "response": 421.11023446796435
+}

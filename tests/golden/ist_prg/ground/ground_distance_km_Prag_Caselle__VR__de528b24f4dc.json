@@ -1,0 +1,17 @@
+{
+  "provider": "ground",
+  "method": "ground_distance_km",
+  "params": {
+    "from_coord": [
+      50.0875,
+      14.4214
+    ],
+    "from_place": "Prag",
+    "to_coord": [
+      45.395,
+      10.8873
+    ],
+    "to_place": "Caselle (VR)"
+  },
+  "response": 730.9044108811394
+}

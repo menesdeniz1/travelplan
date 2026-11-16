@@ -1,0 +1,8 @@
+# Canli Google Flights aramasi icin gerekli (kurulumdan sonra: playwright install chromium)
+playwright>=1.40
+
+# Testler icin
+pytest>=8.0
+
+# Saat dilimleri (zoneinfo); Windows'ta IANA veritabani gerekir (Transitous yerel saatleri)
+tzdata

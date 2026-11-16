@@ -1,0 +1,17 @@
+{
+  "provider": "ground",
+  "method": "ground_distance_km",
+  "params": {
+    "from_coord": [
+      51.5074,
+      -0.1278
+    ],
+    "from_place": "Londra",
+    "to_coord": [
+      49.4544,
+      2.1128
+    ],
+    "to_place": "Beauvais"
+  },
+  "response": 347.3819598870572
+}

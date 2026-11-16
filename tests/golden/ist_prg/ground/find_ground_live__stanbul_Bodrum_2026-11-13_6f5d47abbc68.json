@@ -1,0 +1,73 @@
+{
+  "provider": "ground",
+  "method": "find_ground_live",
+  "params": {
+    "date_str": "2026-11-13",
+    "dest": "Bodrum",
+    "from_coord": [
+      41.0082,
+      28.9784
+    ],
+    "origin": "İstanbul",
+    "to_coord": [
+      37.2493,
+      27.664
+    ]
+  },
+  "response": [
+    {
+      "origin_station": "İstanbul",
+      "dest_station": "Bodrum",
+      "departure_time": "20:00",
+      "arrival_time": "07:30",
+      "duration_mins": 690,
+      "price_try": 2394.99,
+      "operator": "Kamil Koç",
+      "mode": "bus",
+      "date": "2026-11-13",
+      "is_estimated": false,
+      "price_eur": 42.98,
+      "price_is_estimated": false,
+      "source": "flixbus",
+      "origin_station_name": "İstanbul Esenler",
+      "dest_station_name": "Bodrum",
+      "price_from_try": null
+    },
+    {
+      "origin_station": "İstanbul",
+      "dest_station": "Bodrum",
+      "departure_time": "20:20",
+      "arrival_time": "07:30",
+      "duration_mins": 670,
+      "price_try": 2394.99,
+      "operator": "Kamil Koç",
+      "mode": "bus",
+      "date": "2026-11-13",
+      "is_estimated": false,
+      "price_eur": 42.98,
+      "price_is_estimated": false,
+      "source": "flixbus",
+      "origin_station_name": "İstanbul Alibeyköy",
+      "dest_station_name": "Bodrum",
+      "price_from_try": null
+    },
+    {
+      "origin_station": "İstanbul",
+      "dest_station": "Bodrum",
+      "departure_time": "21:45",
+      "arrival_time": "07:30",
+      "duration_mins": 585,
+      "price_try": 2394.99,
+      "operator": "Kamil Koç",
+      "mode": "bus",
+      "date": "2026-11-13",
+      "is_estimated": false,
+      "price_eur": 42.98,
+      "price_is_estimated": false,
+      "source": "flixbus",
+      "origin_station_name": "İstanbul Dudullu",
+      "dest_station_name": "Bodrum",
+      "price_from_try": null
+    }
+  ]
+}

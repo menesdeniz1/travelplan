@@ -1,0 +1,17 @@
+{
+  "provider": "ground",
+  "method": "ground_distance_km",
+  "params": {
+    "from_coord": [
+      51.5074,
+      -0.1278
+    ],
+    "from_place": "Londra",
+    "to_coord": [
+      57.2019,
+      -2.1978
+    ],
+    "to_place": "Aberdeen"
+  },
+  "response": 808.9663910320562
+}

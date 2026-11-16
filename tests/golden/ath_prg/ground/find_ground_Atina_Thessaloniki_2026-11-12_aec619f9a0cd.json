@@ -1,0 +1,39 @@
+{
+  "provider": "ground",
+  "method": "find_ground",
+  "params": {
+    "allow_estimate": true,
+    "date_str": "2026-11-12",
+    "dest": "Thessaloniki",
+    "from_coord": [
+      37.9755,
+      23.7348
+    ],
+    "max_results": 12,
+    "origin": "Atina",
+    "to_coord": [
+      40.5193,
+      22.97
+    ]
+  },
+  "response": [
+    {
+      "origin_station": "Atina",
+      "dest_station": "Thessaloniki",
+      "departure_time": "19:00",
+      "arrival_time": "23:20",
+      "duration_mins": 260,
+      "price_try": 850.0,
+      "operator": "Hellenic Train",
+      "mode": "train",
+      "date": "2026-11-12",
+      "is_estimated": true,
+      "price_eur": null,
+      "price_is_estimated": true,
+      "source": "table",
+      "origin_station_name": "Athens Larissis",
+      "dest_station_name": "Thessaloniki",
+      "price_from_try": null
+    }
+  ]
+}

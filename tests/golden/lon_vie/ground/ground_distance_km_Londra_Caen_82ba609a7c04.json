@@ -1,0 +1,17 @@
+{
+  "provider": "ground",
+  "method": "ground_distance_km",
+  "params": {
+    "from_coord": [
+      51.5074,
+      -0.1278
+    ],
+    "from_place": "Londra",
+    "to_coord": [
+      49.1768,
+      -0.4549
+    ],
+    "to_place": "Caen"
+  },
+  "response": 325.2350098064266
+}

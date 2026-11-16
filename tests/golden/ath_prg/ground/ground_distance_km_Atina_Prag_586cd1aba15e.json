@@ -1,0 +1,17 @@
+{
+  "provider": "ground",
+  "method": "ground_distance_km",
+  "params": {
+    "from_coord": [
+      37.9755,
+      23.7348
+    ],
+    "from_place": "Atina",
+    "to_coord": [
+      50.0875,
+      14.4214
+    ],
+    "to_place": "Prag"
+  },
+  "response": 1920.186657267935
+}

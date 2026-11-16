@@ -1,0 +1,47 @@
+{
+  "provider": "flights",
+  "method": "search_flights",
+  "params": {
+    "departure_date": "2026-11-12",
+    "destination": "BTS",
+    "origin": "ATH",
+    "return_date": null,
+    "trip_type": "oneway"
+  },
+  "response": [
+    {
+      "source": "Google Flights (Canlı)",
+      "airline": "Ryanair",
+      "times": "14:45 – 16:00",
+      "duration": "2 sa. 15 dk.",
+      "airports": "ATH ➔ BTS",
+      "stops": "Aktarmasız",
+      "stops_count": 0,
+      "is_direct": true,
+      "layover_info": "",
+      "total_price_try": 1279.0,
+      "currency": "TRY",
+      "trip_type": "Tek Yön",
+      "badge": "⚡ Aktarmasız / En Hızlı",
+      "google_flights_url": "https://www.google.com/travel/flights?q=one-way%20flights%20from%20ATH%20to%20BTS%20on%202026-11-12&hl=tr&gl=tr&curr=TRY",
+      "observed_at": "2026-10-22T11:56:21+00:00"
+    },
+    {
+      "source": "Google Flights (Canlı)",
+      "airline": "Wizz Air",
+      "times": "23:50 – 01:05+1",
+      "duration": "2 sa. 15 dk.",
+      "airports": "ATH ➔ BTS",
+      "stops": "Aktarmasız",
+      "stops_count": 0,
+      "is_direct": true,
+      "layover_info": "",
+      "total_price_try": 2224.0,
+      "currency": "TRY",
+      "trip_type": "Tek Yön",
+      "badge": null,
+      "google_flights_url": "https://www.google.com/travel/flights?q=one-way%20flights%20from%20ATH%20to%20BTS%20on%202026-11-12&hl=tr&gl=tr&curr=TRY",
+      "observed_at": "2026-10-22T11:56:21+00:00"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "provider": "ground",
+  "method": "find_ground",
+  "params": {
+    "allow_estimate": true,
+    "date_str": "2026-11-12",
+    "dest": "Luxembourg",
+    "from_coord": [
+      51.5074,
+      -0.1278
+    ],
+    "max_results": 12,
+    "origin": "Londra",
+    "to_coord": [
+      49.6268,
+      6.2121
+    ]
+  },
+  "response": []
+}

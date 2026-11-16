@@ -1,0 +1,17 @@
+{
+  "provider": "ground",
+  "method": "ground_distance_km",
+  "params": {
+    "from_coord": [
+      37.9755,
+      23.7348
+    ],
+    "from_place": "Atina",
+    "to_coord": [
+      40.6576,
+      17.947
+    ],
+    "to_place": "Brindisi"
+  },
+  "response": 725.2527480237736
+}

@@ -1,0 +1,20 @@
+{
+  "provider": "ground",
+  "method": "find_ground",
+  "params": {
+    "allow_estimate": true,
+    "date_str": "2026-11-13",
+    "dest": "Prag",
+    "from_coord": [
+      52.4511,
+      20.6518
+    ],
+    "max_results": 12,
+    "origin": "Nowy Dwór Mazowiecki",
+    "to_coord": [
+      50.0875,
+      14.4214
+    ]
+  },
+  "response": []
+}

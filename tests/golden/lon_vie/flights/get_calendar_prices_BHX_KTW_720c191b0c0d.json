@@ -1,0 +1,10 @@
+{
+  "provider": "flights",
+  "method": "get_calendar_prices",
+  "params": {
+    "destination": "KTW",
+    "origin": "BHX",
+    "trip_type": "oneway"
+  },
+  "response": {}
+}

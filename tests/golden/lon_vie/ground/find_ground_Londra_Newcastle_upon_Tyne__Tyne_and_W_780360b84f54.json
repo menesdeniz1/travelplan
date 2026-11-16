@@ -1,0 +1,57 @@
+{
+  "provider": "ground",
+  "method": "find_ground",
+  "params": {
+    "allow_estimate": true,
+    "date_str": "2026-11-12",
+    "dest": "Newcastle upon Tyne, Tyne and Wear",
+    "from_coord": [
+      51.5074,
+      -0.1278
+    ],
+    "max_results": 12,
+    "origin": "Londra",
+    "to_coord": [
+      55.038,
+      -1.6896
+    ]
+  },
+  "response": [
+    {
+      "origin_station": "Londra",
+      "dest_station": "Newcastle upon Tyne, Tyne and Wear",
+      "departure_time": "18:00",
+      "arrival_time": "01:06",
+      "duration_mins": 426,
+      "price_try": 1979.85,
+      "operator": "Tahmini tren/otobüs",
+      "mode": "bus",
+      "date": "2026-11-12",
+      "is_estimated": true,
+      "price_eur": 35.53,
+      "price_is_estimated": true,
+      "source": "estimate",
+      "origin_station_name": null,
+      "dest_station_name": null,
+      "price_from_try": null
+    },
+    {
+      "origin_station": "Londra",
+      "dest_station": "Newcastle upon Tyne, Tyne and Wear",
+      "departure_time": "20:00",
+      "arrival_time": "03:06",
+      "duration_mins": 426,
+      "price_try": 1979.85,
+      "operator": "Tahmini tren/otobüs",
+      "mode": "bus",
+      "date": "2026-11-12",
+      "is_estimated": true,
+      "price_eur": 35.53,
+      "price_is_estimated": true,
+      "source": "estimate",
+      "origin_station_name": null,
+      "dest_station_name": null,
+      "price_from_try": null
+    }
+  ]
+}

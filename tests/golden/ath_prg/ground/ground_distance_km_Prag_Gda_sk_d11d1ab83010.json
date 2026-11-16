@@ -1,0 +1,17 @@
+{
+  "provider": "ground",
+  "method": "ground_distance_km",
+  "params": {
+    "from_coord": [
+      50.0875,
+      14.4214
+    ],
+    "from_place": "Prag",
+    "to_coord": [
+      54.3776,
+      18.4662
+    ],
+    "to_place": "Gdańsk"
+  },
+  "response": 688.3077669715938
+}

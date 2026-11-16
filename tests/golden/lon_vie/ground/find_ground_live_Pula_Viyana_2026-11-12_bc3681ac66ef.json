@@ -1,0 +1,91 @@
+{
+  "provider": "ground",
+  "method": "find_ground_live",
+  "params": {
+    "date_str": "2026-11-12",
+    "dest": "Viyana",
+    "from_coord": [
+      44.8935,
+      13.9222
+    ],
+    "origin": "Pula",
+    "to_coord": [
+      48.2085,
+      16.3731
+    ]
+  },
+  "response": [
+    {
+      "origin_station": "Pula",
+      "dest_station": "Viyana",
+      "departure_time": "04:45",
+      "arrival_time": "15:40",
+      "duration_mins": 655,
+      "price_try": 2645.19,
+      "operator": "FlixBus",
+      "mode": "bus",
+      "date": "2026-11-12",
+      "is_estimated": false,
+      "price_eur": 47.47,
+      "price_is_estimated": false,
+      "source": "flixbus",
+      "origin_station_name": "Pula",
+      "dest_station_name": "Vienna Central Station",
+      "price_from_try": null
+    },
+    {
+      "origin_station": "Pula",
+      "dest_station": "Viyana",
+      "departure_time": "04:45",
+      "arrival_time": "16:00",
+      "duration_mins": 675,
+      "price_try": 2645.19,
+      "operator": "FlixBus",
+      "mode": "bus",
+      "date": "2026-11-12",
+      "is_estimated": false,
+      "price_eur": 47.47,
+      "price_is_estimated": false,
+      "source": "flixbus",
+      "origin_station_name": "Pula",
+      "dest_station_name": "Vienna Erdberg (VIB)",
+      "price_from_try": null
+    },
+    {
+      "origin_station": "Pula",
+      "dest_station": "Viyana",
+      "departure_time": "06:30",
+      "arrival_time": "17:15",
+      "duration_mins": 645,
+      "price_try": 2450.15,
+      "operator": "FlixBus",
+      "mode": "bus",
+      "date": "2026-11-12",
+      "is_estimated": false,
+      "price_eur": 43.97,
+      "price_is_estimated": false,
+      "source": "flixbus",
+      "origin_station_name": "Pula",
+      "dest_station_name": "Vienna Erdberg (VIB)",
+      "price_from_try": null
+    },
+    {
+      "origin_station": "Pula",
+      "dest_station": "Viyana",
+      "departure_time": "15:40",
+      "arrival_time": "01:35",
+      "duration_mins": 595,
+      "price_try": 2004.92,
+      "operator": "FlixBus",
+      "mode": "bus",
+      "date": "2026-11-12",
+      "is_estimated": false,
+      "price_eur": 35.98,
+      "price_is_estimated": false,
+      "source": "flixbus",
+      "origin_station_name": "Pula",
+      "dest_station_name": "Vienna Erdberg (VIB)",
+      "price_from_try": null
+    }
+  ]
+}

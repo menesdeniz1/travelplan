@@ -1,0 +1,17 @@
+{
+  "provider": "ground",
+  "method": "ground_distance_km",
+  "params": {
+    "from_coord": [
+      41.0082,
+      28.9784
+    ],
+    "from_place": "İstanbul",
+    "to_coord": [
+      46.9277,
+      28.9317
+    ],
+    "to_place": "Chişinău"
+  },
+  "response": 822.7873152307966
+}

@@ -1,0 +1,160 @@
+{
+ "response_uuid": "f8a7cec8-7476-4adf-bea8-5043153ddb1f",
+ "trips": [
+  {
+   "departure_city_id": "ab6b59e0-0ea1-4783-833f-070f79f1a2ca",
+   "arrival_city_id": "40e09335-8646-11e6-9066-549f350fcb0c",
+   "date": "2026-11-05T00:00:00+02:00",
+   "means_of_transport": [
+    "bus"
+   ],
+   "departure": {
+    "earliest_date": "2026-11-05T17:30:00+02:00",
+    "latest_date": "2026-11-05T17:30:00+02:00",
+    "stations": [
+     "9b68df74-3ecb-11ea-8017-02437075395e"
+    ]
+   },
+   "arrival": {
+    "earliest_date": "2026-11-05T22:45:00+02:00",
+    "latest_date": "2026-11-05T22:45:00+02:00",
+    "stations": [
+     "dcc1910a-9603-11e6-9066-549f350fcb0c"
+    ]
+   },
+   "results": {
+    "direct:4a1be202-1681-470b-a417-8952a0cf368a:9b68df74-3ecb-11ea-8017-02437075395e:dcc1910a-9603-11e6-9066-549f350fcb0c": {
+     "uid": "direct:4a1be202-1681-470b-a417-8952a0cf368a:9b68df74-3ecb-11ea-8017-02437075395e:dcc1910a-9603-11e6-9066-549f350fcb0c",
+     "status": "available",
+     "transfer_type": "Direct",
+     "transfer_type_key": "direct",
+     "provider": "flixbus",
+     "departure": {
+      "date": "2026-11-05T17:30:00+02:00",
+      "city_id": "ab6b59e0-0ea1-4783-833f-070f79f1a2ca",
+      "station_id": "9b68df74-3ecb-11ea-8017-02437075395e"
+     },
+     "arrival": {
+      "date": "2026-11-05T22:45:00+02:00",
+      "city_id": "40e09335-8646-11e6-9066-549f350fcb0c",
+      "station_id": "dcc1910a-9603-11e6-9066-549f350fcb0c"
+     },
+     "duration": {
+      "hours": 5,
+      "minutes": 15
+     },
+     "price": {
+      "total": 12.99,
+      "original": 12.99,
+      "average": 12.99,
+      "total_with_platform_fee": 13.98,
+      "average_with_platform_fee": 13.98
+     },
+     "remaining": {
+      "seats_left_at_price": 1,
+      "seats": null,
+      "bike_slots": 0,
+      "capacity": "high"
+     },
+     "available": {
+      "seats": 38,
+      "bike_slots": 0
+     },
+     "legs": [
+      {
+       "ride_id": "4a1be202-1681-470b-a417-8952a0cf368a",
+       "departure": {
+        "date": "2026-11-05T17:30:00+02:00",
+        "city_id": "ab6b59e0-0ea1-4783-833f-070f79f1a2ca",
+        "station_id": "9b68df74-3ecb-11ea-8017-02437075395e"
+       },
+       "arrival": {
+        "date": "2026-11-05T22:45:00+02:00",
+        "city_id": "40e09335-8646-11e6-9066-549f350fcb0c",
+        "station_id": "dcc1910a-9603-11e6-9066-549f350fcb0c"
+       },
+       "means_of_transport": "bus",
+       "amenities": [
+        "WIFI",
+        "POWER_SOCKETS"
+       ],
+       "is_marketplace": false,
+       "operator_id": "flixro",
+       "brand_id": "a18f138c-68fa-4b45-a42f-adb0378e10d3",
+       "sub_brand_id": null,
+       "vehicle_details": [],
+       "layout_configuration": [
+        {
+         "column_layout": "TWO_TWO",
+         "deck": 0
+        }
+       ],
+       "cheapest_seat": "SEATER",
+       "seat_types": [
+        {
+         "seat_type_key": "SEATER",
+         "seat_type": "SEATER"
+        }
+       ]
+      }
+     ],
+     "messages": [],
+     "restrictions": {
+      "sale_restriction": false,
+      "info_title": "",
+      "info_title_hint": "",
+      "info_message": "",
+      "bikes_allowed": true,
+      "wheelchair_status": "unknown"
+     },
+     "intermediate_stations_count": 0
+    }
+   }
+  }
+ ],
+ "operators": {
+  "flixro": {
+   "label": "FlixBus RO SRL",
+   "key": "flixro",
+   "id": "flixro"
+  }
+ },
+ "brands": {
+  "a18f138c-68fa-4b45-a42f-adb0378e10d3": {
+   "name": "FlixBus",
+   "type": "core"
+  }
+ },
+ "cities": {
+  "40e09335-8646-11e6-9066-549f350fcb0c": {
+   "name": "Sofia",
+   "slug": "sofia",
+   "legacy_id": 5348,
+   "id": "40e09335-8646-11e6-9066-549f350fcb0c"
+  },
+  "ab6b59e0-0ea1-4783-833f-070f79f1a2ca": {
+   "name": "Thessaloniki",
+   "slug": "thessaloniki",
+   "legacy_id": 40081,
+   "id": "ab6b59e0-0ea1-4783-833f-070f79f1a2ca"
+  }
+ },
+ "stations": {
+  "dcc1910a-9603-11e6-9066-549f350fcb0c": {
+   "id": "dcc1910a-9603-11e6-9066-549f350fcb0c",
+   "legacy_id": 6148,
+   "name": "Sofia",
+   "slug": "sofia",
+   "is_train": false,
+   "importance": 100
+  },
+  "9b68df74-3ecb-11ea-8017-02437075395e": {
+   "id": "9b68df74-3ecb-11ea-8017-02437075395e",
+   "legacy_id": 47361,
+   "name": "Thessaloniki train station",
+   "slug": "thessaloniki",
+   "is_train": false,
+   "importance": 100
+  }
+ }
+}

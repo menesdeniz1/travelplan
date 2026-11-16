@@ -1,0 +1,18 @@
+{
+  "provider": "ground",
+  "method": "find_ground_live",
+  "params": {
+    "date_str": "2026-11-12",
+    "dest": "Viyana",
+    "from_coord": [
+      45.9889,
+      18.242
+    ],
+    "origin": "Pécs",
+    "to_coord": [
+      48.2085,
+      16.3731
+    ]
+  },
+  "response": []
+}

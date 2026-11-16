@@ -1,0 +1,14 @@
+{
+  "provider": "flights",
+  "method": "get_calendar_prices",
+  "params": {
+    "destination": "PRG",
+    "origin": "SAW",
+    "trip_type": "oneway"
+  },
+  "response": {
+    "2026-11-01": 2850.0,
+    "2026-11-02": 2600.0,
+    "2026-11-03": 3100.0
+  }
+}

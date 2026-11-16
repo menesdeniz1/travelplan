@@ -1,0 +1,55 @@
+{
+  "provider": "ground",
+  "method": "find_ground_live",
+  "params": {
+    "date_str": "2026-11-13",
+    "dest": "Konya",
+    "from_coord": [
+      41.0082,
+      28.9784
+    ],
+    "origin": "İstanbul",
+    "to_coord": [
+      37.979,
+      32.5619
+    ]
+  },
+  "response": [
+    {
+      "origin_station": "İstanbul",
+      "dest_station": "Konya",
+      "departure_time": "23:30",
+      "arrival_time": "10:45",
+      "duration_mins": 675,
+      "price_try": 2109.68,
+      "operator": "Kamil Koç",
+      "mode": "bus",
+      "date": "2026-11-13",
+      "is_estimated": false,
+      "price_eur": 37.86,
+      "price_is_estimated": false,
+      "source": "flixbus",
+      "origin_station_name": "İstanbul Esenler",
+      "dest_station_name": "Konya bus station",
+      "price_from_try": null
+    },
+    {
+      "origin_station": "İstanbul",
+      "dest_station": "Konya",
+      "departure_time": "23:50",
+      "arrival_time": "10:45",
+      "duration_mins": 655,
+      "price_try": 2109.68,
+      "operator": "Kamil Koç",
+      "mode": "bus",
+      "date": "2026-11-13",
+      "is_estimated": false,
+      "price_eur": 37.86,
+      "price_is_estimated": false,
+      "source": "flixbus",
+      "origin_station_name": "İstanbul Alibeyköy",
+      "dest_station_name": "Konya bus station",
+      "price_from_try": null
+    }
+  ]
+}

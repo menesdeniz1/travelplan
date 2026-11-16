@@ -1,0 +1,81 @@
+{
+  "provider": "flights",
+  "method": "search_flights",
+  "params": {
+    "departure_date": "2026-11-12",
+    "destination": "BGY",
+    "origin": "Londra",
+    "return_date": null,
+    "trip_type": "oneway"
+  },
+  "response": [
+    {
+      "source": "Google Flights (Canlı)",
+      "airline": "Ryanair",
+      "times": "19:50 – 22:45",
+      "duration": "1 sa. 55 dk.",
+      "airports": "STN ➔ BGY",
+      "stops": "Aktarmasız",
+      "stops_count": 0,
+      "is_direct": true,
+      "layover_info": "",
+      "total_price_try": 1858.0,
+      "currency": "TRY",
+      "trip_type": "Tek Yön",
+      "badge": "⚡ Aktarmasız / En Hızlı",
+      "google_flights_url": "https://www.google.com/travel/flights?q=one-way%20flights%20from%20London%20to%20BGY%20on%202026-11-12&hl=tr&gl=tr&curr=TRY",
+      "observed_at": "2026-10-22T12:30:17+00:00"
+    },
+    {
+      "source": "Google Flights (Canlı)",
+      "airline": "Ryanair",
+      "times": "17:40 – 20:35",
+      "duration": "1 sa. 55 dk.",
+      "airports": "STN ➔ BGY",
+      "stops": "Aktarmasız",
+      "stops_count": 0,
+      "is_direct": true,
+      "layover_info": "",
+      "total_price_try": 2124.0,
+      "currency": "TRY",
+      "trip_type": "Tek Yön",
+      "badge": null,
+      "google_flights_url": "https://www.google.com/travel/flights?q=one-way%20flights%20from%20London%20to%20BGY%20on%202026-11-12&hl=tr&gl=tr&curr=TRY",
+      "observed_at": "2026-10-22T12:30:17+00:00"
+    },
+    {
+      "source": "Google Flights (Canlı)",
+      "airline": "Ryanair",
+      "times": "14:15 – 17:10",
+      "duration": "1 sa. 55 dk.",
+      "airports": "STN ➔ BGY",
+      "stops": "Aktarmasız",
+      "stops_count": 0,
+      "is_direct": true,
+      "layover_info": "",
+      "total_price_try": 2222.0,
+      "currency": "TRY",
+      "trip_type": "Tek Yön",
+      "badge": null,
+      "google_flights_url": "https://www.google.com/travel/flights?q=one-way%20flights%20from%20London%20to%20BGY%20on%202026-11-12&hl=tr&gl=tr&curr=TRY",
+      "observed_at": "2026-10-22T12:30:17+00:00"
+    },
+    {
+      "source": "Google Flights (Canlı)",
+      "airline": "Ryanair",
+      "times": "08:15 – 11:10",
+      "duration": "1 sa. 55 dk.",
+      "airports": "STN ➔ BGY",
+      "stops": "Aktarmasız",
+      "stops_count": 0,
+      "is_direct": true,
+      "layover_info": "",
+      "total_price_try": 25142.0,
+      "currency": "TRY",
+      "trip_type": "Tek Yön",
+      "badge": null,
+      "google_flights_url": "https://www.google.com/travel/flights?q=one-way%20flights%20from%20London%20to%20BGY%20on%202026-11-12&hl=tr&gl=tr&curr=TRY",
+      "observed_at": "2026-10-22T12:30:17+00:00"
+    }
+  ]
+}

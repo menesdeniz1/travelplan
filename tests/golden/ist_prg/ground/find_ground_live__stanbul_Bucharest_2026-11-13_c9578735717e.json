@@ -1,0 +1,37 @@
+{
+  "provider": "ground",
+  "method": "find_ground_live",
+  "params": {
+    "date_str": "2026-11-13",
+    "dest": "Bucharest",
+    "from_coord": [
+      41.0082,
+      28.9784
+    ],
+    "origin": "İstanbul",
+    "to_coord": [
+      44.5031,
+      26.1029
+    ]
+  },
+  "response": [
+    {
+      "origin_station": "İstanbul",
+      "dest_station": "Bucharest",
+      "departure_time": "22:00",
+      "arrival_time": "07:10",
+      "duration_mins": 610,
+      "price_try": 2144.79,
+      "operator": "Kamil Koç",
+      "mode": "bus",
+      "date": "2026-11-13",
+      "is_estimated": false,
+      "price_eur": 38.49,
+      "price_is_estimated": false,
+      "source": "flixbus",
+      "origin_station_name": "İstanbul Esenler",
+      "dest_station_name": "Bucharest",
+      "price_from_try": null
+    }
+  ]
+}

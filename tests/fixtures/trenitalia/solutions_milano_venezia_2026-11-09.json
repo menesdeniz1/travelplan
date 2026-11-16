@@ -1,0 +1,291 @@
+{
+ "searchId": "830001700-830002593-one_way-2026-11-09T13:00:00.000---rewq-fdsa-iokm-ttno-vcxz-FBN-iuyt-S",
+ "solutions": [
+  {
+   "solution": {
+    "_type": "TICKET",
+    "id": "xeb5c0fe1-d408-427b-b729-a909f757ccf3",
+    "origin": "Milano Centrale",
+    "destination": "Venezia S. Lucia",
+    "departureTime": "2026-11-09T13:25:00.000+01:00",
+    "arrivalTime": "2026-11-09T16:52:00.000+01:00",
+    "duration": "3h 27min",
+    "status": "SALEABLE",
+    "trains": [
+     {
+      "description": "TRENORD 2627",
+      "trainCategory": "Regionale",
+      "acronym": "RE",
+      "denomination": "Regionale TRENORD",
+      "name": "2627",
+      "logoId": "REnoTI",
+      "urban": false
+     },
+     {
+      "description": "3503",
+      "trainCategory": "Regionale Veloce",
+      "acronym": "RV",
+      "denomination": "Fast Regional",
+      "name": "3503",
+      "logoId": "RV",
+      "urban": false
+     }
+    ],
+    "price": {
+     "currency": "€",
+     "amount": 22.4,
+     "amountCrypto": "ivzW0TxmPuM3m2hl6b927A==",
+     "originalAmount": null,
+     "indicative": false,
+     "hideAmount": false
+    },
+    "discounts": [],
+    "nodes": [
+     {
+      "id": "x620aeee6-5038-4b51-86f8-885fd250949c",
+      "origin": "Milano Centrale",
+      "bdoOrigin": "S01700",
+      "destination": "Verona Porta Nuova",
+      "departureTime": "2026-11-09T13:25:00.000+01:00",
+      "arrivalTime": "2026-11-09T15:17:00.000+01:00",
+      "salable": false,
+      "train": {
+       "description": "TRENORD 2627",
+       "trainCategory": "Regionale",
+       "acronym": "RE",
+       "denomination": "Regionale TRENORD",
+       "name": "2627",
+       "logoId": "REnoTI",
+       "urban": false
+      },
+      "bluJetMessage": null,
+      "blueJet": false
+     },
+     {
+      "id": "x986f617b-923f-4a1d-884d-db7e416e9e98",
+      "origin": "Verona Porta Nuova",
+      "bdoOrigin": "S02430",
+      "destination": "Venezia S. Lucia",
+      "departureTime": "2026-11-09T15:22:00.000+01:00",
+      "arrivalTime": "2026-11-09T16:52:00.000+01:00",
+      "salable": false,
+      "train": {
+       "description": "3503",
+       "trainCategory": "Regionale Veloce",
+       "acronym": "RV",
+       "denomination": "Fast Regional",
+       "name": "3503",
+       "logoId": "RV",
+       "urban": false
+      },
+      "bluJetMessage": null,
+      "blueJet": false
+     }
+    ],
+    "additionalPrice": null,
+    "description": null,
+    "validities": null
+   }
+  },
+  {
+   "solution": {
+    "_type": "TICKET",
+    "id": "xc20b5e48-088e-43e2-94d0-c1f8d564566e",
+    "origin": "Milano Centrale",
+    "destination": "Venezia S. Lucia",
+    "departureTime": "2026-11-09T13:45:00.000+01:00",
+    "arrivalTime": "2026-11-09T16:14:00.000+01:00",
+    "duration": "2h 29min",
+    "status": "SALEABLE",
+    "trains": [
+     {
+      "description": "9731",
+      "trainCategory": "Frecciarossa",
+      "acronym": "FR",
+      "denomination": "FRECCIAROSSA",
+      "name": "9731",
+      "logoId": "FR",
+      "urban": false
+     }
+    ],
+    "price": {
+     "currency": "€",
+     "amount": 19.9,
+     "amountCrypto": "VNUepDTnd82Ihj0kibqjGg==",
+     "originalAmount": null,
+     "indicative": false,
+     "hideAmount": false
+    },
+    "discounts": [],
+    "nodes": [
+     {
+      "id": "x7a07fff4-d45e-400b-9962-884490879081",
+      "origin": "Milano Centrale",
+      "bdoOrigin": "S01700",
+      "destination": "Venezia S. Lucia",
+      "departureTime": "2026-11-09T13:45:00.000+01:00",
+      "arrivalTime": "2026-11-09T16:14:00.000+01:00",
+      "salable": false,
+      "train": {
+       "description": "9731",
+       "trainCategory": "Frecciarossa",
+       "acronym": "FR",
+       "denomination": "FRECCIAROSSA",
+       "name": "9731",
+       "logoId": "FR",
+       "urban": false
+      },
+      "bluJetMessage": null,
+      "blueJet": false
+     }
+    ],
+    "additionalPrice": null,
+    "description": null,
+    "validities": null
+   }
+  },
+  {
+   "solution": {
+    "_type": "TICKET",
+    "id": "x51c3f04a-f6b8-491b-a6a1-87e1f1169e32",
+    "origin": "Milano Centrale",
+    "destination": "Venezia S. Lucia",
+    "departureTime": "2026-11-09T14:15:00.000+01:00",
+    "arrivalTime": "2026-11-09T16:44:00.000+01:00",
+    "duration": "2h 29min",
+    "status": "SALEABLE",
+    "trains": [
+     {
+      "description": "9733",
+      "trainCategory": "Frecciarossa",
+      "acronym": "FR",
+      "denomination": "FRECCIAROSSA",
+      "name": "9733",
+      "logoId": "FR",
+      "urban": false
+     }
+    ],
+    "price": {
+     "currency": "€",
+     "amount": 19.9,
+     "amountCrypto": "VNUepDTnd82Ihj0kibqjGg==",
+     "originalAmount": null,
+     "indicative": false,
+     "hideAmount": false
+    },
+    "discounts": [],
+    "nodes": [
+     {
+      "id": "xffe048df-1d7b-43e7-86fe-2144180ec807",
+      "origin": "Milano Centrale",
+      "bdoOrigin": "S01700",
+      "destination": "Venezia S. Lucia",
+      "departureTime": "2026-11-09T14:15:00.000+01:00",
+      "arrivalTime": "2026-11-09T16:44:00.000+01:00",
+      "salable": false,
+      "train": {
+       "description": "9733",
+       "trainCategory": "Frecciarossa",
+       "acronym": "FR",
+       "denomination": "FRECCIAROSSA",
+       "name": "9733",
+       "logoId": "FR",
+       "urban": false
+      },
+      "bluJetMessage": null,
+      "blueJet": false
+     }
+    ],
+    "additionalPrice": null,
+    "description": null,
+    "validities": null
+   }
+  },
+  {
+   "solution": {
+    "_type": "TICKET",
+    "id": "xfb10b6d7-6c93-401b-9fd7-1072db9af84b",
+    "origin": "Milano Centrale",
+    "destination": "Venezia S. Lucia",
+    "departureTime": "2026-11-09T15:48:00.000+01:00",
+    "arrivalTime": "2026-11-09T18:44:00.000+01:00",
+    "duration": "2h 56min",
+    "status": "SALEABLE",
+    "trains": [
+     {
+      "description": null,
+      "trainCategory": "Urban transport (not included in the price)",
+      "acronym": "UB",
+      "denomination": "Urban transport (not included in the price) from Milano Centrale to Milano Porta Garibaldi",
+      "name": null,
+      "logoId": "UB",
+      "urban": true
+     },
+     {
+      "description": "9743",
+      "trainCategory": "Frecciarossa",
+      "acronym": "FR",
+      "denomination": "FRECCIAROSSA",
+      "name": "9743",
+      "logoId": "FR",
+      "urban": false
+     }
+    ],
+    "price": {
+     "currency": "€",
+     "amount": 22.9,
+     "amountCrypto": "9h4fsMGr2wxZCeDJUO4qBw==",
+     "originalAmount": null,
+     "indicative": false,
+     "hideAmount": false
+    },
+    "discounts": [],
+    "nodes": [
+     {
+      "id": "x2b30c462-0748-482e-9408-3265b22e3e6d",
+      "origin": "Milano Centrale",
+      "bdoOrigin": null,
+      "destination": "Milano Porta Garibaldi",
+      "departureTime": "2026-11-09T15:48:00.000+01:00",
+      "arrivalTime": "2026-11-09T16:03:00.000+01:00",
+      "salable": false,
+      "train": {
+       "description": null,
+       "trainCategory": "Urban transport (not included in the price)",
+       "acronym": "UB",
+       "denomination": "Urban transport (not included in the price) from Milano Centrale to Milano Porta Garibaldi",
+       "name": null,
+       "logoId": "UB",
+       "urban": true
+      },
+      "bluJetMessage": null,
+      "blueJet": false
+     },
+     {
+      "id": "xf1f09eff-fb6f-4471-9181-07f3c094beed",
+      "origin": "Milano Porta Garibaldi",
+      "bdoOrigin": "S00219",
+      "destination": "Venezia S. Lucia",
+      "departureTime": "2026-11-09T16:13:00.000+01:00",
+      "arrivalTime": "2026-11-09T18:44:00.000+01:00",
+      "salable": false,
+      "train": {
+       "description": "9743",
+       "trainCategory": "Frecciarossa",
+       "acronym": "FR",
+       "denomination": "FRECCIAROSSA",
+       "name": "9743",
+       "logoId": "FR",
+       "urban": false
+      },
+      "bluJetMessage": null,
+      "blueJet": false
+     }
+    ],
+    "additionalPrice": null,
+    "description": null,
+    "validities": null
+   }
+  }
+ ]
+}

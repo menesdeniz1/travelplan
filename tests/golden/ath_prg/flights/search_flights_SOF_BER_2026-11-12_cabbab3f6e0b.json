@@ -1,0 +1,64 @@
+{
+  "provider": "flights",
+  "method": "search_flights",
+  "params": {
+    "departure_date": "2026-11-12",
+    "destination": "BER",
+    "origin": "SOF",
+    "return_date": null,
+    "trip_type": "oneway"
+  },
+  "response": [
+    {
+      "source": "Google Flights (Canlı)",
+      "airline": "Ryanair",
+      "times": "20:10 – 21:25",
+      "duration": "2 sa. 15 dk.",
+      "airports": "SOF ➔ BER",
+      "stops": "Aktarmasız",
+      "stops_count": 0,
+      "is_direct": true,
+      "layover_info": "",
+      "total_price_try": 1650.0,
+      "currency": "TRY",
+      "trip_type": "Tek Yön",
+      "badge": "⚡ Aktarmasız / En Hızlı",
+      "google_flights_url": "https://www.google.com/travel/flights?q=one-way%20flights%20from%20SOF%20to%20BER%20on%202026-11-12&hl=tr&gl=tr&curr=TRY",
+      "observed_at": "2026-10-22T11:58:18+00:00"
+    },
+    {
+      "source": "Google Flights (Canlı)",
+      "airline": "Wizz Air",
+      "times": "12:45 – 14:05",
+      "duration": "2 sa. 20 dk.",
+      "airports": "SOF ➔ BER",
+      "stops": "Aktarmasız",
+      "stops_count": 0,
+      "is_direct": true,
+      "layover_info": "",
+      "total_price_try": 2558.0,
+      "currency": "TRY",
+      "trip_type": "Tek Yön",
+      "badge": null,
+      "google_flights_url": "https://www.google.com/travel/flights?q=one-way%20flights%20from%20SOF%20to%20BER%20on%202026-11-12&hl=tr&gl=tr&curr=TRY",
+      "observed_at": "2026-10-22T11:58:18+00:00"
+    },
+    {
+      "source": "Google Flights (Canlı)",
+      "airline": "Bulgaria Air",
+      "times": "14:50 – 16:00",
+      "duration": "2 sa. 10 dk.",
+      "airports": "SOF ➔ BER",
+      "stops": "Aktarmasız",
+      "stops_count": 0,
+      "is_direct": true,
+      "layover_info": "",
+      "total_price_try": 6935.0,
+      "currency": "TRY",
+      "trip_type": "Tek Yön",
+      "badge": null,
+      "google_flights_url": "https://www.google.com/travel/flights?q=one-way%20flights%20from%20SOF%20to%20BER%20on%202026-11-12&hl=tr&gl=tr&curr=TRY",
+      "observed_at": "2026-10-22T11:58:18+00:00"
+    }
+  ]
+}

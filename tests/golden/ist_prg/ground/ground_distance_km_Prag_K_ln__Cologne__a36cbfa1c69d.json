@@ -1,0 +1,17 @@
+{
+  "provider": "ground",
+  "method": "ground_distance_km",
+  "params": {
+    "from_coord": [
+      50.0875,
+      14.4214
+    ],
+    "from_place": "Prag",
+    "to_coord": [
+      50.8659,
+      7.1427
+    ],
+    "to_place": "Köln (Cologne)"
+  },
+  "response": 652.581006263782
+}

@@ -1,0 +1,30 @@
+{
+  "provider": "flights",
+  "method": "search_flights",
+  "params": {
+    "departure_date": "2026-11-13",
+    "destination": "DRS",
+    "origin": "SAW",
+    "return_date": null,
+    "trip_type": "oneway"
+  },
+  "response": [
+    {
+      "source": "Google Flights (Canlı)",
+      "airline": "Azerbaycan Hava Yolları, Lufthansa",
+      "times": "10:50 – 10:20+1",
+      "duration": "25 sa. 30 dk.",
+      "airports": "SAW ➔ DRS",
+      "stops": "2 aktarma",
+      "stops_count": 2,
+      "is_direct": false,
+      "layover_info": "",
+      "total_price_try": 74355.0,
+      "currency": "TRY",
+      "trip_type": "Tek Yön",
+      "badge": "🏷️ En Uygun Fiyat",
+      "google_flights_url": "https://www.google.com/travel/flights?q=one-way%20flights%20from%20SAW%20to%20DRS%20on%202026-11-13&hl=tr&gl=tr&curr=TRY",
+      "observed_at": "2026-10-22T12:09:52+00:00"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "provider": "ground",
+  "method": "find_ground",
+  "params": {
+    "allow_estimate": true,
+    "date_str": "2026-11-12",
+    "dest": "Edremit",
+    "from_coord": [
+      37.9755,
+      23.7348
+    ],
+    "max_results": 12,
+    "origin": "Atina",
+    "to_coord": [
+      39.5525,
+      27.0102
+    ]
+  },
+  "response": []
+}

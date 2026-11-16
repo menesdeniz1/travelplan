@@ -1,0 +1,17 @@
+{
+  "provider": "ground",
+  "method": "ground_distance_km",
+  "params": {
+    "from_coord": [
+      41.0082,
+      28.9784
+    ],
+    "from_place": "İstanbul",
+    "to_coord": [
+      50.0875,
+      14.4214
+    ],
+    "to_place": "Prag"
+  },
+  "response": 1891.435169936512
+}

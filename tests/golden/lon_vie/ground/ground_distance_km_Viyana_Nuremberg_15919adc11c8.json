@@ -1,0 +1,17 @@
+{
+  "provider": "ground",
+  "method": "ground_distance_km",
+  "params": {
+    "from_coord": [
+      48.2085,
+      16.3731
+    ],
+    "from_place": "Viyana",
+    "to_coord": [
+      49.4987,
+      11.0781
+    ],
+    "to_place": "Nuremberg"
+  },
+  "response": 516.2581852632034
+}

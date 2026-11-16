@@ -1,0 +1,91 @@
+{
+  "provider": "ground",
+  "method": "find_ground_live",
+  "params": {
+    "date_str": "2026-11-12",
+    "dest": "Viyana",
+    "from_coord": [
+      50.476,
+      19.0807
+    ],
+    "origin": "Katowice",
+    "to_coord": [
+      48.2085,
+      16.3731
+    ]
+  },
+  "response": [
+    {
+      "origin_station": "Katowice",
+      "dest_station": "Viyana",
+      "departure_time": "16:15",
+      "arrival_time": "21:35",
+      "duration_mins": 320,
+      "price_try": 1196.94,
+      "operator": "FlixBus",
+      "mode": "bus",
+      "date": "2026-11-12",
+      "is_estimated": false,
+      "price_eur": 21.48,
+      "price_is_estimated": false,
+      "source": "flixbus",
+      "origin_station_name": "Katowice, Bus Station Sadowa",
+      "dest_station_name": "Vienna Central Station",
+      "price_from_try": null
+    },
+    {
+      "origin_station": "Katowice",
+      "dest_station": "Viyana",
+      "departure_time": "16:40",
+      "arrival_time": "22:55",
+      "duration_mins": 375,
+      "price_try": 1475.55,
+      "operator": "FlixBus",
+      "mode": "bus",
+      "date": "2026-11-12",
+      "is_estimated": false,
+      "price_eur": 26.48,
+      "price_is_estimated": false,
+      "source": "flixbus",
+      "origin_station_name": "Katowice, Bus Station Sadowa",
+      "dest_station_name": "Vienna Erdberg (VIB)",
+      "price_from_try": null
+    },
+    {
+      "origin_station": "Katowice",
+      "dest_station": "Viyana",
+      "departure_time": "18:10",
+      "arrival_time": "23:45",
+      "duration_mins": 335,
+      "price_try": 1196.94,
+      "operator": "FlixBus",
+      "mode": "bus",
+      "date": "2026-11-12",
+      "is_estimated": false,
+      "price_eur": 21.48,
+      "price_is_estimated": false,
+      "source": "flixbus",
+      "origin_station_name": "Katowice, Bus Station Sadowa",
+      "dest_station_name": "Vienna Erdberg (VIB)",
+      "price_from_try": null
+    },
+    {
+      "origin_station": "Katowice",
+      "dest_station": "Viyana",
+      "departure_time": "18:10",
+      "arrival_time": "00:05",
+      "duration_mins": 355,
+      "price_try": 1587.0,
+      "operator": "FlixBus",
+      "mode": "bus",
+      "date": "2026-11-12",
+      "is_estimated": false,
+      "price_eur": 28.48,
+      "price_is_estimated": false,
+      "source": "flixbus",
+      "origin_station_name": "Katowice, Bus Station Sadowa",
+      "dest_station_name": "Vienna Central Station",
+      "price_from_try": null
+    }
+  ]
+}

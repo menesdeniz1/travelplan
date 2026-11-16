@@ -1,0 +1,12 @@
+{
+  "provider": "flights",
+  "method": "search_flights",
+  "params": {
+    "departure_date": "2026-11-13",
+    "destination": "BER",
+    "origin": "KRK",
+    "return_date": null,
+    "trip_type": "oneway"
+  },
+  "response": []
+}

@@ -1,0 +1,47 @@
+{
+  "provider": "flights",
+  "method": "search_flights",
+  "params": {
+    "departure_date": "2026-11-12",
+    "destination": "BTS",
+    "origin": "MXP",
+    "return_date": null,
+    "trip_type": "oneway"
+  },
+  "response": [
+    {
+      "source": "Google Flights (Canlı)",
+      "airline": "Ryanair",
+      "times": "16:55 – 18:25",
+      "duration": "1 sa. 30 dk.",
+      "airports": "MXP ➔ BTS",
+      "stops": "Aktarmasız",
+      "stops_count": 0,
+      "is_direct": true,
+      "layover_info": "",
+      "total_price_try": 1224.0,
+      "currency": "TRY",
+      "trip_type": "Tek Yön",
+      "badge": "⚡ Aktarmasız / En Hızlı",
+      "google_flights_url": "https://www.google.com/travel/flights?q=one-way%20flights%20from%20MXP%20to%20BTS%20on%202026-11-12&hl=tr&gl=tr&curr=TRY",
+      "observed_at": "2026-10-22T12:31:29+00:00"
+    },
+    {
+      "source": "Google Flights (Canlı)",
+      "airline": "Ryanair",
+      "times": "11:05 – 12:35",
+      "duration": "1 sa. 30 dk.",
+      "airports": "MXP ➔ BTS",
+      "stops": "Aktarmasız",
+      "stops_count": 0,
+      "is_direct": true,
+      "layover_info": "",
+      "total_price_try": 1502.0,
+      "currency": "TRY",
+      "trip_type": "Tek Yön",
+      "badge": null,
+      "google_flights_url": "https://www.google.com/travel/flights?q=one-way%20flights%20from%20MXP%20to%20BTS%20on%202026-11-12&hl=tr&gl=tr&curr=TRY",
+      "observed_at": "2026-10-22T12:31:29+00:00"
+    }
+  ]
+}

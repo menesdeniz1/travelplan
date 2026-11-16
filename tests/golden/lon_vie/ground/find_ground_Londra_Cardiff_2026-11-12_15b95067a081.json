@@ -1,0 +1,57 @@
+{
+  "provider": "ground",
+  "method": "find_ground",
+  "params": {
+    "allow_estimate": true,
+    "date_str": "2026-11-12",
+    "dest": "Cardiff",
+    "from_coord": [
+      51.5074,
+      -0.1278
+    ],
+    "max_results": 12,
+    "origin": "Londra",
+    "to_coord": [
+      51.3967,
+      -3.3433
+    ]
+  },
+  "response": [
+    {
+      "origin_station": "Londra",
+      "dest_station": "Cardiff",
+      "departure_time": "18:00",
+      "arrival_time": "22:03",
+      "duration_mins": 243,
+      "price_try": 1087.72,
+      "operator": "Tahmini tren/otobüs",
+      "mode": "bus",
+      "date": "2026-11-12",
+      "is_estimated": true,
+      "price_eur": 19.52,
+      "price_is_estimated": true,
+      "source": "estimate",
+      "origin_station_name": null,
+      "dest_station_name": null,
+      "price_from_try": null
+    },
+    {
+      "origin_station": "Londra",
+      "dest_station": "Cardiff",
+      "departure_time": "20:00",
+      "arrival_time": "00:03",
+      "duration_mins": 243,
+      "price_try": 1087.72,
+      "operator": "Tahmini tren/otobüs",
+      "mode": "bus",
+      "date": "2026-11-12",
+      "is_estimated": true,
+      "price_eur": 19.52,
+      "price_is_estimated": true,
+      "source": "estimate",
+      "origin_station_name": null,
+      "dest_station_name": null,
+      "price_from_try": null
+    }
+  ]
+}

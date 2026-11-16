@@ -1,0 +1,18 @@
+{
+  "provider": "ground",
+  "method": "find_ground_live",
+  "params": {
+    "date_str": "2026-11-13",
+    "dest": "Otopeni",
+    "from_coord": [
+      41.0082,
+      28.9784
+    ],
+    "origin": "İstanbul",
+    "to_coord": [
+      44.5718,
+      26.1033
+    ]
+  },
+  "response": []
+}

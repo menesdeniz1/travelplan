@@ -1,0 +1,37 @@
+{
+  "provider": "ground",
+  "method": "find_ground_live",
+  "params": {
+    "date_str": "2026-11-12",
+    "dest": "Prag",
+    "from_coord": [
+      51.1341,
+      13.7678
+    ],
+    "origin": "Dresden",
+    "to_coord": [
+      50.0875,
+      14.4214
+    ]
+  },
+  "response": [
+    {
+      "origin_station": "Dresden",
+      "dest_station": "Prag",
+      "departure_time": "23:50",
+      "arrival_time": "01:40",
+      "duration_mins": 110,
+      "price_try": 695.43,
+      "operator": "FlixBus",
+      "mode": "bus",
+      "date": "2026-11-12",
+      "is_estimated": false,
+      "price_eur": 12.48,
+      "price_is_estimated": false,
+      "source": "flixbus",
+      "origin_station_name": "Dresden central station (Bayrische Straße)",
+      "dest_station_name": "Prague (Main Station)",
+      "price_from_try": null
+    }
+  ]
+}

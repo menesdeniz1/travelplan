@@ -1,0 +1,17 @@
+{
+  "provider": "ground",
+  "method": "ground_distance_km",
+  "params": {
+    "from_coord": [
+      48.2085,
+      16.3731
+    ],
+    "from_place": "Viyana",
+    "to_coord": [
+      45.8099,
+      21.3379
+    ],
+    "to_place": "Timişoara"
+  },
+  "response": 576.4968492707776
+}

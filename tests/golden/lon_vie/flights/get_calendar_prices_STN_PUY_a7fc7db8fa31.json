@@ -1,0 +1,10 @@
+{
+  "provider": "flights",
+  "method": "get_calendar_prices",
+  "params": {
+    "destination": "PUY",
+    "origin": "STN",
+    "trip_type": "oneway"
+  },
+  "response": {}
+}

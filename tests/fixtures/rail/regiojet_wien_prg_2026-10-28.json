@@ -1,0 +1,127 @@
+{
+  "routes": [
+    {
+      "notices": [],
+      "id": "8730597973",
+      "departureStationId": 3741302011,
+      "departureTime": "2026-10-28T06:39:00.000+01:00",
+      "predictedDepartureTime": null,
+      "arrivalStationId": 372825000,
+      "arrivalTime": "2026-10-28T10:56:00.000+01:00",
+      "predictedArrivalTime": null,
+      "vehicleTypes": [
+        "TRAIN"
+      ],
+      "transfersCount": 0,
+      "freeSeatsCount": 177,
+      "priceFrom": 12.9,
+      "priceTo": 27.9,
+      "creditPriceFrom": 12.7,
+      "creditPriceTo": 27.7,
+      "pricesCount": 4,
+      "actionPrice": null,
+      "surcharge": false,
+      "support": false,
+      "nationalTrip": false,
+      "bookable": true,
+      "delay": null,
+      "travelTime": "04:17 h",
+      "vehicleStandards": [
+        "YELLOW"
+      ]
+    },
+    {
+      "notices": [],
+      "id": "8730597974",
+      "departureStationId": 3741302011,
+      "departureTime": "2026-10-28T10:39:00.000+01:00",
+      "predictedDepartureTime": null,
+      "arrivalStationId": 372825000,
+      "arrivalTime": "2026-10-28T14:56:00.000+01:00",
+      "predictedArrivalTime": null,
+      "vehicleTypes": [
+        "TRAIN"
+      ],
+      "transfersCount": 0,
+      "freeSeatsCount": 22,
+      "priceFrom": 28.9,
+      "priceTo": 42.9,
+      "creditPriceFrom": 28.7,
+      "creditPriceTo": 42.7,
+      "pricesCount": 3,
+      "actionPrice": null,
+      "surcharge": false,
+      "support": false,
+      "nationalTrip": false,
+      "bookable": true,
+      "delay": null,
+      "travelTime": "04:17 h",
+      "vehicleStandards": [
+        "YELLOW"
+      ]
+    },
+    {
+      "notices": [],
+      "id": "8730597975",
+      "departureStationId": 3741302011,
+      "departureTime": "2026-10-28T14:39:00.000+01:00",
+      "predictedDepartureTime": null,
+      "arrivalStationId": 372825000,
+      "arrivalTime": "2026-10-28T19:00:00.000+01:00",
+      "predictedArrivalTime": null,
+      "vehicleTypes": [
+        "TRAIN"
+      ],
+      "transfersCount": 0,
+      "freeSeatsCount": 69,
+      "priceFrom": 22.9,
+      "priceTo": 39.9,
+      "creditPriceFrom": 22.7,
+      "creditPriceTo": 39.7,
+      "pricesCount": 4,
+      "actionPrice": null,
+      "surcharge": false,
+      "support": false,
+      "nationalTrip": false,
+      "bookable": true,
+      "delay": null,
+      "travelTime": "04:21 h",
+      "vehicleStandards": [
+        "YELLOW"
+      ]
+    },
+    {
+      "notices": [],
+      "id": "8730597976",
+      "departureStationId": 3741302011,
+      "departureTime": "2026-10-28T17:36:00.000+01:00",
+      "predictedDepartureTime": null,
+      "arrivalStationId": 372825000,
+      "arrivalTime": "2026-10-28T21:58:00.000+01:00",
+      "predictedArrivalTime": null,
+      "vehicleTypes": [
+        "TRAIN"
+      ],
+      "transfersCount": 0,
+      "freeSeatsCount": 244,
+      "priceFrom": 16.9,
+      "priceTo": 30.9,
+      "creditPriceFrom": 16.7,
+      "creditPriceTo": 30.7,
+      "pricesCount": 4,
+      "actionPrice": null,
+      "surcharge": false,
+      "support": false,
+      "nationalTrip": false,
+      "bookable": true,
+      "delay": null,
+      "travelTime": "04:22 h",
+      "vehicleStandards": [
+        "YELLOW"
+      ]
+    }
+  ],
+  "routesMessage": null,
+  "bannerBubbles": [],
+  "textBubbles": []
+}

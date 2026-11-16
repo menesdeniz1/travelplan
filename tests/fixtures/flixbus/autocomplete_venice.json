@@ -1,0 +1,53 @@
+[
+ {
+  "score": 64.744255,
+  "country": "it",
+  "has_train_station": false,
+  "district": "Veneto",
+  "name": "Venice",
+  "legacy_id": 2155,
+  "subdivision_code": null,
+  "location": {
+   "lon": 12.3155151,
+   "lat": 45.4408474
+  },
+  "timezone_offset_seconds": 7200,
+  "id": "40dea03b-8646-11e6-9066-549f350fcb0c",
+  "stations": null,
+  "is_flixbus_city": true
+ },
+ {
+  "score": 24.92075,
+  "country": "it",
+  "has_train_station": false,
+  "district": "Veneto",
+  "name": "Venice Airport",
+  "legacy_id": 23238,
+  "subdivision_code": null,
+  "location": {
+   "lon": 12.3480704,
+   "lat": 45.505556
+  },
+  "timezone_offset_seconds": 7200,
+  "id": "b2a6981d-00be-40c6-9141-57e4977b409f",
+  "stations": null,
+  "is_flixbus_city": true
+ },
+ {
+  "score": 19.589918,
+  "country": "it",
+  "has_train_station": false,
+  "district": null,
+  "name": "Venice Mestre Train Station",
+  "legacy_id": null,
+  "subdivision_code": null,
+  "location": {
+   "lon": 12.2319,
+   "lat": 45.481902
+  },
+  "timezone_offset_seconds": 7200,
+  "id": "86fd9f4d-7ae1-4648-8d23-9b1d3c92e450",
+  "stations": null,
+  "is_flixbus_city": false
+ }
+]

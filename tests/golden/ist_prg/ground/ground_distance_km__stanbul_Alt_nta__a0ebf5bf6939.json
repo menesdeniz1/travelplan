@@ -1,0 +1,17 @@
+{
+  "provider": "ground",
+  "method": "ground_distance_km",
+  "params": {
+    "from_coord": [
+      41.0082,
+      28.9784
+    ],
+    "from_place": "İstanbul",
+    "to_coord": [
+      39.1111,
+      30.1304
+    ],
+    "to_place": "Altıntaş"
+  },
+  "response": 290.7654199695181
+}

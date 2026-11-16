@@ -1,0 +1,17 @@
+{
+  "provider": "ground",
+  "method": "ground_distance_km",
+  "params": {
+    "from_coord": [
+      50.0875,
+      14.4214
+    ],
+    "from_place": "Prag",
+    "to_coord": [
+      48.9482,
+      14.4283
+    ],
+    "to_place": "České Budějovice"
+  },
+  "response": 158.3569174719629
+}

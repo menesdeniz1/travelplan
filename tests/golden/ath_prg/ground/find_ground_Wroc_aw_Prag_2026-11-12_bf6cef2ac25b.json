@@ -1,0 +1,20 @@
+{
+  "provider": "ground",
+  "method": "find_ground",
+  "params": {
+    "allow_estimate": true,
+    "date_str": "2026-11-12",
+    "dest": "Prag",
+    "from_coord": [
+      51.1037,
+      16.8821
+    ],
+    "max_results": 12,
+    "origin": "Wrocław",
+    "to_coord": [
+      50.0875,
+      14.4214
+    ]
+  },
+  "response": []
+}

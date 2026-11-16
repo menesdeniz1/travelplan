@@ -1,0 +1,18 @@
+{
+  "provider": "ground",
+  "method": "find_ground_live",
+  "params": {
+    "date_str": "2026-11-13",
+    "dest": "Prag",
+    "from_coord": [
+      50.0777,
+      19.7848
+    ],
+    "origin": "Balice",
+    "to_coord": [
+      50.0875,
+      14.4214
+    ]
+  },
+  "response": []
+}

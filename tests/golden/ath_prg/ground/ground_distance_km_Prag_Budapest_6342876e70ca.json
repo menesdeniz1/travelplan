@@ -1,0 +1,17 @@
+{
+  "provider": "ground",
+  "method": "ground_distance_km",
+  "params": {
+    "from_coord": [
+      50.0875,
+      14.4214
+    ],
+    "from_place": "Prag",
+    "to_coord": [
+      47.4302,
+      19.2624
+    ],
+    "to_place": "Budapest"
+  },
+  "response": 577.0079601457055
+}

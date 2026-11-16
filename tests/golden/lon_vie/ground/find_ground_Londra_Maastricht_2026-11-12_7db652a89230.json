@@ -1,0 +1,20 @@
+{
+  "provider": "ground",
+  "method": "find_ground",
+  "params": {
+    "allow_estimate": true,
+    "date_str": "2026-11-12",
+    "dest": "Maastricht",
+    "from_coord": [
+      51.5074,
+      -0.1278
+    ],
+    "max_results": 12,
+    "origin": "Londra",
+    "to_coord": [
+      50.9111,
+      5.7694
+    ]
+  },
+  "response": []
+}

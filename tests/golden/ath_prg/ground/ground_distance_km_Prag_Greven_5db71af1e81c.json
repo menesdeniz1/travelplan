@@ -1,0 +1,17 @@
+{
+  "provider": "ground",
+  "method": "ground_distance_km",
+  "params": {
+    "from_coord": [
+      50.0875,
+      14.4214
+    ],
+    "from_place": "Prag",
+    "to_coord": [
+      52.1338,
+      7.6885
+    ],
+    "to_place": "Greven"
+  },
+  "response": 652.4141330894075
+}

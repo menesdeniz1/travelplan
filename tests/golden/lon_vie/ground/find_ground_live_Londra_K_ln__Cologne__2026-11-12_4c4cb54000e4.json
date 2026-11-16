@@ -1,0 +1,18 @@
+{
+  "provider": "ground",
+  "method": "find_ground_live",
+  "params": {
+    "date_str": "2026-11-12",
+    "dest": "Köln (Cologne)",
+    "from_coord": [
+      51.5074,
+      -0.1278
+    ],
+    "origin": "Londra",
+    "to_coord": [
+      50.8659,
+      7.1427
+    ]
+  },
+  "response": []
+}

@@ -1,0 +1,17 @@
+{
+  "provider": "ground",
+  "method": "ground_distance_km",
+  "params": {
+    "from_coord": [
+      48.2085,
+      16.3731
+    ],
+    "from_place": "Viyana",
+    "to_coord": [
+      47.4302,
+      19.2624
+    ],
+    "to_place": "Budapest"
+  },
+  "response": 290.52545391900173
+}

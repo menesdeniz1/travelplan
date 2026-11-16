@@ -1,0 +1,10 @@
+{
+ "description": "SYNTHETIC cards built to the same shape as real ones, for formats not seen in the live capture: codeshare 'Austrian / Aegean', '₺13.281' and '13.281 TL' price formats, +1 arrival, and a blocked-page body.",
+ "synthetic": true,
+ "cards": [
+  "10:15\n–\n12:05\nAustrian / Aegean\n3 sa. 50 dk.\nVIE–ATH\nAktarmasız\n95 kg CO2e\n₺13.281",
+  "09:40\n–\n11:20\nAustrian\n3 sa. 40 dk.\nVIE–ATH\nAktarmasız\n95 kg CO2e\n13.281 TL",
+  "22:05\n–\n06:35+1\nTurkish Airlines\n8 sa. 30 dk.\nIST–PRG\n1 aktarma\n1 sa. 40 dk. VIE\n160 kg CO2e\n₺3.120"
+ ],
+ "blocked_body": "Bilgisayar ağınızdan olağan dışı trafik algılandı. Bu sorunu çözmek için lütfen reCAPTCHA doğrulamasını tamamlayın."
+}

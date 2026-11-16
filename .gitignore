@@ -1,0 +1,60 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+
+# Playwright & test dumps
+.pytest_cache/
+*.log
+debug*.txt
+temp*.txt
+scratch*.txt
+
+# OS / Editor
+.DS_Store
+config.json
+alerts.json
+price_history.json
+scratch/
+test_*.json
+watches.json
+*.json.tmp
+*.corrupt-*
+
+# Local data / search log
+logs/
+*.sqlite
+*.sqlite3
+search_log.db
+observations.db
+
+# Storage: SQLite database, WAL side files, migrated legacy JSON backups
+travelplan.db
+travelplan.db.*
+*.db-wal
+*.db-shm
+*.migrated.bak
+*.migrated-*.bak
+
+# Local settings with secrets (.env). The committed template .env.example is kept.
+.env
+.env.*
+!.env.example
+
+# Flight price cache
+flight_cache.db
+
+# Ground (bus and train) cache
+ground_cache.db
+
+# Google Hotels price cache
+hotel_cache.db
+
+# Deploy copies of the database are never committed (copy them to the Mac by hand)
+deploy/*.db
+deploy/*.db-*

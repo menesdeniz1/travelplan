@@ -1,0 +1,64 @@
+{
+  "provider": "flights",
+  "method": "search_flights",
+  "params": {
+    "departure_date": "2026-11-13",
+    "destination": "PRG",
+    "origin": "CND",
+    "return_date": null,
+    "trip_type": "oneway"
+  },
+  "response": [
+    {
+      "source": "Google Flights (Canlı)",
+      "airline": "Turkish Airlines",
+      "times": "09:40 – 18:00",
+      "duration": "9 sa. 20 dk.",
+      "airports": "CND ➔ PRG",
+      "stops": "1 aktarma",
+      "stops_count": 1,
+      "is_direct": false,
+      "layover_info": "",
+      "total_price_try": 17552.0,
+      "currency": "TRY",
+      "trip_type": "Tek Yön",
+      "badge": "🏷️ En Uygun Fiyat",
+      "google_flights_url": "https://www.google.com/travel/flights?q=one-way%20flights%20from%20CND%20to%20PRG%20on%202026-11-13&hl=tr&gl=tr&curr=TRY",
+      "observed_at": "2026-10-22T12:12:25+00:00"
+    },
+    {
+      "source": "Google Flights (Canlı)",
+      "airline": "Turkish Airlines",
+      "times": "09:40 – 13:50",
+      "duration": "5 sa. 10 dk.",
+      "airports": "CND ➔ PRG",
+      "stops": "1 aktarma",
+      "stops_count": 1,
+      "is_direct": false,
+      "layover_info": "",
+      "total_price_try": 23196.0,
+      "currency": "TRY",
+      "trip_type": "Tek Yön",
+      "badge": null,
+      "google_flights_url": "https://www.google.com/travel/flights?q=one-way%20flights%20from%20CND%20to%20PRG%20on%202026-11-13&hl=tr&gl=tr&curr=TRY",
+      "observed_at": "2026-10-22T12:12:25+00:00"
+    },
+    {
+      "source": "Google Flights (Canlı)",
+      "airline": "Turkish Airlines",
+      "times": "09:40 – 08:35+1",
+      "duration": "23 sa. 55 dk.",
+      "airports": "CND ➔ PRG",
+      "stops": "1 aktarma",
+      "stops_count": 1,
+      "is_direct": false,
+      "layover_info": "",
+      "total_price_try": 27514.0,
+      "currency": "TRY",
+      "trip_type": "Tek Yön",
+      "badge": null,
+      "google_flights_url": "https://www.google.com/travel/flights?q=one-way%20flights%20from%20CND%20to%20PRG%20on%202026-11-13&hl=tr&gl=tr&curr=TRY",
+      "observed_at": "2026-10-22T12:12:25+00:00"
+    }
+  ]
+}

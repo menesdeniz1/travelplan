@@ -1,0 +1,58 @@
+{
+  "score": 0.75,
+  "total_misses": 0,
+  "scenarios": {
+    "ath_prg": {
+      "best_known": 2782.41,
+      "budget_20_best": 2782.41,
+      "hit": true,
+      "misses": 0
+    },
+    "ist_prg": {
+      "best_known": 5181.79,
+      "budget_20_best": 5181.79,
+      "hit": true,
+      "misses": 0
+    },
+    "prg_ist_via": {
+      "best_known": 10860.25,
+      "budget_20_best": 10860.25,
+      "hit": true,
+      "misses": 0
+    },
+    "lon_vie": {
+      "best_known": 4875.31,
+      "budget_20_best": 5090.31,
+      "hit": false,
+      "misses": 0
+    }
+  },
+  "score_with_memory": 0.75,
+  "total_misses_with_memory": 0,
+  "scenarios_with_memory": {
+    "ath_prg": {
+      "best_known": 2782.41,
+      "budget_20_best": 2782.41,
+      "hit": true,
+      "misses": 0
+    },
+    "ist_prg": {
+      "best_known": 5181.79,
+      "budget_20_best": 5181.79,
+      "hit": true,
+      "misses": 0
+    },
+    "prg_ist_via": {
+      "best_known": 10860.25,
+      "budget_20_best": 10860.25,
+      "hit": true,
+      "misses": 0
+    },
+    "lon_vie": {
+      "best_known": 4875.31,
+      "budget_20_best": 5090.31,
+      "hit": false,
+      "misses": 0
+    }
+  }
+}

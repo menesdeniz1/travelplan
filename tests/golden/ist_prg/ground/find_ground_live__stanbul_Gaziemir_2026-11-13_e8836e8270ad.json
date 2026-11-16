@@ -1,0 +1,18 @@
+{
+  "provider": "ground",
+  "method": "find_ground_live",
+  "params": {
+    "date_str": "2026-11-13",
+    "dest": "Gaziemir",
+    "from_coord": [
+      41.0082,
+      28.9784
+    ],
+    "origin": "İstanbul",
+    "to_coord": [
+      38.2924,
+      27.157
+    ]
+  },
+  "response": []
+}

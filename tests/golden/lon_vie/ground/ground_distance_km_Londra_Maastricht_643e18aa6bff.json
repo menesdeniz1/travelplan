@@ -1,0 +1,17 @@
+{
+  "provider": "ground",
+  "method": "ground_distance_km",
+  "params": {
+    "from_coord": [
+      51.5074,
+      -0.1278
+    ],
+    "from_place": "Londra",
+    "to_coord": [
+      50.9111,
+      5.7694
+    ],
+    "to_place": "Maastricht"
+  },
+  "response": 520.0048713918723
+}

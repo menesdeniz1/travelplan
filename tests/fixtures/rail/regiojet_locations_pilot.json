@@ -1,0 +1,220 @@
+[
+  {
+    "country": "Hungary",
+    "code": "HU",
+    "cities": [
+      {
+        "id": 10202091,
+        "name": "Budapest",
+        "aliases": [
+          "Budapest",
+          "布达佩斯",
+          "Budapeszt",
+          "Будапешт",
+          "Budapešť"
+        ],
+        "stationsTypes": [
+          "TRAIN_STATION",
+          "BUS_STATION"
+        ],
+        "stations": [
+          {
+            "available": true,
+            "id": 5404232005,
+            "name": "Kelenföld",
+            "fullname": "Budapest - Kelenföld",
+            "aliases": [],
+            "address": "Budapešť, 1115 Maďarsko",
+            "stationsTypes": [
+              "TRAIN_STATION"
+            ],
+            "iataCode": null,
+            "stationUrl": "https://regiojet.com//timetables-and-stops/stops/5404232005.html",
+            "stationTimeZoneCode": "Europe/Budapest",
+            "wheelChairPlatform": null,
+            "significance": 3,
+            "longitude": 19.021642684936523,
+            "latitude": 47.46517562866211,
+            "imageUrl": null,
+            "cisNumber": null,
+            "sr70Number": null
+          },
+          {
+            "available": true,
+            "id": 7063331001,
+            "name": "Keleti pu.",
+            "fullname": "Budapest - Keleti pu.",
+            "aliases": [],
+            "address": "Budapest, Kerepesi út 2-4, 1087 Maďarsko",
+            "stationsTypes": [
+              "TRAIN_STATION"
+            ],
+            "iataCode": null,
+            "stationUrl": "https://regiojet.com//timetables-and-stops/stops/7063331001.html",
+            "stationTimeZoneCode": "Europe/Budapest",
+            "wheelChairPlatform": null,
+            "significance": 2,
+            "longitude": 19.083982467651367,
+            "latitude": 47.500450134277344,
+            "imageUrl": null,
+            "cisNumber": null,
+            "sr70Number": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "country": "Austria",
+    "code": "AT",
+    "cities": [
+      {
+        "id": 10202052,
+        "name": "Vienna",
+        "aliases": [
+          "Wien",
+          "Viedeň",
+          "Vienne",
+          "Bécs",
+          "Vídeň",
+          "Відень",
+          "Wiedeń",
+          "维也纳",
+          "Вена"
+        ],
+        "stationsTypes": [
+          "TRAIN_STATION",
+          "BUS_STATION"
+        ],
+        "stations": [
+          {
+            "available": true,
+            "id": 3741302011,
+            "name": "Hbf",
+            "fullname": "Vienna - Hbf",
+            "aliases": [
+              "Vídeň hbf"
+            ],
+            "address": "Wien Hbf., 1040 Vídeň, Rakousko",
+            "stationsTypes": [
+              "TRAIN_STATION"
+            ],
+            "iataCode": "VIE",
+            "stationUrl": "https://regiojet.com//timetables-and-stops/stops/3741302011.html",
+            "stationTimeZoneCode": "Europe/Vienna",
+            "wheelChairPlatform": null,
+            "significance": 3,
+            "longitude": 16.376480102539062,
+            "latitude": 48.18522644042969,
+            "imageUrl": "https://brn-ybus-pubapi.sa.cz/resources/station/zastavka_placeholder.png",
+            "cisNumber": null,
+            "sr70Number": 6210300
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "country": "Czech Republic",
+    "code": "CZ",
+    "cities": [
+      {
+        "id": 10202003,
+        "name": "Prague",
+        "aliases": [
+          "Praha",
+          "Praga",
+          "Prága",
+          "Pha",
+          "布拉格",
+          "Prha",
+          "Прага",
+          "Prag"
+        ],
+        "stationsTypes": [
+          "TRAIN_STATION",
+          "BUS_STATION"
+        ],
+        "stations": [
+          {
+            "available": true,
+            "id": 372825000,
+            "name": "MS",
+            "fullname": "Prague - MS",
+            "aliases": [
+              "Hbf.",
+              "hl.n.",
+              "Praha hlavní nádraží",
+              "hlavák",
+              "Hauptbahnhof",
+              "nádraží",
+              "hlavní"
+            ],
+            "address": "Wilsonova 300/8, 120 00 Vinohrady-Praha 2",
+            "stationsTypes": [
+              "TRAIN_STATION"
+            ],
+            "iataCode": null,
+            "stationUrl": "https://regiojet.com//timetables-and-stops/stops/372825000.html",
+            "stationTimeZoneCode": "Europe/Prague",
+            "wheelChairPlatform": "RJ",
+            "significance": 6,
+            "longitude": 14.4356060028076,
+            "latitude": 50.0829200744629,
+            "imageUrl": "https://brn-ybus-pubapi.sa.cz/resources/station/zastavka_placeholder.png",
+            "cisNumber": 55775,
+            "sr70Number": 5457076
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "country": "Slovakia",
+    "code": "SK",
+    "cities": [
+      {
+        "id": 10202001,
+        "name": "Bratislava",
+        "aliases": [
+          "Blava,Brtislava,Preßburg,Pressburg",
+          "Bratysława",
+          "Pozsony",
+          "Bratislava",
+          "Братислава",
+          "布拉迪斯拉发"
+        ],
+        "stationsTypes": [
+          "TRAIN_STATION",
+          "BUS_STATION"
+        ],
+        "stations": [
+          {
+            "available": true,
+            "id": 1841058000,
+            "name": "MS",
+            "fullname": "Bratislava - MS",
+            "aliases": [
+              "Hbf.",
+              "hl.st."
+            ],
+            "address": "Bratislava Hlavná Stanica, Staré Mesto, Predstaničné námestie, 811 04 Bratislava, Slovensko",
+            "stationsTypes": [
+              "TRAIN_STATION"
+            ],
+            "iataCode": "BTS",
+            "stationUrl": "https://regiojet.com//timetables-and-stops/stops/1841058000.html",
+            "stationTimeZoneCode": "Europe/Bratislava",
+            "wheelChairPlatform": "RJ",
+            "significance": 2,
+            "longitude": 17.105915069580078,
+            "latitude": 48.15833282470703,
+            "imageUrl": "https://brn-ybus-pubapi.sa.cz/resources/station/zast_Blava_hlSt.png",
+            "cisNumber": null,
+            "sr70Number": 5413206
+          }
+        ]
+      }
+    ]
+  }
+]

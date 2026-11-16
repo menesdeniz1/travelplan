@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TravelPlan: Avrupa İçi Akıllı Rota & Fiyat Takibi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <link rel="stylesheet" href="/static/css/app.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div>
+        <h1>✈️ TravelPlan Canlı Uçuş & Bütçe Takip Motoru</h1>
+        <p class="subtitle">Avrupa içi uçuş + tren/otobüs rotaları, kurallı arama ve fiyat takibi</p>
+      </div>
+      <div class="header-actions">
+        <span class="health-pill" id="flightHealth" title="Uçuş verisi durumu yükleniyor...">
+          <span class="health-dot"></span><span id="flightHealthText">Uçuş verisi: bilinmiyor</span>
+        </span>
+        <button class="btn-watchlist-header" id="btnThemeToggle" onclick="toggleTheme()" title="Açık / Koyu Tema Değiştir">
+          <span id="themeIcon">☀️</span> <span id="themeLabel">Açık</span>
+        </button>
+        <button class="btn-watchlist-header" id="btnAlertsHeader" style="display: none; background: rgba(16, 185, 129, 0.15); border-color: rgba(16, 185, 129, 0.4); color: #10b981;" onclick="openAlertsModal()">
+          <span>🚨</span> <span>Fırsatlar (<span id="headerAlertCount">0</span>)</span>
+        </button>
+        <button class="btn-watchlist-header" onclick="openTelegramModal()">
+          <span>📱</span> Telegram
+        </button>
+        <button class="btn-watchlist-header" onclick="switchAppTab('planner'); scrollToTripPlanner()" title="Gezi Planı (kurallı arama) bölümüne git">
+          <span>🧳</span> Gezi Planı
+        </button>
+        <button class="btn-watchlist-header" onclick="switchAppTab('tour'); scrollToTourExplore()" title="Tur Keşfi bölümüne git">
+          <span>🗺️</span> Tur Keşfi
+        </button>
+        <button class="btn-watchlist-header" onclick="openWatchesModal()">
+          <span>📋</span> <span>Takiplerim (<span id="headerWatchCount">0</span>)</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Fırsat Bilet Bildirimi Banner'ı -->
+    <div id="opportunityBanner" style="display: none; margin-bottom: 16px; background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(56, 189, 248, 0.1)); border: 1px solid rgba(16, 185, 129, 0.35); border-radius: 12px; padding: 12px 18px; align-items: center; justify-content: space-between; gap: 12px;">
+      <div style="display: flex; align-items: center; gap: 10px;">
+        <span style="font-size: 22px;">🎉</span>
+        <div>
+          <span style="font-weight: 800; color: #10b981;">Hedef Bütçenizin Altında Fırsat Bileti Yakalandı!</span>
+          <span id="opportunityText" style="font-size: 13px; color: var(--text-muted); margin-left: 8px;"></span>
+        </div>
+      </div>
+      <button class="filter-btn active" onclick="openAlertsModal()" style="white-space: nowrap; font-weight: 800; background: #10b981; color: #000; border: none; padding: 8px 14px; border-radius: 8px; cursor: pointer;">Fırsatı Gör ➔</button>
+    </div>
+
+    <!-- Ana Sekmeler: Gezi Planı & Tur Keşfi -->
+    <div class="main-tab-nav" style="display: flex; gap: 8px; margin-bottom: 16px;">
+      <button type="button" class="main-tab-btn active" id="tabBtnTripPlanner" onclick="switchAppTab('planner')">🧳 Gezi Planı</button>
+      <button type="button" class="main-tab-btn" id="tabBtnTourExplore" onclick="switchAppTab('tour')">🗺️ Tur Keşfi</button>
+    </div>
+
+    <!-- Gezi Planı: kurallı arama (tarih aralığı, en geç varış, zorunlu geçiş, ayrı bütçeler) -->
+    <div id="tripPlannerSection" class="panel">
+      <div class="tp-head">
+        <span style="font-size: 22px;">🧳</span>
+        <div>
+          <div style="font-weight: 800; font-size: 16px; color: var(--text);">🧳 Gezi Planı (kurallı arama)</div>
+          <div style="font-size: 12px; color: var(--text-muted);">Tarih aralığı, en geç varış ve zorunlu geçiş ülkesi kurallarıyla direkt uçuş ve yan yol seçeneklerini karşılaştırın</div>
+        </div>
+      </div>
+
+      <div class="tp-quick">
+        <span style="font-size: 11px; color: var(--text-muted); font-weight: 700;">Örnek senaryolar:</span>
+        <button type="button" class="chip" onclick="applyTripPreset('outbound')">Örnek: Atina ➔ Prag (en geç <span id="tpPresetOutDeadline">28.10 12:00</span>)</button>
+        <button type="button" class="chip" onclick="applyTripPreset('inbound')">Örnek: Prag ➔ İstanbul (Yunanistan üzerinden)</button>
+        <span id="tpPresetNote" class="tp-hint" style="display: none; margin-top: 0;">(örnek tarih güncellendi)</span>
+      </div>
+
+      <div class="tp-grid">
+        <div>
+          <label for="tpOrigin">Nereden</label>
+          <input type="text" id="tpOrigin" list="cityList" placeholder="Örn: İstanbul">
+        </div>
+        <div>
+          <label for="tpDestination">Nereye</label>
+          <input type="text" id="tpDestination" list="cityList" placeholder="Örn: Prag">
+        </div>
+        <div>
+          <label for="tpDateStart">Kalkış tarihi (başlangıç)</label>
+          <input type="date" id="tpDateStart">
+        </div>
+        <div>
+          <label for="tpDateEnd">Kalkış tarihi (bitiş, opsiyonel)</label>
+          <input type="date" id="tpDateEnd">
+          <span class="tp-hint" id="tpDatesPreview"></span>
+        </div>
+        <div>
+          <label>En geç varış</label>
+          <div class="tp-row">
+            <input type="date" id="tpArriveDate" aria-label="En geç varış tarihi">
+            <input type="time" id="tpArriveTime" value="23:59" aria-label="En geç varış saati">
+          </div>
+        </div>
+        <div>
+          <label>En erken kalkış (opsiyonel)</label>
+          <div class="tp-row">
+            <input type="date" id="tpAfterDate" aria-label="En erken kalkış tarihi">
+            <input type="time" id="tpAfterTime" aria-label="En erken kalkış saati">
+          </div>
+        </div>
+        <div>
+          <label for="tpVia">Zorunlu duraklar (sırayla)</label>
+          <input type="text" id="tpVia" placeholder="örn. Yunanistan veya Budapeşte, Viyana">
+          <span class="tp-hint">Virgülle sıra sıra yazın: önce Budapeşte, sonra Viyana. Ülke de olabilir (ör. Yunanistan).</span>
+        </div>
+        <div>
+          <label for="tpDirectBudget">Direkt uçuş bütçesi (₺)</label>
+          <input type="number" id="tpDirectBudget" min="0" step="100" placeholder="Örn: 10000">
+        </div>
+        <div>
+          <label for="tpSideBudget">Yan yol bütçesi (₺)</label>
+          <input type="number" id="tpSideBudget" min="0" step="100" placeholder="Örn: 7000">
+        </div>
+        <div>
+          <label for="tpMaxStops">Otomatik ara durak sayısı</label>
+          <select id="tpMaxStops">
+            <option value="0">0 — sadece direkt</option>
+            <option value="1">En fazla 1 ara durak</option>
+            <option value="2">En fazla 2 ara durak (varsayılan)</option>
+            <option value="3">En fazla 3 ara durak</option>
+          </select>
+          <span class="tp-hint">0 = sadece direkt uçuş. Yüksek değer daha çok yan yol bulur ama aramayı uzatır.</span>
+        </div>
+        <div>
+          <label for="tpFlightBudget">Arama bütçesi (uçuş araması)</label>
+          <input type="number" id="tpFlightBudget" min="1" max="60" step="1" value="20">
+          <span class="tp-hint">Yüksek bütçe = daha çok seçenek ama daha uzun süre (~5 sn/arama)</span>
+        </div>
+        <div>
+          <label>Bagaj</label>
+          <div class="tp-radio-group">
+            <label class="tp-radio"><input type="radio" name="tpBag" value="small" checked> <span>Sadece küçük çanta</span></label>
+            <label class="tp-radio"><input type="radio" name="tpBag" value="cabin"> <span>Kabin bagajı</span></label>
+            <label class="tp-radio"><input type="radio" name="tpBag" value="checked"> <span>+ Valiz</span></label>
+          </div>
+          <span class="tp-hint">Bagaj ücreti fiyata eklenir; tutarı tahmini olabilir.</span>
+        </div>
+        <div>
+          <label for="tpFlex">Esnek tarih (±gün)</label>
+          <select id="tpFlex">
+            <option value="0">Kapalı (tam tarih)</option>
+            <option value="1">±1 gün</option>
+            <option value="2">±2 gün</option>
+            <option value="3">±3 gün</option>
+          </select>
+          <span class="tp-hint">Yakın günleri de tarar; en ucuz günü ve tasarrufu gösterir.</span>
+        </div>
+        <div>
+          <label>Durakta en az kalış (opsiyonel)</label>
+          <div id="tpMinStayRows"></div>
+          <button type="button" class="chip" onclick="addMinStayRow()">+ Durak ekle</button>
+          <span class="tp-hint">Yer ve saat girin (örn. Budapeşte: 12). Aktarmada bu kadar beklenir.</span>
+        </div>
+      </div>
+
+      <label class="tp-check">
+        <input type="checkbox" id="tpSideRoutes" checked>
+        <span>Yan yolları da ara (çevre havalimanı + tren)</span>
+      </label>
+
+      <label class="tp-check">
+        <input type="checkbox" id="tpSchengenSingleEntry">
+        <span>Tek girişli Schengen vizesi</span>
+      </label>
+
+      <details class="tp-return" id="tpReturnBlock">
+        <summary>↩️ Dönüş de ara (isteğe bağlı)</summary>
+        <div class="tp-grid" style="margin-top: 12px;">
+          <div>
+            <label for="tpReturnDateStart">Dönüş kalkış tarihi (başlangıç)</label>
+            <input type="date" id="tpReturnDateStart">
+          </div>
+          <div>
+            <label for="tpReturnDateEnd">Dönüş kalkış tarihi (bitiş, opsiyonel)</label>
+            <input type="date" id="tpReturnDateEnd">
+            <span class="tp-hint" id="tpReturnDatesPreview"></span>
+          </div>
+          <div>
+            <label>Dönüş en geç varış</label>
+            <div class="tp-row">
+              <input type="date" id="tpReturnArriveDate" aria-label="Dönüş en geç varış tarihi">
+              <input type="time" id="tpReturnArriveTime" value="23:59" aria-label="Dönüş en geç varış saati">
+            </div>
+          </div>
+          <div>
+            <label for="tpReturnVia">Dönüş zorunlu duraklar (sırayla)</label>
+            <input type="text" id="tpReturnVia" placeholder="örn. Yunanistan">
+          </div>
+          <div>
+            <label for="tpMinStayHours">Hedefte en az kalış (saat)</label>
+            <input type="number" id="tpMinStayHours" min="0" step="1" placeholder="örn. 24">
+            <span class="tp-hint">Gidiş-dönüş kombinasyonlarında hedef şehirde en az bu kadar kalınır.</span>
+          </div>
+        </div>
+      </details>
+
+      <div class="tp-real-row">
+        <button type="button" class="tp-real-toggle" id="tpRealOnly" aria-pressed="false" onclick="toggleTripRealOnly()">✅ Sadece gerçek veriler</button>
+        <span class="tp-hint">Açıkken tahmini tren/otobüs saat ve ücreti, transfer ücreti, bagaj ve otel kullanılmaz; yalnızca gerçek veriyle hesaplanan seçenekler gelir. Kapalıyken tahmini seçenekler etiketli görünür.</span>
+      </div>
+
+      <div class="tp-actions">
+        <button type="button" class="btn-trip-search" id="btnTripSearch" onclick="runTripSearch()">🔍 Ara</button>
+        <button type="button" class="filter-btn" id="btnTripWatch" onclick="saveTripWatch()">🔔 Bu kurallarla takip et</button>
+      </div>
+      <div id="tripFormMsg" class="tp-msg"></div>
+      <div id="tripResults"></div>
+    </div>
+
+    <!-- Tur Keşfi Sekmesi (PLN-15b) -->
+    <div id="tourExploreSection" class="panel" style="display: none;">
+      <div class="tp-head">
+        <span style="font-size: 22px;">🗺️</span>
+        <div>
+          <div style="font-weight: 800; font-size: 16px; color: var(--text);">🗺️ Tur Keşfi (aday şehirler üzerinden arama)</div>
+          <div style="font-size: 12px; color: var(--text-muted);">Kalkış ve varış arasındaki olası aktarma/mola şehirlerini tek seferde tarayın ve fiyat farklarını karşılaştırın</div>
+        </div>
+      </div>
+
+      <div class="tour-warning" style="margin-top: 14px;">
+        ⚠️ Her aday Google araması harcar (aday × bütçe)
+      </div>
+
+      <div class="tp-grid" style="margin-top: 16px;">
+        <div>
+          <label for="tourOrigin">Kalkış</label>
+          <input type="text" id="tourOrigin" list="cityList" placeholder="Örn: Atina">
+        </div>
+        <div>
+          <label for="tourDestination">Varış</label>
+          <input type="text" id="tourDestination" list="cityList" placeholder="Örn: Prag">
+        </div>
+        <div>
+          <label for="tourDateStart">Kalkış tarihi (başlangıç)</label>
+          <input type="date" id="tourDateStart">
+        </div>
+        <div>
+          <label for="tourDateEnd">Kalkış tarihi (bitiş, opsiyonel)</label>
+          <input type="date" id="tourDateEnd">
+        </div>
+        <div>
+          <label>Son varış (en geç varış)</label>
+          <div class="tp-row">
+            <input type="date" id="tourArriveDate" aria-label="Son varış tarihi">
+            <input type="time" id="tourArriveTime" value="23:59" aria-label="Son varış saati">
+          </div>
+        </div>
+        <div>
+          <label for="tourCandidates">İsteğe bağlı aday şehirler (virgüllü)</label>
+          <input type="text" id="tourCandidates" placeholder="Örn: Viyana, Budapeşte, Krakov (boşsa otomatik seçilir)">
+          <span class="tp-hint">Boş bırakılırsa coğrafi olarak en mantıklı şehirler taranır.</span>
+        </div>
+        <div>
+          <label for="tourMinStayHours">En az kalış (saat)</label>
+          <input type="number" id="tourMinStayHours" min="0" max="48" step="1" value="4" placeholder="4">
+          <span class="tp-hint">Aday şehirde geçirilmesi istenen en az süre (saat).</span>
+        </div>
+        <div>
+          <label for="tourBudget">Aday başına bütçe</label>
+          <input type="number" id="tourBudget" min="1" max="20" step="1" value="8" placeholder="8">
+          <span class="tp-hint">Her aday için ayrılan uçuş araması sayısı (1–20, varsayılan 8).</span>
+        </div>
+      </div>
+
+      <div class="tp-actions" style="margin-top: 18px; display: flex; gap: 12px; align-items: center;">
+        <button type="button" class="btn-trip-search" id="btnTourSearch" onclick="runTourExplore()">🔍 Tur Keşfini Başlat</button>
+        <span id="tourSearchSpinner" style="display: none; font-size: 13px; font-weight: 700; color: var(--accent);">⏳ Tur araması yapılıyor...</span>
+      </div>
+
+      <div id="tourFormMsg" class="tp-msg" style="margin-top: 12px;"></div>
+      <div id="tourResults" style="margin-top: 20px;"></div>
+    </div>
+
+    <!-- Hızlı uçuş araması: sadece uçuş (varsayılan kapalı; durum localStorage'da tutulur) -->
+    <details id="quickFlightDetails" class="qf-details">
+    <summary class="qf-summary">✈️ Hızlı uçuş araması (sadece uçuş) <span class="qf-summary-hint">aç / kapat</span></summary>
+    <div class="panel" style="margin-top: 12px;">
+      <!-- Trip type -->
+      <div class="trip-type-selector">
+        <button class="type-btn active" id="btnRoundtrip" onclick="setTripType('roundtrip')">🔁 Gidiş - Dönüş</button>
+        <button class="type-btn" id="btnOneway" onclick="setTripType('oneway')">➡️ Tek Yön</button>
+      </div>
+
+      <div class="search-grid">
+        <div>
+          <label>Kalkış Şehri / Havalimanı</label>
+          <input type="text" id="origin" value="İstanbul" list="cityList" placeholder="Şehir veya Kod (Örn: İstanbul, IST, Ankara)...">
+        </div>
+        <div>
+          <label>Varış Şehri / Havalimanı</label>
+          <input type="text" id="destination" value="" list="cityList" placeholder="Avrupa'da bir şehir (örn: Prag, Milano, Barselona)...">
+        </div>
+        <div>
+          <label>Gidiş Tarihi</label>
+          <input type="date" id="depDate" value="">
+        </div>
+        <div id="retDateContainer">
+          <label>Dönüş Tarihi</label>
+          <input type="date" id="retDate" value="">
+        </div>
+        <div class="search-actions">
+          <button class="btn-search" onclick="searchLiveFlights()">
+            <span>🔍</span> Canlı Ara
+          </button>
+          <button class="btn-clear" onclick="clearSearch()" title="Aramayı Temizle / Sıfırla">
+            <span>🗑️</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Quick destination suggestions -->
+      <div class="quick-chips">
+        <span style="font-size: 11px; color: var(--text-muted); font-weight: 700;">Hızlı Seçim:</span>
+        <span class="chip" onclick="setDest('Prag')">🇨🇿 Prag</span>
+        <span class="chip" onclick="setDest('Roma')">🇮🇹 Roma</span>
+        <span class="chip" onclick="setDest('Londra')">🇬🇧 Londra</span>
+        <span class="chip" onclick="setDest('Paris')">🇫🇷 Paris</span>
+        <span class="chip" onclick="setDest('Amsterdam')">🇳🇱 Amsterdam</span>
+        <span class="chip" onclick="setDest('Berlin')">🇩🇪 Berlin</span>
+        <span class="chip" onclick="setDest('Barselona')">🇪🇸 Barselona</span>
+        <span class="chip" onclick="setDest('Viyana')">🇦🇹 Viyana</span>
+        <span class="chip" onclick="setDest('Budapeşte')">🇭🇺 Budapeşte</span>
+        <span class="chip" onclick="setDest('Atina')">🇬🇷 Atina</span>
+      </div>
+
+      <!-- Multi-Modal & Çevre Havalimanları Akıllı Arama Seçenekleri -->
+      <div style="margin-top: 14px; padding-top: 14px; border-top: 1px dashed var(--card-border); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px;">
+        <label style="display: flex; align-items: center; gap: 8px; cursor: pointer; margin-bottom: 0; text-transform: none; font-size: 13px; font-weight: 700; color: var(--text);">
+          <input type="checkbox" id="chkMultiModal" checked style="width: 18px; height: 18px; accent-color: var(--accent); cursor: pointer;" onchange="toggleMultiModalOptions()">
+          <span>🚆 Çok Modlu Rota & Çevre Havalimanları (Tren / Otobüs)</span>
+          <span style="font-size: 10px; background: rgba(16, 185, 129, 0.15); color: #10b981; padding: 2px 6px; border-radius: 4px; font-weight: 800;">Tasarruf Zekası</span>
+        </label>
+        <div id="multimodalInputsRow" style="display: flex; gap: 10px; align-items: center; flex-wrap: wrap;">
+          <div style="display: flex; align-items: center; gap: 6px;">
+            <span style="font-size: 11px; font-weight: 700; color: var(--text-muted);">En Geç Varış:</span>
+            <input type="time" id="inputArrivalDeadline" style="width: 95px; padding: 6px 10px; font-size: 12px; font-weight: 700;">
+          </div>
+          <div style="display: flex; align-items: center; gap: 6px;">
+            <span style="font-size: 11px; font-weight: 700; color: var(--text-muted);">Maks. Süre:</span>
+            <select id="selectMaxJourneyHours" style="width: 135px; padding: 6px 10px; font-size: 12px; font-weight: 700;">
+              <option value="">Süre Kısıtı Yok</option>
+              <option value="6">En fazla 6 Saat</option>
+              <option value="8">En fazla 8 Saat</option>
+              <option value="10" selected>En fazla 10 Saat</option>
+              <option value="12">En fazla 12 Saat</option>
+              <option value="16">En fazla 16 Saat</option>
+            </select>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 2px;">
+            <div style="display: flex; align-items: center; gap: 6px;">
+              <label for="inputTimeValue" style="font-size: 11px; font-weight: 700; color: var(--text-muted); margin-bottom: 0; text-transform: none;">Saatimin değeri (₺/sa):</label>
+              <input type="number" id="inputTimeValue" min="0" step="50" value="150" onchange="saveTimeValueSetting()" style="width: 80px; padding: 6px 10px; font-size: 12px; font-weight: 700;">
+            </div>
+            <span class="mm-setting-helper">0 = sadece fiyata göre sırala</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    </details>
+
+    <!-- Datalist for Europe + Türkiye city autocomplete (scope: Avrupa + Türkiye only) -->
+    <datalist id="cityList">
+      <!-- Türkiye -->
+      <option value="İstanbul">
+      <option value="Ankara">
+      <option value="İzmir">
+      <option value="Antalya">
+      <option value="Trabzon">
+      <option value="Bodrum">
+      <option value="Dalaman">
+      <option value="Adana">
+      <option value="Gaziantep">
+      <!-- Avrupa -->
+      <option value="Paris">
+      <option value="Londra">
+      <option value="Roma">
+      <option value="Milano">
+      <option value="Berlin">
+      <option value="Münih">
+      <option value="Frankfurt">
+      <option value="Amsterdam">
+      <option value="Viyana">
+      <option value="Prag">
+      <option value="Barselona">
+      <option value="Madrid">
+      <option value="Atina">
+      <option value="Budapeşte">
+      <option value="Varşova">
+      <option value="Krakow">
+      <option value="Belgrad">
+      <option value="Bükreş">
+      <option value="Sofya">
+      <option value="Zürih">
+      <option value="Cenevre">
+      <option value="Brüksel">
+      <option value="Lizbon">
+      <option value="Dublin">
+      <option value="Kopenhag">
+      <option value="Stockholm">
+      <option value="Oslo">
+      <option value="Helsinki">
+      <!-- Avrupa'nın doğusu (Avrupa Rusyası) -->
+      <option value="Moskova">
+      <option value="St. Petersburg">
+    </datalist>
+
+    <!-- ±3 Gün Tarih Esnekliği Fiyat Matrisi -->
+    <div id="dateMatrixContainer" style="display: none; margin-bottom: 20px;" class="panel">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; flex-wrap: wrap; gap: 8px;">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span style="font-size: 18px;">📅</span>
+          <div>
+            <span style="font-weight: 800; font-size: 15px; color: var(--text);">Tarih Esnekliği (±3 Günlük Fiyat Matrisi)</span>
+            <span style="font-size: 12px; color: var(--text-muted); margin-left: 6px;">En ucuz günü keşfedin, tıklayarak o tarihe geçin</span>
+          </div>
+        </div>
+        <div id="matrixSavingPill" style="display: none; background: rgba(16, 185, 129, 0.15); border: 1px solid rgba(16, 185, 129, 0.4); color: #10b981; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 700;"></div>
+      </div>
+      <div id="dateMatrixGrid" class="matrix-grid"></div>
+    </div>
+
+    <!-- 3'lü Özet Kartları & Bütçe Alarmı -->
+    <div id="summaryCardsContainer" class="summary-grid" style="display: none;">
+      <!-- En Ucuz -->
+      <div class="sum-card" id="cardCheapest" onclick="setQuickFilter('cheapest')">
+        <span class="sum-badge cheapest">🏷️ EN UCUZ</span>
+        <div class="sum-price" id="sumPriceCheapest">-- ₺</div>
+        <div class="sum-airline" id="sumAirlineCheapest">--</div>
+        <div class="sum-meta" id="sumMetaCheapest">--</div>
+      </div>
+
+      <!-- En İyi Seçenek -->
+      <div class="sum-card" id="cardBest" onclick="setQuickFilter('best')">
+        <span class="sum-badge best">🏆 EN İYİ (F/P)</span>
+        <div class="sum-price" id="sumPriceBest">-- ₺</div>
+        <div class="sum-airline" id="sumAirlineBest">--</div>
+        <div class="sum-meta" id="sumMetaBest">--</div>
+      </div>
+
+      <!-- En Hızlı / Aktarmasız -->
+      <div class="sum-card" id="cardFastest" onclick="setQuickFilter('fastest')">
+        <span class="sum-badge fastest">⚡ EN HIZLI</span>
+        <div class="sum-price" id="sumPriceFastest">-- ₺</div>
+        <div class="sum-airline" id="sumAirlineFastest">--</div>
+        <div class="sum-meta" id="sumMetaFastest">--</div>
+      </div>
+
+      <!-- Bütçe Alarmı Butonu -->
+      <div class="sum-card" onclick="openAlarmModal()" style="border-style: dashed; border-color: rgba(245, 158, 11, 0.4); background: rgba(245, 158, 11, 0.05); display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+        <span class="sum-badge alarm">🔔 BÜTÇE ALARMI</span>
+        <div style="font-size: 15px; font-weight: 800; color: #fbbf24; margin-top: 4px;">Fiyat Alarmı Kur</div>
+        <div style="font-size: 11px; color: var(--text-muted); margin-top: 4px;">Hedef fiyatın altına inince bildir</div>
+      </div>
+    </div>
+
+    <!-- Fiyat Geçmişi & Canlı Trend Grafiği -->
+    <div id="priceHistoryContainer" style="display: none; margin-bottom: 20px;" class="panel">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; flex-wrap: wrap; gap: 8px;">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span style="font-size: 18px;">📈</span>
+          <div>
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <span style="font-weight: 800; font-size: 15px; color: var(--text);">Fiyat Geçmişi & Trend Analizi</span>
+              <span style="font-size: 11px; color: var(--accent); background: rgba(56, 189, 248, 0.1); padding: 1px 6px; border-radius: 4px; font-weight: 600;">🤖 Canlı Kayıt & Takip Motoru</span>
+            </div>
+            <span style="font-size: 12px; color: var(--text-muted);">Sistem yapılan her taramayı kaydeder ve zamanla gerçek fiyat geçmişi oluşturur</span>
+          </div>
+        </div>
+        <div style="display: flex; gap: 6px; align-items: center; flex-wrap: wrap;">
+          <span id="chartMinPriceLabel" style="font-size: 12px; font-weight: 700; color: #10b981; background: rgba(16, 185, 129, 0.15); padding: 4px 10px; border-radius: 6px;"></span>
+          <div style="display: flex; gap: 4px;">
+            <button class="filter-btn active" id="btnHist1" style="padding: 4px 8px; font-size: 11px;" onclick="loadPriceHistoryDays(1)">Gün İçi</button>
+            <button class="filter-btn" id="btnHist7" style="padding: 4px 8px; font-size: 11px;" onclick="loadPriceHistoryDays(7)">7 Gün</button>
+            <button class="filter-btn" id="btnHist14" style="padding: 4px 8px; font-size: 11px;" onclick="loadPriceHistoryDays(14)">14 Gün</button>
+            <button class="filter-btn" id="btnHist30" style="padding: 4px 8px; font-size: 11px;" onclick="loadPriceHistoryDays(30)">30 Gün</button>
+          </div>
+          <button class="filter-btn" style="padding: 4px 10px; font-size: 11px;" onclick="toggleChartVisibility()">Göster / Gizle</button>
+        </div>
+      </div>
+      <div id="priceHistoryEstimateNote" style="display: none; font-size: 11px; font-weight: 600; color: #b45309; margin-bottom: 6px;">Kesik çizgi / soluk noktalar: tahmini değer (gerçek gözlem değil)</div>
+      <div id="priceHistoryChartWrapper" style="position: relative; height: 180px; width: 100%;">
+        <canvas id="priceHistoryChart"></canvas>
+      </div>
+    </div>
+
+    <!-- Canlı Filtreleme & Sıralama Araç Çubuğu -->
+    <div id="filterToolbar" class="filter-toolbar" style="display: none;">
+      <!-- Sıralama -->
+      <div class="filter-section">
+        <span class="filter-label">Sırala:</span>
+        <button class="filter-btn active" id="btnSortPrice" onclick="setSortMode('price')">💰 Önce En Ucuz</button>
+        <button class="filter-btn" id="btnSortDuration" onclick="setSortMode('duration')">⚡ Önce En Hızlı</button>
+      </div>
+
+      <!-- Aktarma Seçimi (Booking.com Modeli) -->
+      <div class="filter-section">
+        <span class="filter-label">Aktarma:</span>
+        <button class="filter-btn active" id="btnStopAll" onclick="setStopsFilter('all')">Tümü</button>
+        <button class="filter-btn" id="btnStop0" onclick="setStopsFilter(0)">⚡ Aktarmasız</button>
+        <button class="filter-btn" id="btnStop1" onclick="setStopsFilter(1)">1 Aktarma</button>
+        <button class="filter-btn" id="btnStop2" onclick="setStopsFilter(2)">2+ Aktarma</button>
+      </div>
+
+      <!-- Kalkış Saati Seçimi -->
+      <div class="filter-section">
+        <span class="filter-label">Kalkış:</span>
+        <button class="filter-btn active" id="btnTimeAll" onclick="setDepartureTimeFilter('all')">Tümü (00-24)</button>
+        <button class="filter-btn" id="btnTimeMorning" onclick="setDepartureTimeFilter('morning')">🌅 Sabah (06-12)</button>
+        <button class="filter-btn" id="btnTimeAfternoon" onclick="setDepartureTimeFilter('afternoon')">☀️ Öğle (12-18)</button>
+        <button class="filter-btn" id="btnTimeEvening" onclick="setDepartureTimeFilter('evening')">🌙 Akşam (18-24)</button>
+        <button class="filter-btn" id="btnTimeNight" onclick="setDepartureTimeFilter('night')">🌌 Gece (00-06)</button>
+        <button class="filter-btn" id="btnTimeCustom" onclick="toggleMainCustomTimeFilter()">⚙️ Özel Saat (00-24)...</button>
+      </div>
+
+      <!-- Ana Sayfa Canlı Özel Saat Filtresi Paneli (00:00 - 24:00) -->
+      <div id="mainCustomTimePanel" style="display: none; align-items: center; gap: 8px; padding: 6px 12px; background: rgba(56, 189, 248, 0.08); border-radius: 8px; border: 1px solid rgba(56, 189, 248, 0.25); flex-wrap: wrap;">
+        <span style="font-size: 11px; font-weight: 700; color: var(--accent);">⏰ Canlı Saat Aralığı:</span>
+        <input type="text" id="mainFilterTimeStart" value="00:00" placeholder="00:00" maxlength="8" oninput="applyMainCustomTimeFilter()" onblur="normalizeMainFilterTime(this, 'start')" style="width: 70px; padding: 4px 6px; font-size: 12px; font-weight: 700; background: var(--card-bg); color: var(--text); border: 1px solid var(--card-border); border-radius: 6px; text-align: center;">
+        <span style="font-size: 12px; color: var(--text-muted); font-weight: 800;">➔</span>
+        <input type="text" id="mainFilterTimeEnd" value="24:00" placeholder="24:00" maxlength="8" oninput="applyMainCustomTimeFilter()" onblur="normalizeMainFilterTime(this, 'end')" style="width: 70px; padding: 4px 6px; font-size: 12px; font-weight: 700; background: var(--card-bg); color: var(--text); border: 1px solid var(--card-border); border-radius: 6px; text-align: center;">
+        <button type="button" class="filter-btn" style="padding: 2px 7px; font-size: 11px; font-weight: 700;" onclick="setMainFilterPreset('00:00', '11:00')">🎯 00-11</button>
+        <button type="button" class="filter-btn" style="padding: 2px 7px; font-size: 11px; font-weight: 700;" onclick="setMainFilterPreset('00:00', '24:00')">🌍 00-24</button>
+      </div>
+
+      <!-- Süre Filtresi (Kullanıcı Ayarlı) -->
+      <div class="filter-section">
+        <span class="filter-label">Süre:</span>
+        <button class="filter-btn active" id="btnDurAll" onclick="setDurationFilter('all')">Tümü</button>
+        <button class="filter-btn" id="btnDur5" onclick="setDurationFilter(5)">&lt; 5 Sa</button>
+        <button class="filter-btn" id="btnDur10" onclick="setDurationFilter(10)">&lt; 10 Sa</button>
+        <button class="filter-btn" id="btnDur15" onclick="setDurationFilter(15)">&lt; 15 Sa</button>
+        <button class="filter-btn" id="btnDur24" onclick="setDurationFilter(24)">&lt; 24 Sa</button>
+      </div>
+
+      <!-- Havayolu Seçimi -->
+      <div class="filter-section" id="airlineFiltersGroup">
+        <span class="filter-label">Havayolu:</span>
+        <div id="airlineChipsContainer" style="display: flex; gap: 6px; flex-wrap: wrap;"></div>
+      </div>
+
+      <!-- Sayı Göstergesi -->
+      <div class="flight-counter">
+        Gösterilen: <strong id="visibleFlightCount" style="color: var(--accent); font-weight: 800;">0</strong> / <span id="totalFlightCount" style="font-weight: 700;">0</span> Uçuş
+      </div>
+    </div>
+
+    <!-- Çok Modlu Hibrit Rotalar (Tren + Çevre Havalimanı Uçuşu) -->
+    <div id="multimodalSection" style="display: none; margin-bottom: 24px;" class="panel">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; flex-wrap: wrap; gap: 8px;">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span style="font-size: 22px;">🚆</span>
+          <div>
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <span style="font-weight: 800; font-size: 16px; color: var(--text);">Akıllı Çok Modlu Rotalar (Uçak + Hızlı Tren / Otobüs)</span>
+              <span style="font-size: 11px; color: #10b981; background: rgba(16, 185, 129, 0.15); padding: 2px 8px; border-radius: 4px; font-weight: 800;">Virtual Interlining</span>
+            </div>
+            <span style="font-size: 12px; color: var(--text-muted);">Doğrudan pahalı uçuşlar yerine çevre havalimanı ve tren bağlantısıyla büyük tasarruf</span>
+          </div>
+        </div>
+        <div id="multimodalSavingsSummary" style="font-size: 13px; font-weight: 800; color: #10b981; background: rgba(16, 185, 129, 0.12); padding: 6px 12px; border-radius: 20px; border: 1px solid rgba(16, 185, 129, 0.3);"></div>
+      </div>
+
+      <!-- Çok Modlu İnteraktif Harita Katmanı (Leaflet) -->
+      <div id="multimodalMapContainer" style="margin-bottom: 18px; border-radius: 12px; overflow: hidden; border: 1px solid var(--card-border); background: var(--card-bg); box-shadow: var(--shadow);">
+        <div style="padding: 10px 16px; background: var(--surface-bg); border-bottom: 1px solid var(--card-border); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
+          <div style="font-size: 13px; font-weight: 700; color: var(--accent); display: flex; align-items: center; gap: 6px;">
+            <span>🗺️</span> İnteraktif Rota Haritası (Uçuş Yayı + Tren/Otobüs Hattı)
+          </div>
+          <div style="font-size: 11px; color: var(--text-muted); display: flex; gap: 14px; align-items: center;">
+            <span style="display: flex; align-items: center; gap: 5px;"><span style="display: inline-block; width: 14px; height: 3px; background: #0284c7; border-radius: 2px;"></span> ✈️ Uçuş</span>
+            <span style="display: flex; align-items: center; gap: 5px;"><span style="display: inline-block; width: 14px; height: 3px; background: #10b981; border-radius: 2px;"></span> 🚆 Tren / Otobüs</span>
+          </div>
+        </div>
+        <div id="multimodalMap" style="height: 290px; width: 100%; position: relative; z-index: 1;"></div>
+      </div>
+
+      <div id="multimodalCardsList"></div>
+    </div>
+
+    <!-- Live Flights List -->
+    <div id="liveFlightsList"></div>
+  </div>
+
+  <!-- MODAL 1: Bütçe Alarmı Kur -->
+  <div id="alarmModal" class="modal-overlay">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3>🔔 Fiyat Alarmı & Bütçe Takibi Kur</h3>
+        <button class="modal-close" onclick="closeAlarmModal()">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 16px;">
+          Bu rotadaki bilet fiyatları belirleyeceğiniz hedef bütçenin altına indiğinde alarm tetiklenir.
+        </p>
+        
+        <div style="background: var(--surface-bg); padding: 14px; border-radius: 10px; margin-bottom: 16px; border: 1px solid var(--card-border);">
+          <div style="font-size: 12px; color: var(--text-muted);">İzlenen Rota:</div>
+          <div id="alarmRouteTitle" style="font-size: 16px; font-weight: 800; color: var(--text); margin-top: 2px;">--</div>
+          <div style="display: flex; justify-content: space-between; margin-top: 8px; font-size: 13px;">
+            <span style="color: var(--text-muted);">Güncel En İyi Fiyat:</span>
+            <strong id="alarmCurrentPrice" style="color: var(--green);">-- ₺</strong>
+          </div>
+        </div>
+
+        <div style="margin-bottom: 16px;">
+          <label>Hedef Bütçeniz (TL)</label>
+          <input type="number" id="inputTargetBudget" style="font-size: 16px; font-weight: 700; color: var(--green);" placeholder="Örn: 30000">
+          <span style="font-size: 11px; color: var(--text-muted); margin-top: 4px; display: block;">Fiyat bu tutarın altına düştüğünde fırsat uyarısı verilir.</span>
+        </div>
+
+        <div>
+          <label>Maksimum Aktarma Sayısı</label>
+          <select id="selectMaxTransfers" style="width: 100%; background: var(--surface-bg); border: 1px solid var(--card-border); color: var(--text); padding: 11px 14px; border-radius: 10px; font-size: 14px;">
+            <option value="1">En Fazla 1 Aktarma (Önerilen)</option>
+            <option value="0">⚡ Sadece Aktarmasız Uçuşlar</option>
+            <option value="2">2 Aktarmaya Kadar Kabul Et</option>
+          </select>
+        </div>
+
+        <div style="margin-top: 14px;">
+          <label>Kalkış Saati Aralığı (Opsiyonel)</label>
+          <select id="selectAlarmTimeSlot" onchange="toggleCustomTimeInputs()" style="width: 100%; background: var(--surface-bg); border: 1px solid var(--card-border); color: var(--text); padding: 11px 14px; border-radius: 10px; font-size: 14px;">
+            <option value="all">Farketmez (Tüm Gün / 24 Saat)</option>
+            <option value="morning">🌅 Sabah Kalkışlı (06:00 – 12:00)</option>
+            <option value="afternoon">☀️ Öğleden Sonra (12:00 – 18:00)</option>
+            <option value="evening">🌙 Akşam (18:00 – 24:00)</option>
+            <option value="night">🌌 Gece (00:00 – 06:00)</option>
+            <option value="custom">⚙️ Özel Saat Aralığı Belirle (örn: 00:00 - 11:00)...</option>
+          </select>
+
+          <!-- Özel Saat Aralığı Seçim Kutusu (00:00 - 24:00 Serbest Giriş & Hızlı Butonlar) -->
+          <div id="customTimeRangeContainer" style="display: none; margin-top: 10px; padding: 14px; background: rgba(56, 189, 248, 0.08); border: 1px dashed var(--accent); border-radius: 10px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+              <span style="font-size: 13px; font-weight: 800; color: var(--accent);">⏰ Kalkış Saat Aralığı (00:00 – 24:00):</span>
+              <span id="alarmTimePreviewBadge" style="font-size: 11px; font-weight: 700; background: rgba(56, 189, 248, 0.15); color: var(--accent); padding: 2px 8px; border-radius: 6px;">00:00 – 24:00</span>
+            </div>
+
+            <!-- Hızlı Saat Seçim Butonları -->
+            <div style="display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 10px;">
+              <button type="button" class="filter-btn" style="padding: 3px 8px; font-size: 11px; font-weight: 700;" onclick="setAlarmCustomPreset('00:00', '11:00')">🎯 00:00 – 11:00 (Özel)</button>
+              <button type="button" class="filter-btn" style="padding: 3px 8px; font-size: 11px; font-weight: 700;" onclick="setAlarmCustomPreset('00:00', '24:00')">🌍 00:00 – 24:00 (Tüm Gün)</button>
+              <button type="button" class="filter-btn" style="padding: 3px 8px; font-size: 11px; font-weight: 700;" onclick="setAlarmCustomPreset('00:00', '06:00')">🌌 00:00 – 06:00 (Gece)</button>
+              <button type="button" class="filter-btn" style="padding: 3px 8px; font-size: 11px; font-weight: 700;" onclick="setAlarmCustomPreset('06:00', '12:00')">🌅 06:00 – 12:00 (Sabah)</button>
+              <button type="button" class="filter-btn" style="padding: 3px 8px; font-size: 11px; font-weight: 700;" onclick="setAlarmCustomPreset('12:00', '18:00')">☀️ 12:00 – 18:00 (Öğle)</button>
+              <button type="button" class="filter-btn" style="padding: 3px 8px; font-size: 11px; font-weight: 700;" onclick="setAlarmCustomPreset('18:00', '24:00')">🌙 18:00 – 24:00 (Akşam)</button>
+            </div>
+
+            <div style="display: flex; gap: 12px; align-items: center;">
+              <div style="flex: 1;">
+                <span style="font-size: 11px; color: var(--text-muted); display: block; margin-bottom: 4px;">En Erken Kalkış:</span>
+                <input type="text" id="inputCustomTimeStart" value="00:00" placeholder="00:00 (örn: 00:01, 00 00)" maxlength="8"
+                  oninput="handleTimeInput(this, 'start')" onblur="normalizeTimeInput(this, 'start')"
+                  style="width: 100%; padding: 8px 10px; font-size: 14px; font-weight: 700; background: var(--card-bg); color: var(--text); border: 1px solid var(--card-border); border-radius: 8px; text-align: center;">
+              </div>
+              <span style="font-size: 18px; font-weight: 800; color: var(--text-muted); margin-top: 14px;">➔</span>
+              <div style="flex: 1;">
+                <span style="font-size: 11px; color: var(--text-muted); display: block; margin-bottom: 4px;">En Geç Kalkış:</span>
+                <input type="text" id="inputCustomTimeEnd" value="24:00" placeholder="24:00 (örn: 11:00, 24 00)" maxlength="8"
+                  oninput="handleTimeInput(this, 'end')" onblur="normalizeTimeInput(this, 'end')"
+                  style="width: 100%; padding: 8px 10px; font-size: 14px; font-weight: 700; background: var(--card-bg); color: var(--text); border: 1px solid var(--card-border); border-radius: 8px; text-align: center;">
+              </div>
+            </div>
+            <div style="font-size: 11px; color: var(--text-muted); margin-top: 6px;">İster <code>00:00</code> veya <code>00 01</code> yazın, ister <code>24:00</code> olarak belirleyin; tüm formatlar otomatik tanınır.</div>
+          </div>
+
+          <div style="display: flex; align-items: center; gap: 8px; margin-top: 12px; padding: 10px 12px; background: rgba(16, 185, 129, 0.08); border-radius: 8px; border: 1px solid rgba(16, 185, 129, 0.25);">
+            <input type="checkbox" id="chkWatchMultimodal" checked style="width: 16px; height: 16px; accent-color: #10b981; cursor: pointer;">
+            <label for="chkWatchMultimodal" style="font-size: 12px; font-weight: 700; color: var(--text); margin-bottom: 0; cursor: pointer;">🚆 Çevre havalimanı ve hızlı tren fırsatlarını da 7/24 izle (Virtual Interlining)</label>
+          </div>
+
+          <div style="font-size: 11px; color: var(--text-muted); margin-top: 10px; line-height: 1.45; background: rgba(16, 185, 129, 0.08); padding: 10px 12px; border-radius: 8px; border: 1px solid rgba(16, 185, 129, 0.25);">
+            🛡️ <strong>Tüm Uçuşlar & Yeni Uçaklar Koruması:</strong> Bu alarm belirli tek bir uçuşa kilitlenmez! Seçtiğiniz gün ve saat aralığında sisteme sonradan eklenecek yeni uçuşlar veya fiyatı hedef bütçenizin altına inen TÜM havayolları 7/24 otomatik taranır.
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="type-btn" onclick="closeAlarmModal()">İptal</button>
+        <button class="btn-search" style="height: 38px; padding: 0 20px;" onclick="saveBudgetWatch()">
+          <span>🔔</span> Alarmı Kaydet
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL 2: Takiplerim & Alarmlarım Paneli -->
+  <div id="watchlistModal" class="modal-overlay">
+    <div class="modal-box" style="max-width: 650px;">
+      <div class="modal-header">
+        <h3>📋 Aktif Bütçe Alarmlarım & Takipler</h3>
+        <button class="modal-close" onclick="closeWatchesModal()">&times;</button>
+      </div>
+      <div style="padding: 12px 20px; background: var(--surface-bg); border-bottom: 1px solid var(--card-border); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
+        <span style="font-size: 12px; color: var(--text-muted);">🤖 7/24 Arka Plan Tarayıcısı Aktif</span>
+        <button class="filter-btn active" id="btnScanAllNow" onclick="triggerManualScan()" style="display: flex; align-items: center; gap: 6px; font-weight: 700; cursor: pointer;">
+          <span>⚡</span> Tüm Takipleri Şimdi Otomatik Tara
+        </button>
+      </div>
+      <div id="scanStatusBanner" style="display: none; padding: 10px 20px; font-size: 12px; font-weight: 700; background: rgba(56, 189, 248, 0.1); color: var(--accent); border-bottom: 1px solid var(--card-border);"></div>
+      <div class="modal-body" id="watchlistContent" style="max-height: 400px; overflow-y: auto;">
+        <div style="text-align: center; padding: 30px; color: var(--text-muted);">Yükleniyor...</div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn-search" style="height: 38px; padding: 0 20px;" onclick="closeWatchesModal()">Kapat</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL 3: Telegram Bildirim Ayarları -->
+  <div id="telegramModal" class="modal-overlay">
+    <div class="modal-box" style="max-width: 540px;">
+      <div class="modal-header">
+        <h3>📱 Telegram Fırsat Bildirimi Ayarları</h3>
+        <button class="modal-close" onclick="closeTelegramModal()">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div style="background: rgba(56, 189, 248, 0.08); border: 1px solid rgba(56, 189, 248, 0.2); border-radius: 10px; padding: 14px; margin-bottom: 16px; font-size: 13px; line-height: 1.5;">
+          <div style="font-weight: 700; color: var(--accent); margin-bottom: 6px;">📲 Cep Telefonunuza Anında Bildirim:</div>
+          Bilet fiyatı belirlediğiniz hedef bütçenin altına indiğinde, Telegram botunuz size rezervasyon linkleriyle birlikte anlık alarm mesajı gönderir.
+        </div>
+
+        <div style="margin-bottom: 14px;">
+          <label>Telegram Bot Token</label>
+          <input type="password" id="tgBotToken" placeholder="Örn: 123456789:ABCdefGhIJKlmNoPQRsTUVwxyZ...">
+          <div style="font-size: 11px; color: var(--text-muted); margin-top: 4px;">
+            Telegram'da <strong>@BotFather</strong>'dan aldığınız bot API token'ı.
+          </div>
+        </div>
+
+        <div style="margin-bottom: 14px;">
+          <label>Telegram Chat ID</label>
+          <input type="text" id="tgChatId" placeholder="Örn: 123456789 veya -100...">
+          <div style="font-size: 11px; color: var(--text-muted); margin-top: 4px;">
+            Telegram'da <strong>@userinfobot</strong>'a mesaj atarak öğrendiğiniz kullanıcı ID'niz.
+          </div>
+        </div>
+
+        <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 16px;">
+          <input type="checkbox" id="tgEnabled" checked style="width: auto; cursor: pointer;">
+          <label for="tgEnabled" style="margin-bottom: 0; text-transform: none; cursor: pointer; color: var(--text);">Telegram fırsat bildirimlerini etkinleştir</label>
+        </div>
+
+        <div id="tgStatusMsg" style="display: none; padding: 10px 12px; border-radius: 8px; font-size: 12px; font-weight: 700; margin-bottom: 12px;"></div>
+      </div>
+      <div class="modal-footer" style="display: flex; justify-content: space-between; align-items: center;">
+        <button type="button" class="filter-btn" onclick="testTelegram()" id="btnTestTg">🔔 Test Bildirimi Gönder</button>
+        <div style="display: flex; gap: 8px;">
+          <button type="button" class="btn-clear" style="height: 38px; padding: 0 16px;" onclick="closeTelegramModal()">İptal</button>
+          <button type="button" class="btn-search" style="height: 38px; padding: 0 20px;" onclick="saveTelegramSettings()">💾 Kaydet</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL 4: Yakalanan Fırsatlar (Alerts) Paneli -->
+  <div id="alertsModal" class="modal-overlay">
+    <div class="modal-box" style="max-width: 650px;">
+      <div class="modal-header">
+        <h3>🚨 Yakalanan Fırsat Biletleri</h3>
+        <button class="modal-close" onclick="closeAlertsModal()">&times;</button>
+      </div>
+      <div class="modal-body" id="alertsContent" style="max-height: 420px; overflow-y: auto;">
+        <div style="text-align: center; padding: 30px; color: var(--text-muted);">Yükleniyor...</div>
+      </div>
+      <div class="modal-footer" style="display: flex; justify-content: space-between; align-items: center;">
+        <button type="button" class="btn-delete-watch" onclick="clearAllAlerts()">🗑️ Tüm Bildirimleri Temizle</button>
+        <button class="btn-search" style="height: 38px; padding: 0 20px;" onclick="closeAlertsModal()">Kapat</button>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="/static/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "provider": "flights",
+  "method": "search_flights",
+  "params": {
+    "departure_date": "2026-11-01",
+    "destination": "PRG",
+    "origin": "SAW",
+    "return_date": null,
+    "trip_type": "oneway"
+  },
+  "response": [
+    {
+      "airline": "Pegasus",
+      "departure_date": "2026-11-01",
+      "departure_time": "10:30",
+      "destination": "PRG",
+      "duration_text": "2h 45m",
+      "flight_number": "PC1234",
+      "is_direct": true,
+      "origin": "SAW",
+      "stops": 0,
+      "total_price_try": 2850.0
+    }
+  ]
+}

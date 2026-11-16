@@ -1,0 +1,10 @@
+{
+  "provider": "flights",
+  "method": "get_calendar_prices",
+  "params": {
+    "destination": "KTW",
+    "origin": "SOF",
+    "trip_type": "oneway"
+  },
+  "response": {}
+}

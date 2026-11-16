@@ -1,0 +1,20 @@
+{
+  "provider": "ground",
+  "method": "find_ground",
+  "params": {
+    "allow_estimate": true,
+    "date_str": "2026-11-12",
+    "dest": "Viyana",
+    "from_coord": [
+      47.4302,
+      19.2624
+    ],
+    "max_results": 12,
+    "origin": "Budapest",
+    "to_coord": [
+      48.2085,
+      16.3731
+    ]
+  },
+  "response": []
+}

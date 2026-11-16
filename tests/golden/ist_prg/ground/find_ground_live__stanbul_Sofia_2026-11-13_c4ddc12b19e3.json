@@ -1,0 +1,37 @@
+{
+  "provider": "ground",
+  "method": "find_ground_live",
+  "params": {
+    "date_str": "2026-11-13",
+    "dest": "Sofia",
+    "from_coord": [
+      41.0082,
+      28.9784
+    ],
+    "origin": "İstanbul",
+    "to_coord": [
+      42.6964,
+      23.4177
+    ]
+  },
+  "response": [
+    {
+      "origin_station": "İstanbul",
+      "dest_station": "Sofia",
+      "departure_time": "23:00",
+      "arrival_time": "07:00",
+      "duration_mins": 540,
+      "price_try": 2116.93,
+      "operator": "Kamil Koç",
+      "mode": "bus",
+      "date": "2026-11-13",
+      "is_estimated": false,
+      "price_eur": 37.99,
+      "price_is_estimated": false,
+      "source": "flixbus",
+      "origin_station_name": "İstanbul Esenler",
+      "dest_station_name": "Sofia",
+      "price_from_try": null
+    }
+  ]
+}

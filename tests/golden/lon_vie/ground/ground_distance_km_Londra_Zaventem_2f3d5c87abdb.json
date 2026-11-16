@@ -1,0 +1,17 @@
+{
+  "provider": "ground",
+  "method": "ground_distance_km",
+  "params": {
+    "from_coord": [
+      51.5074,
+      -0.1278
+    ],
+    "from_place": "Londra",
+    "to_coord": [
+      50.9014,
+      4.4844
+    ],
+    "to_place": "Zaventem"
+  },
+  "response": 410.31892440964054
+}

@@ -1,0 +1,37 @@
+{
+  "provider": "ground",
+  "method": "find_ground_live",
+  "params": {
+    "date_str": "2026-11-12",
+    "dest": "Plovdiv",
+    "from_coord": [
+      37.9755,
+      23.7348
+    ],
+    "origin": "Atina",
+    "to_coord": [
+      42.0678,
+      24.8508
+    ]
+  },
+  "response": [
+    {
+      "origin_station": "Atina",
+      "dest_station": "Plovdiv",
+      "departure_time": "19:00",
+      "arrival_time": "10:00",
+      "duration_mins": 900,
+      "price_try": 4513.03,
+      "operator": "Tourist Service Holding",
+      "mode": "bus",
+      "date": "2026-11-12",
+      "is_estimated": false,
+      "price_eur": 80.99,
+      "price_is_estimated": false,
+      "source": "flixbus",
+      "origin_station_name": "Athens Karaiskaki",
+      "dest_station_name": "Plovdiv",
+      "price_from_try": null
+    }
+  ]
+}

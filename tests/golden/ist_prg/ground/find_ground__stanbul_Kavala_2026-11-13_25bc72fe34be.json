@@ -1,0 +1,20 @@
+{
+  "provider": "ground",
+  "method": "find_ground",
+  "params": {
+    "allow_estimate": true,
+    "date_str": "2026-11-13",
+    "dest": "Kavala",
+    "from_coord": [
+      41.0082,
+      28.9784
+    ],
+    "max_results": 12,
+    "origin": "İstanbul",
+    "to_coord": [
+      40.9133,
+      24.6192
+    ]
+  },
+  "response": []
+}

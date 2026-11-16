@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  TravelPlan kullanici LaunchAgent sablonu. Dogrudan yuklenmez: scripts/macos/autostart_macos.sh
+  install, sablondaki yer tutucu alanlarini (cift alt cizgili buyuk harfli adlar) doldurup
+  ~/Library/LaunchAgents altina yazar. Bu aciklama satirinda yer tutucu adi kullanilmaz.
+-->
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.travelplan.server</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>__PYTHON__</string>
+        <string>__REPO_DIR__/server_v2.py</string>
+    </array>
+
+    <key>WorkingDirectory</key>
+    <string>__REPO_DIR__</string>
+
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>TRAVELPLAN_HOST</key>
+        <string>__HOST__</string>
+        <key>TRAVELPLAN_PORT</key>
+        <string>__PORT__</string>
+        <key>TRAVELPLAN_MAX_BROWSERS</key>
+        <string>__MAX_BROWSERS__</string>
+        <key>TRAVELPLAN_ALLOWED_HOSTS</key>
+        <string>__ALLOWED_HOSTS__</string>
+        <key>PYTHONUNBUFFERED</key>
+        <string>1</string>
+__OPTIONAL_ENV__
+    </dict>
+
+    <!-- Oturum acilinca baslar -->
+    <key>RunAtLoad</key>
+    <true/>
+
+    <!-- Cokerse veya cikarsa yeniden baslatir; ThrottleInterval ile en fazla 30 sn'de bir -->
+    <key>KeepAlive</key>
+    <true/>
+    <key>ThrottleInterval</key>
+    <integer>30</integer>
+
+    <!-- launchd ciktilari. Asil gunluk logs/server.log dosyasina sunucu kendisi yazar ve dondurur. -->
+    <key>StandardOutPath</key>
+    <string>__REPO_DIR__/logs/launchd.out.log</string>
+    <key>StandardErrorPath</key>
+    <string>__REPO_DIR__/logs/launchd.err.log</string>
+</dict>
+</plist>

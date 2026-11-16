@@ -1,0 +1,17 @@
+{
+  "provider": "ground",
+  "method": "ground_distance_km",
+  "params": {
+    "from_coord": [
+      48.2085,
+      16.3731
+    ],
+    "from_place": "Viyana",
+    "to_coord": [
+      46.9911,
+      15.4396
+    ],
+    "to_place": "Feldkirchen bei Graz"
+  },
+  "response": 190.4882178515728
+}

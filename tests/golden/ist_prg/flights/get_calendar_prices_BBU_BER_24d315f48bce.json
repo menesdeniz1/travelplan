@@ -1,0 +1,10 @@
+{
+  "provider": "flights",
+  "method": "get_calendar_prices",
+  "params": {
+    "destination": "BER",
+    "origin": "BBU",
+    "trip_type": "oneway"
+  },
+  "response": {}
+}

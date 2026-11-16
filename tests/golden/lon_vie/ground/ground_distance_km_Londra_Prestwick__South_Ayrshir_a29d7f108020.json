@@ -1,0 +1,17 @@
+{
+  "provider": "ground",
+  "method": "ground_distance_km",
+  "params": {
+    "from_coord": [
+      51.5074,
+      -0.1278
+    ],
+    "from_place": "Londra",
+    "to_coord": [
+      55.5015,
+      -4.5772
+    ],
+    "to_place": "Prestwick, South Ayrshire"
+  },
+  "response": 665.6517304656364
+}

@@ -1,0 +1,1351 @@
+[
+ {
+  "country": "Germany",
+  "code": "DE",
+  "cities": [
+   {
+    "id": 10202072,
+    "name": "Berlin",
+    "aliases": [
+     "柏林",
+     "Berlin",
+     "Берлин",
+     "Berlín",
+     "Берлін"
+    ],
+    "stationsTypes": [
+     "BUS_STATION"
+    ],
+    "stations": [
+     {
+      "available": true,
+      "id": 2704917000,
+      "name": "Südkreuz Bf",
+      "fullname": "Berlin - Südkreuz Bf",
+      "aliases": [],
+      "address": "Berlin Südkreuz, Hildegard-Knef-Platz, 10829 Berlin, Německo",
+      "stationsTypes": [
+       "BUS_STATION"
+      ],
+      "iataCode": "BER",
+      "stationUrl": "https://regiojet.com//timetables-and-stops/stops/2704917000.html",
+      "stationTimeZoneCode": "Europe/Berlin",
+      "wheelChairPlatform": null,
+      "significance": 1,
+      "longitude": 13.364163398742676,
+      "latitude": 52.476200103759766,
+      "imageUrl": null,
+      "cisNumber": 64705,
+      "sr70Number": null
+     },
+     {
+      "available": true,
+      "id": 10204076,
+      "name": "ZOB am Funkturm",
+      "fullname": "Berlin - ZOB am Funkturm",
+      "aliases": [],
+      "address": "ZOB Berlin, Hardenbergstraße 14, 10623 Berlin, Německo",
+      "stationsTypes": [
+       "BUS_STATION"
+      ],
+      "iataCode": "BER",
+      "stationUrl": "https://regiojet.com//timetables-and-stops/stops/10204076.html",
+      "stationTimeZoneCode": "Europe/Berlin",
+      "wheelChairPlatform": null,
+      "significance": 2,
+      "longitude": 13.279487609863281,
+      "latitude": 52.50785446166992,
+      "imageUrl": null,
+      "cisNumber": null,
+      "sr70Number": null
+     }
+    ]
+   },
+   {
+    "id": 10202071,
+    "name": "Dresden",
+    "aliases": [
+     "Dresde",
+     "Dresden",
+     "Drážďany",
+     "Дрезден",
+     "德累斯顿"
+    ],
+    "stationsTypes": [
+     "BUS_STATION"
+    ],
+    "stations": [
+     {
+      "available": true,
+      "id": 10204075,
+      "name": "Hbf., Bayerische Strasse",
+      "fullname": "Dresden - Hbf., Bayerische Strasse",
+      "aliases": [],
+      "address": null,
+      "stationsTypes": [
+       "BUS_STATION"
+      ],
+      "iataCode": "DRS",
+      "stationUrl": "https://regiojet.com//timetables-and-stops/stops/10204075.html",
+      "stationTimeZoneCode": "Europe/Berlin",
+      "wheelChairPlatform": null,
+      "significance": 5,
+      "longitude": 13.73182487487793,
+      "latitude": 51.03940963745117,
+      "imageUrl": null,
+      "cisNumber": 7109,
+      "sr70Number": null
+     }
+    ]
+   },
+   {
+    "id": 10202006,
+    "name": "Munich",
+    "aliases": [
+     "慕尼黑",
+     "Мюнхен",
+     "Mníchov",
+     "München",
+     "Mnichov"
+    ],
+    "stationsTypes": [
+     "BUS_STATION"
+    ],
+    "stations": [
+     {
+      "available": true,
+      "id": 10204006,
+      "name": "Letiště FJS, Terminál 2",
+      "fullname": "Munich - Letiště FJS, Terminál 2",
+      "aliases": [
+       "Airport",
+       "Letisko"
+      ],
+      "address": "Munich International Airport, Munich Airport, München-Flughafen, Německo, 85356 München-Flughafen, Německo",
+      "stationsTypes": [
+       "BUS_STATION"
+      ],
+      "iataCode": "MUC",
+      "stationUrl": "https://regiojet.com//timetables-and-stops/stops/10204006.html",
+      "stationTimeZoneCode": "Europe/Berlin",
+      "wheelChairPlatform": null,
+      "significance": 0,
+      "longitude": 11.789947509765625,
+      "latitude": 48.356163024902344,
+      "imageUrl": null,
+      "cisNumber": null,
+      "sr70Number": null
+     },
+     {
+      "available": true,
+      "id": 1603795000,
+      "name": "ZOB (Hackerbrücke)",
+      "fullname": "Munich - ZOB (Hackerbrücke)",
+      "aliases": [],
+      "address": "ZOB Munich, Arnulfstraße 21, 80335 München, Německo",
+      "stationsTypes": [
+       "BUS_STATION"
+      ],
+      "iataCode": "MUC",
+      "stationUrl": "https://regiojet.com//timetables-and-stops/stops/1603795000.html",
+      "stationTimeZoneCode": "Europe/Berlin",
+      "wheelChairPlatform": null,
+      "significance": 1,
+      "longitude": 11.549785614013672,
+      "latitude": 48.14236831665039,
+      "imageUrl": null,
+      "cisNumber": 55876,
+      "sr70Number": null
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "country": "Hungary",
+  "code": "HU",
+  "cities": [
+   {
+    "id": 10202091,
+    "name": "Budapest",
+    "aliases": [
+     "Budapest",
+     "布达佩斯",
+     "Budapeszt",
+     "Будапешт",
+     "Budapešť"
+    ],
+    "stationsTypes": [
+     "TRAIN_STATION",
+     "BUS_STATION"
+    ],
+    "stations": [
+     {
+      "available": true,
+      "id": 5404232004,
+      "name": "Déli pu.",
+      "fullname": "Budapest - Déli pu.",
+      "aliases": [],
+      "address": "Budapest, 1012 Maďarsko",
+      "stationsTypes": [
+       "TRAIN_STATION"
+      ],
+      "iataCode": null,
+      "stationUrl": "https://regiojet.com//timetables-and-stops/stops/5404232004.html",
+      "stationTimeZoneCode": "Europe/Budapest",
+      "wheelChairPlatform": null,
+      "significance": 2,
+      "longitude": 19.024742126464844,
+      "latitude": 47.50028610229492,
+      "imageUrl": null,
+      "cisNumber": null,
+      "sr70Number": null
+     },
+     {
+      "available": true,
+      "id": 5404232005,
+      "name": "Kelenföld",
+      "fullname": "Budapest - Kelenföld",
+      "aliases": [],
+      "address": "Budapešť, 1115 Maďarsko",
+      "stationsTypes": [
+       "TRAIN_STATION"
+      ],
+      "iataCode": null,
+      "stationUrl": "https://regiojet.com//timetables-and-stops/stops/5404232005.html",
+      "stationTimeZoneCode": "Europe/Budapest",
+      "wheelChairPlatform": null,
+      "significance": 3,
+      "longitude": 19.021642684936523,
+      "latitude": 47.46517562866211,
+      "imageUrl": null,
+      "cisNumber": null,
+      "sr70Number": null
+     },
+     {
+      "available": true,
+      "id": 6934589004,
+      "name": "Kelenföld aut.áll.",
+      "fullname": "Budapest - Kelenföld aut.áll.",
+      "aliases": [],
+      "address": "Kelenföld aut.áll., Budapešť, 1115 Maďarsko",
+      "stationsTypes": [
+       "BUS_STATION"
+      ],
+      "iataCode": null,
+      "stationUrl": "https://regiojet.com//timetables-and-stops/stops/6934589004.html",
+      "stationTimeZoneCode": "Europe/Budapest",
+      "wheelChairPlatform": null,
+      "significance": 2,
+      "longitude": 19.022653579711914,
+      "latitude": 47.463497161865234,
+      "imageUrl": null,
+      "cisNumber": 65718,
+      "sr70Number": null
+     },
+     {
+      "available": true,
+      "id": 7063331001,
+      "name": "Keleti pu.",
+      "fullname": "Budapest - Keleti pu.",
+      "aliases": [],
+      "address": "Budapest, Kerepesi út 2-4, 1087 Maďarsko",
+      "stationsTypes": [
+       "TRAIN_STATION"
+      ],
+      "iataCode": null,
+      "stationUrl": "https://regiojet.com//timetables-and-stops/stops/7063331001.html",
+      "stationTimeZoneCode": "Europe/Budapest",
+      "wheelChairPlatform": null,
+      "significance": 2,
+      "longitude": 19.083982467651367,
+      "latitude": 47.500450134277344,
+      "imageUrl": null,
+      "cisNumber": null,
+      "sr70Number": null
+     },
+     {
+      "available": true,
+      "id": 5228194003,
+      "name": "Népliget aut.áll.",
+      "fullname": "Budapest - Népliget aut.áll.",
+      "aliases": [],
+      "address": "Népliget Ülloi út 131",
+      "stationsTypes": [
+       "BUS_STATION"
+      ],
+      "iataCode": null,
+      "stationUrl": "https://regiojet.com//timetables-and-stops/stops/5228194003.html",
+      "stationTimeZoneCode": "Europe/Budapest",
+      "wheelChairPlatform": null,
+      "significance": 3,
+      "longitude": 19.098434448242188,
+      "latitude": 47.47431182861328,
+      "imageUrl": null,
+      "cisNumber": 49562,
+      "sr70Number": null
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "country": "Austria",
+  "code": "AT",
+  "cities": [
+   {
+    "id": 888040001,
+    "name": "Linz",
+    "aliases": [
+     "Линц",
+     "Лінц",
+     "林茨",
+     "Linz",
+     "Linec"
+    ],
+    "stationsTypes": [
+     "TRAIN_STATION",
+     "BUS_STATION"
+    ],
+    "stations": [
+     {
+      "available": true,
+      "id": 4111552008,
+      "name": "Hbf",
+      "fullname": "Linz - Hbf",
+      "aliases": [],
+      "address": null,
+      "stationsTypes": [
+       "TRAIN_STATION"
+      ],
+      "iataCode": null,
+      "stationUrl": "https://regiojet.com//timetables-and-stops/stops/4111552008.html",
+      "stationTimeZoneCode": "Europe/Vienna",
+      "wheelChairPlatform": null,
+      "significance": 0,
+      "longitude": 14.29115104675293,
+      "latitude": 48.290496826171875,
+      "imageUrl": null,
+      "cisNumber": null,
+      "sr70Number": null
+     },
+     {
+      "available": true,
+      "id": 6066722001,
+      "name": "Industriezeile",
+      "fullname": "Linz - Industriezeile",
+      "aliases": [],
+      "address": null,
+      "stationsTypes": [
+       "BUS_STATION"
+      ],
+      "iataCode": null,
+      "stationUrl": "https://regiojet.com//timetables-and-stops/stops/6066722001.html",
+      "stationTimeZoneCode": "Europe/Vienna",
+      "wheelChairPlatform": null,
+      "significance": 0,
+      "longitude": 14.314194679260254,
+      "latitude": 48.31051254272461,
+      "imageUrl": null,
+      "cisNumber": 54668,
+      "sr70Number": null
+     }
+    ]
+   },
+   {
+    "id": 888040003,
+    "name": "Salzburg",
+    "aliases": [
+     "Salzburk",
+     "萨尔茨堡",
+     "Salzburg",
+     "Solnohrad",
+     "Salcburk",
+     "Зальцбург"
+    ],
+    "stationsTypes": [
+     "TRAIN_STATION",
+     "BUS_STATION"
+    ],
+    "stations": [
+     {
+      "available": true,
+      "id": 4111552011,
+      "name": "Hbf",
+      "fullname": "Salzburg - Hbf",
+      "aliases": [],
+      "address": null,
+      "stationsTypes": [
+       "TRAIN_STATION"
+      ],
+      "iataCode": null,
+      "stationUrl": "https://regiojet.com//timetables-and-stops/stops/4111552011.html",
+      "stationTimeZoneCode": "Europe/Vienna",
+      "wheelChairPlatform": null,
+      "significance": 0,
+      "longitude": 13.045740127563477,
+      "latitude": 47.812774658203125,
+      "imageUrl": null,
+      "cisNumber": null,
+      "sr70Number": null
+     },
+     {
+      "available": true,
+      "id": 888049003,
+      "name": "P+R Süd",
+      "fullname": "Salzburg - P+R Süd",
+      "aliases": [],
+      "address": null,
+      "stationsTypes": [
+       "BUS_STATION"
+      ],
+      "iataCode": null,
+      "stationUrl": "https://regiojet.com//timetables-and-stops/stops/888049003.html",
+      "stationTimeZoneCode": "Europe/Vienna",
+      "wheelChairPlatform": null,
+      "significance": 0,
+      "longitude": 13.071476936340332,
+      "latitude": 47.769920349121094,
+      "imageUrl": null,
+      "cisNumber": 60231,
+      "sr70Number": null
+     }
+    ]
+   },
+   {
+    "id": 10202052,
+    "name": "Vienna",
+    "aliases": [
+     "Wien",
+     "Viedeň",
+     "Vienne",
+     "Bécs",
+     "Vídeň",
+     "Відень",
+     "Wiedeń",
+     "维也纳",
+     "Вена"
+    ],
+    "stationsTypes": [
+     "TRAIN_STATION",
+     "BUS_STATION"
+    ],
+    "stations": [
+     {
+      "available": true,
+      "id": 3741302011,
+      "name": "Hbf",
+      "fullname": "Vienna - Hbf",
+      "aliases": [
+       "Vídeň hbf"
+      ],
+      "address": "Wien Hbf., 1040 Vídeň, Rakousko",
+      "stationsTypes": [
+       "TRAIN_STATION"
+      ],
+      "iataCode": "VIE",
+      "stationUrl": "https://regiojet.com//timetables-and-stops/stops/3741302011.html",
+      "stationTimeZoneCode": "Europe/Vienna",
+      "wheelChairPlatform": null,
+      "significance": 3,
+      "longitude": 16.376480102539062,
+      "latitude": 48.18522644042969,
+      "imageUrl": "https://brn-ybus-pubapi.sa.cz/resources/station/zastavka_placeholder.png",
+      "cisNumber": null,
+      "sr70Number": 6210300
+     },
+     {
+      "available": true,
+      "id": 4218903000,
+      "name": "Hbf Main train station (Südtiroler Platz)",
+      "fullname": "Vienna - Hbf Main train station (Südtiroler Platz)",
+      "aliases": [
+       "Hbf (Südtiroler Platz)"
+      ],
+      "address": "Vienna, Vienna (central station), 1040 Vídeň, Rakousko",
+      "stationsTypes": [
+       "BUS_STATION"
+      ],
+      "iataCode": "VIE",
+      "stationUrl": "https://regiojet.com//timetables-and-stops/stops/4218903000.html",
+      "stationTimeZoneCode": "Europe/Vienna",
+      "wheelChairPlatform": null,
+      "significance": 3,
+      "longitude": 16.372875213623047,
+      "latitude": 48.185298919677734,
+      "imageUrl": "https://brn-ybus-pubapi.sa.cz/resources/station/zastavka_placeholder.png",
+      "cisNumber": 63243,
+      "sr70Number": null
+     },
+     {
+      "available": true,
+      "id": 4111552003,
+      "name": "Meidling",
+      "fullname": "Vienna - Meidling",
+      "aliases": [],
+      "address": "Eichenstraße 25, 1120 Wien, Rakousko",
+      "stationsTypes": [
+       "TRAIN_STATION"
+      ],
+      "iataCode": "VIE",
+      "stationUrl": "https://regiojet.com//timetables-and-stops/stops/4111552003.html",
+      "stationTimeZoneCode": "Europe/Vienna",
+      "wheelChairPlatform": null,
+      "significance": 1,
+      "longitude": 16.335399627685547,
+      "latitude": 48.17521286010742,
+      "imageUrl": "https://brn-ybus-pubapi.sa.cz/resources/station/zastavka_placeholder.png",
+      "cisNumber": null,
+      "sr70Number": null
+     },
+     {
+      "available": true,
+      "id": 10204055,
+      "name": "Schwechat Airport",
+      "fullname": "Vienna - Schwechat Airport",
+      "aliases": [
+       "Letiště",
+       "Lotnisko Schwechat",
+       "Flughafen",
+       "Airport",
+       "Letisko Schwechat",
+       "Letiště Schwechat",
+       "Schwechat Flughafen",
+       "Letisko"
+      ],
+      "address": "Vienna Airport, Vienna VIE, 1300 Schwechat, Rakousko",
+      "stationsTypes": [
+       "TRAIN_STATION",
+       "BUS_STATION"
+      ],
+      "iataCode": "VIE",
+      "stationUrl": "https://regiojet.com//timetables-and-stops/stops/10204055.html",
+      "stationTimeZoneCode": "Europe/Vienna",
+      "wheelChairPlatform": null,
+      "significance": 2,
+      "longitude": 16.563922882080078,
+      "latitude": 48.11997985839844,
+      "imageUrl": null,
+      "cisNumber": 41103,
+      "sr70Number": null
+     },
+     {
+      "available": true,
+      "id": 6693517004,
+      "name": "Stadlau",
+      "fullname": "Vienna - Stadlau",
+      "aliases": [],
+      "address": null,
+      "stationsTypes": [
+       "TRAIN_STATION"
+      ],
+      "iataCode": null,
+      "stationUrl": "https://regiojet.com//timetables-and-stops/stops/6693517004.html",
+      "stationTimeZoneCode": "Europe/Vienna",
+      "wheelChairPlatform": null,
+      "significance": 1,
+      "longitude": 16.44840431213379,
+      "latitude": 48.21919250488281,
+      "imageUrl": null,
+      "cisNumber": null,
+      "sr70Number": null
+     },
+     {
+      "available": true,
+      "id": 4111552004,
+      "name": "Westbahnhof",
+      "fullname": "Vienna - Westbahnhof",
+      "aliases": [],
+      "address": null,
+      "stationsTypes": [
+       "TRAIN_STATION"
+      ],
+      "iataCode": null,
+      "stationUrl": "https://regiojet.com//timetables-and-stops/stops/4111552004.html",
+      "stationTimeZoneCode": "Europe/Vienna",
+      "wheelChairPlatform": null,
+      "significance": 0,
+      "longitude": 16.337726593017578,
+      "latitude": 48.1967887878418,
+      "imageUrl": "https://brn-ybus-pubapi.sa.cz/resources/station/zastavka_placeholder.png",
+      "cisNumber": null,
+      "sr70Number": null
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "country": "Czech Republic",
+  "code": "CZ",
+  "cities": [
+   {
+    "id": 10202002,
+    "name": "Brno",
+    "aliases": [
+     "Brünn",
+     "布尔诺",
+     "Брно",
+     "Brno"
+    ],
+    "stationsTypes": [
+     "TRAIN_STATION",
+     "BUS_STATION"
+    ],
+    "stations": [
+     {
+      "available": true,
+      "id": 4987881000,
+      "name": "Královo Pole",
+      "fullname": "Brno - Královo Pole",
+      "aliases": [
+       "Královo Pole",
+       "Krpole"
+      ],
+      "address": null,
+      "stationsTypes": [
+       "TRAIN_STATION"
+      ],
+      "iataCode": null,
+      "stationUrl": "https://regiojet.com//timetables-and-stops/stops/4987881000.html",
+      "stationTimeZoneCode": "Europe/Prague",
+      "wheelChairPlatform": null,
+      "significance": 1,
+      "longitude": 16.5961971282959,
+      "latitude": 49.23056411743164,
+      "imageUrl": null,
+      "cisNumber": null,
+      "sr70Number": 5433315
+     },
+     {
+      "available": true,
+      "id": 3088864001,
+      "name": "MS",
+      "fullname": "Brno - MS",
+      "aliases": [
+       "hl.n.",
+       "hlavák",
+       "Brno nádraží",
+       "Brno hlavní nádraží",
+       "Hbf",
+       "hlavní"
+      ],
+      "address": "Železniční stanice Hlavní nádraží, Nádražní 418/7, 602 00 Brno-střed",
+      "stationsTypes": [
+       "TRAIN_STATION"
+      ],
+      "iataCode": "BRQ",
+      "stationUrl": "https://regiojet.com//timetables-and-stops/stops/3088864001.html",
+      "stationTimeZoneCode": "Europe/Prague",
+      "wheelChairPlatform": "CD",
+      "significance": 3,
+      "longitude": 16.612524032592773,
+      "latitude": 49.190853118896484,
+      "imageUrl": "https://brn-ybus-pubapi.sa.cz/resources/station/zast_Brno_HlNadr.png",
+      "cisNumber": null,
+      "sr70Number": 5433295
+     },
+     {
+      "available": true,
+      "id": 10204002,
+      "name": "bus station Grand",
+      "fullname": "Brno - bus station Grand",
+      "aliases": [
+       "Dw. Autob. przy Hotelu Grand",
+       "der Busbahnhof Grand"
+      ],
+      "address": "Student Agency, Benešova 16, 602 00",
+      "stationsTypes": [
+       "BUS_STATION"
+      ],
+      "iataCode": "BRQ",
+      "stationUrl": "https://regiojet.com//timetables-and-stops/stops/10204002.html",
+      "stationTimeZoneCode": "Europe/Prague",
+      "wheelChairPlatform": null,
+      "significance": 3,
+      "longitude": 16.6142520904541,
+      "latitude": 49.1933555603027,
+      "imageUrl": "https://brn-ybus-pubapi.sa.cz/resources/station/Brno_Grand.png",
+      "cisNumber": 2762,
+      "sr70Number": null
+     },
+     {
+      "available": true,
+      "id": 3398241000,
+      "name": "Židenice",
+      "fullname": "Brno - Židenice",
+      "aliases": [
+       "Brno Židenice",
+       "Židenice"
+      ],
+      "address": "Lazaretní 610/11, 615 00 Brno-Židenice",
+      "stationsTypes": [
+       "TRAIN_STATION"
+      ],
+      "iataCode": "BRQ",
+      "stationUrl": "https://regiojet.com//timetables-and-stops/stops/3398241000.html",
+      "stationTimeZoneCode": "Europe/Prague",
+      "wheelChairPlatform": null,
+      "significance": 2,
+      "longitude": 16.636619567871094,
+      "latitude": 49.20414733886719,
+      "imageUrl": "https://brn-ybus-pubapi.sa.cz/resources/station/zastavka_placeholder.png",
+      "cisNumber": null,
+      "sr70Number": 5433395
+     }
+    ]
+   },
+   {
+    "id": 10202003,
+    "name": "Prague",
+    "aliases": [
+     "Praha",
+     "Praga",
+     "Prága",
+     "Pha",
+     "布拉格",
+     "Prha",
+     "Прага",
+     "Prag"
+    ],
+    "stationsTypes": [
+     "TRAIN_STATION",
+     "BUS_STATION"
+    ],
+    "stations": [
+     {
+      "available": true,
+      "id": 17797000,
+      "name": "Hradčanská",
+      "fullname": "Prague - Hradčanská",
+      "aliases": [],
+      "address": "Hradčanská, Autobusové nádraží, 160 00 Praha 6",
+      "stationsTypes": [
+       "BUS_STATION"
+      ],
+      "iataCode": "PRG",
+      "stationUrl": "https://regiojet.com//timetables-and-stops/stops/17797000.html",
+      "stationTimeZoneCode": "Europe/Prague",
+      "wheelChairPlatform": null,
+      "significance": 1,
+      "longitude": 14.403122901916504,
+      "latitude": 50.09715270996094,
+      "imageUrl": "https://brn-ybus-pubapi.sa.cz/resources/station/Praha_Hradcanska.png",
+      "cisNumber": 27866,
+      "sr70Number": null
+     },
+     {
+      "available": true,
+      "id": 372825000,
+      "name": "MS",
+      "fullname": "Prague - MS",
+      "aliases": [
+       "Hbf.",
+       "hl.n.",
+       "Praha hlavní nádraží",
+       "hlavák",
+       "Hauptbahnhof",
+       "nádraží",
+       "hlavní"
+      ],
+      "address": "Wilsonova 300/8, 120 00 Vinohrady-Praha 2",
+      "stationsTypes": [
+       "TRAIN_STATION"
+      ],
+      "iataCode": null,
+      "stationUrl": "https://regiojet.com//timetables-and-stops/stops/372825000.html",
+      "stationTimeZoneCode": "Europe/Prague",
+      "wheelChairPlatform": "RJ",
+      "significance": 6,
+      "longitude": 14.4356060028076,
+      "latitude": 50.0829200744629,
+      "imageUrl": "https://brn-ybus-pubapi.sa.cz/resources/station/zastavka_placeholder.png",
+      "cisNumber": 55775,
+      "sr70Number": 5457076
+     },
+     {
+      "available": true,
+      "id": 17902017,
+      "name": "Na Knížecí",
+      "fullname": "Prague - Na Knížecí",
+      "aliases": [],
+      "address": "Na Knížecí, Nádraží a zastávky, 150 00 Praha-Smíchov",
+      "stationsTypes": [
+       "BUS_STATION"
+      ],
+      "iataCode": "PRG",
+      "stationUrl": "https://regiojet.com//timetables-and-stops/stops/17902017.html",
+      "stationTimeZoneCode": "Europe/Prague",
+      "wheelChairPlatform": null,
+      "significance": 2,
+      "longitude": 14.404358863830566,
+      "latitude": 50.06863021850586,
+      "imageUrl": "https://brn-ybus-pubapi.sa.cz/resources/station/Praha_Knizeci.png",
+      "cisNumber": 27875,
+      "sr70Number": null
+     },
+     {
+      "available": true,
+      "id": 8744788001,
+      "name": "Opletalova, náhradní zastávka",
+      "fullname": "Prague - Opletalova, náhradní zastávka",
+      "aliases": [],
+      "address": null,
+      "stationsTypes": [
+       "BUS_STATION"
+      ],
+      "iataCode": null,
+      "stationUrl": "https://regiojet.com//timetables-and-stops/stops/8744788001.html",
+      "stationTimeZoneCode": "Europe/Prague",
+      "wheelChairPlatform": null,
+      "significance": 1,
+      "longitude": 14.432955741882324,
+      "latitude": 50.084346771240234,
+      "imageUrl": null,
+      "cisNumber": null,
+      "sr70Number": null
+     },
+     {
+      "available": true,
+      "id": 17552003,
+      "name": "Vaclav Havel Airport Prague",
+      "fullname": "Prague - Vaclav Havel Airport Prague",
+      "aliases": [
+       "Václav Havel Flughafen Prag",
+       "Terminál 1",
+       "Flughafen",
+       "Ruzyně",
+       "letiště",
+       "airport"
+      ],
+      "address": "Praha Letiště Václava Havla (BUS), Autobusové nádraží, 161 00 Praha 6",
+      "stationsTypes": [
+       "BUS_STATION"
+      ],
+      "iataCode": "PRG",
+      "stationUrl": "https://regiojet.com//timetables-and-stops/stops/17552003.html",
+      "stationTimeZoneCode": "Europe/Prague",
+      "wheelChairPlatform": null,
+      "significance": 2,
+      "longitude": 14.2693090438843,
+      "latitude": 50.1075325012207,
+      "imageUrl": null,
+      "cisNumber": 59609,
+      "sr70Number": null
+     },
+     {
+      "available": true,
+      "id": 509515001,
+      "name": "Wilsonova bus st. next to train st.",
+      "fullname": "Prague - Wilsonova bus st. next to train st.",
+      "aliases": [],
+      "address": null,
+      "stationsTypes": [
+       "BUS_STATION"
+      ],
+      "iataCode": "PRG",
+      "stationUrl": "https://regiojet.com//timetables-and-stops/stops/509515001.html",
+      "stationTimeZoneCode": "Europe/Prague",
+      "wheelChairPlatform": null,
+      "significance": 1,
+      "longitude": 14.4352836608887,
+      "latitude": 50.0834770202637,
+      "imageUrl": "https://brn-ybus-pubapi.sa.cz/resources/station/zast_Pha_Wilsonova.png",
+      "cisNumber": 55775,
+      "sr70Number": null
+     },
+     {
+      "available": true,
+      "id": 7434585001,
+      "name": "Zahradní Město",
+      "fullname": "Prague - Zahradní Město",
+      "aliases": [],
+      "address": null,
+      "stationsTypes": [
+       "TRAIN_STATION"
+      ],
+      "iataCode": null,
+      "stationUrl": "https://regiojet.com//timetables-and-stops/stops/7434585001.html",
+      "stationTimeZoneCode": "Europe/Prague",
+      "wheelChairPlatform": null,
+      "significance": 4,
+      "longitude": 14.504159927368164,
+      "latitude": 50.062156677246094,
+      "imageUrl": null,
+      "cisNumber": 57665,
+      "sr70Number": 5457279
+     },
+     {
+      "available": true,
+      "id": 10204003,
+      "name": "ÚAN Florenc",
+      "fullname": "Prague - ÚAN Florenc",
+      "aliases": [],
+      "address": "Student Agency kavárna, Křižíkova 345/4, 186 00 Karlín",
+      "stationsTypes": [
+       "BUS_STATION"
+      ],
+      "iataCode": "PRG",
+      "stationUrl": "https://regiojet.com//timetables-and-stops/stops/10204003.html",
+      "stationTimeZoneCode": "Europe/Prague",
+      "wheelChairPlatform": null,
+      "significance": 5,
+      "longitude": 14.4407234191895,
+      "latitude": 50.0893783569336,
+      "imageUrl": "https://brn-ybus-pubapi.sa.cz/resources/station/zast_Pha_Florenc.png",
+      "cisNumber": 27862,
+      "sr70Number": null
+     },
+     {
+      "available": true,
+      "id": 17902007,
+      "name": "Černý Most",
+      "fullname": "Prague - Černý Most",
+      "aliases": [],
+      "address": "Černý most, Autobusové nádraží, 198 00 Praha 20",
+      "stationsTypes": [
+       "BUS_STATION"
+      ],
+      "iataCode": "PRG",
+      "stationUrl": "https://regiojet.com//timetables-and-stops/stops/17902007.html",
+      "stationTimeZoneCode": "Europe/Prague",
+      "wheelChairPlatform": null,
+      "significance": 2,
+      "longitude": 14.5774354934692,
+      "latitude": 50.1088981628418,
+      "imageUrl": "https://brn-ybus-pubapi.sa.cz/resources/station/zast_Pha_CernMost.png",
+      "cisNumber": 47090,
+      "sr70Number": null
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "country": "Slovakia",
+  "code": "SK",
+  "cities": [
+   {
+    "id": 10202001,
+    "name": "Bratislava",
+    "aliases": [
+     "Blava,Brtislava,Preßburg,Pressburg",
+     "Bratysława",
+     "Pozsony",
+     "Bratislava",
+     "Братислава",
+     "布拉迪斯拉发"
+    ],
+    "stationsTypes": [
+     "TRAIN_STATION",
+     "BUS_STATION"
+    ],
+    "stations": [
+     {
+      "available": true,
+      "id": 2420693001,
+      "name": "Einsteinova",
+      "fullname": "Bratislava - Einsteinova",
+      "aliases": [],
+      "address": null,
+      "stationsTypes": [
+       "BUS_STATION"
+      ],
+      "iataCode": "BTS",
+      "stationUrl": "https://regiojet.com//timetables-and-stops/stops/2420693001.html",
+      "stationTimeZoneCode": "Europe/Bratislava",
+      "wheelChairPlatform": null,
+      "significance": 1,
+      "longitude": 17.098865509033203,
+      "latitude": 48.13222885131836,
+      "imageUrl": null,
+      "cisNumber": 54811,
+      "sr70Number": null
+     },
+     {
+      "available": true,
+      "id": 1841058000,
+      "name": "MS",
+      "fullname": "Bratislava - MS",
+      "aliases": [
+       "Hbf.",
+       "hl.st."
+      ],
+      "address": "Bratislava Hlavná Stanica, Staré Mesto, Predstaničné námestie, 811 04 Bratislava, Slovensko",
+      "stationsTypes": [
+       "TRAIN_STATION"
+      ],
+      "iataCode": "BTS",
+      "stationUrl": "https://regiojet.com//timetables-and-stops/stops/1841058000.html",
+      "stationTimeZoneCode": "Europe/Bratislava",
+      "wheelChairPlatform": "RJ",
+      "significance": 2,
+      "longitude": 17.105915069580078,
+      "latitude": 48.15833282470703,
+      "imageUrl": "https://brn-ybus-pubapi.sa.cz/resources/station/zast_Blava_hlSt.png",
+      "cisNumber": null,
+      "sr70Number": 5413206
+     },
+     {
+      "available": true,
+      "id": 2420693000,
+      "name": "Most SNP (Nový most)",
+      "fullname": "Bratislava - Most SNP (Nový most)",
+      "aliases": [],
+      "address": "Most SNP, Autobusové nádraží, 811 02 Bratislava, Slovensko",
+      "stationsTypes": [
+       "BUS_STATION"
+      ],
+      "iataCode": "BTS",
+      "stationUrl": "https://regiojet.com//timetables-and-stops/stops/2420693000.html",
+      "stationTimeZoneCode": "Europe/Bratislava",
+      "wheelChairPlatform": null,
+      "significance": 1,
+      "longitude": 17.104293823242188,
+      "latitude": 48.140743255615234,
+      "imageUrl": null,
+      "cisNumber": 54810,
+      "sr70Number": null
+     },
+     {
+      "available": true,
+      "id": 10204001,
+      "name": "Nivy bus station",
+      "fullname": "Bratislava - Nivy bus station",
+      "aliases": [
+       "Autobusová stanica Nivy"
+      ],
+      "address": null,
+      "stationsTypes": [
+       "BUS_STATION"
+      ],
+      "iataCode": "BTS",
+      "stationUrl": "https://regiojet.com//timetables-and-stops/stops/10204001.html",
+      "stationTimeZoneCode": "Europe/Bratislava",
+      "wheelChairPlatform": null,
+      "significance": 3,
+      "longitude": 17.12877655029297,
+      "latitude": 48.14678192138672,
+      "imageUrl": "https://brn-ybus-pubapi.sa.cz/resources/station/Bratislava_Nivy.png",
+      "cisNumber": 2498,
+      "sr70Number": null
+     },
+     {
+      "available": true,
+      "id": 6553511001,
+      "name": "Vinohrady",
+      "fullname": "Bratislava - Vinohrady",
+      "aliases": [],
+      "address": "831 02 Bratislava, Slovensko",
+      "stationsTypes": [
+       "TRAIN_STATION"
+      ],
+      "iataCode": null,
+      "stationUrl": "https://regiojet.com//timetables-and-stops/stops/6553511001.html",
+      "stationTimeZoneCode": "Europe/Bratislava",
+      "wheelChairPlatform": null,
+      "significance": 1,
+      "longitude": 17.133752822875977,
+      "latitude": 48.18688201904297,
+      "imageUrl": null,
+      "cisNumber": null,
+      "sr70Number": null
+     }
+    ]
+   },
+   {
+    "id": 10202033,
+    "name": "Košice",
+    "aliases": [
+     "košo",
+     " koša",
+     "Kassa",
+     "Košice",
+     "Кошице",
+     "Koszyce",
+     " koše",
+     "科希策"
+    ],
+    "stationsTypes": [
+     "TRAIN_STATION",
+     "BUS_STATION"
+    ],
+    "stations": [
+     {
+      "available": true,
+      "id": 10204035,
+      "name": "AS",
+      "fullname": "Košice - AS",
+      "aliases": [],
+      "address": "Košice AS, Staničné námestie 9, 040 01 Staré Mesto, Slovensko",
+      "stationsTypes": [
+       "BUS_STATION"
+      ],
+      "iataCode": "KSC",
+      "stationUrl": "https://regiojet.com//timetables-and-stops/stops/10204035.html",
+      "stationTimeZoneCode": "Europe/Bratislava",
+      "wheelChairPlatform": null,
+      "significance": 0,
+      "longitude": 21.267847061157227,
+      "latitude": 48.72075271606445,
+      "imageUrl": "https://brn-ybus-pubapi.sa.cz/resources/station/Kosice_AS.png",
+      "cisNumber": null,
+      "sr70Number": null
+     },
+     {
+      "available": true,
+      "id": 1763018007,
+      "name": "Sta.",
+      "fullname": "Košice - Sta.",
+      "aliases": [
+       "Bf."
+      ],
+      "address": null,
+      "stationsTypes": [
+       "TRAIN_STATION"
+      ],
+      "iataCode": "KSC",
+      "stationUrl": "https://regiojet.com//timetables-and-stops/stops/1763018007.html",
+      "stationTimeZoneCode": "Europe/Bratislava",
+      "wheelChairPlatform": "RJ",
+      "significance": 0,
+      "longitude": 21.267885208129883,
+      "latitude": 48.72236251831055,
+      "imageUrl": "https://brn-ybus-pubapi.sa.cz/resources/station/Kosice_zelSt.png",
+      "cisNumber": null,
+      "sr70Number": 136002
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "country": "Poland",
+  "code": "PL",
+  "cities": [
+   {
+    "id": 1225791000,
+    "name": "Cracow",
+    "aliases": [
+     "Cracow",
+     "Krakow",
+     "Cracovie",
+     "Krakkó",
+     "Krakov",
+     "Краков",
+     "Kraków",
+     "Krakau",
+     "克拉科夫"
+    ],
+    "stationsTypes": [
+     "TRAIN_STATION",
+     "BUS_STATION"
+    ],
+    "stations": [
+     {
+      "available": true,
+      "id": 1225796002,
+      "name": "Airport",
+      "fullname": "Cracow - Airport",
+      "aliases": [
+       "Flughafen",
+       "letisko"
+      ],
+      "address": null,
+      "stationsTypes": [
+       "BUS_STATION"
+      ],
+      "iataCode": null,
+      "stationUrl": "https://regiojet.com//timetables-and-stops/stops/1225796002.html",
+      "stationTimeZoneCode": "Europe/Warsaw",
+      "wheelChairPlatform": null,
+      "significance": 0,
+      "longitude": 19.80116844177246,
+      "latitude": 50.07177734375,
+      "imageUrl": "https://brn-ybus-pubapi.sa.cz/resources/station/zastavka_placeholder.png",
+      "cisNumber": 62966,
+      "sr70Number": null
+     },
+     {
+      "available": true,
+      "id": 8167535001,
+      "name": "Płaszów station",
+      "fullname": "Cracow - Płaszów station",
+      "aliases": [
+       "Płaszów"
+      ],
+      "address": null,
+      "stationsTypes": [
+       "TRAIN_STATION"
+      ],
+      "iataCode": null,
+      "stationUrl": "https://regiojet.com//timetables-and-stops/stops/8167535001.html",
+      "stationTimeZoneCode": "Europe/Warsaw",
+      "wheelChairPlatform": null,
+      "significance": 1,
+      "longitude": null,
+      "latitude": null,
+      "imageUrl": null,
+      "cisNumber": null,
+      "sr70Number": null
+     },
+     {
+      "available": true,
+      "id": 2147908003,
+      "name": "Reg. Dw. Autob. ul. Bosacka 18",
+      "fullname": "Cracow - Reg. Dw. Autob. ul. Bosacka 18",
+      "aliases": [],
+      "address": "Krakow Glowny (Dworzec autobusowy Bosacka 18), 30-001 Krakov, Polsko",
+      "stationsTypes": [
+       "BUS_STATION"
+      ],
+      "iataCode": "KRK",
+      "stationUrl": "https://regiojet.com//timetables-and-stops/stops/2147908003.html",
+      "stationTimeZoneCode": "Europe/Warsaw",
+      "wheelChairPlatform": null,
+      "significance": 1,
+      "longitude": 19.949535369873047,
+      "latitude": 50.0678825378418,
+      "imageUrl": null,
+      "cisNumber": 64663,
+      "sr70Number": null
+     },
+     {
+      "available": true,
+      "id": 6135257001,
+      "name": "main station",
+      "fullname": "Cracow - main station",
+      "aliases": [
+       "Hlavní nádraží",
+       "Główny"
+      ],
+      "address": null,
+      "stationsTypes": [
+       "TRAIN_STATION"
+      ],
+      "iataCode": null,
+      "stationUrl": "https://regiojet.com//timetables-and-stops/stops/6135257001.html",
+      "stationTimeZoneCode": "Europe/Warsaw",
+      "wheelChairPlatform": "RJ",
+      "significance": 2,
+      "longitude": 19.947851181030273,
+      "latitude": 50.06942367553711,
+      "imageUrl": null,
+      "cisNumber": null,
+      "sr70Number": null
+     }
+    ]
+   },
+   {
+    "id": 2737640000,
+    "name": "Warsaw",
+    "aliases": [
+     "Warszawa",
+     "Varšava",
+     "Varsavia",
+     "Warschau"
+    ],
+    "stationsTypes": [
+     "TRAIN_STATION"
+    ],
+    "stations": [
+     {
+      "available": true,
+      "id": 7998876003,
+      "name": "Central station",
+      "fullname": "Warsaw - Central station",
+      "aliases": [
+       "Centrální nádraží",
+       "Centralna"
+      ],
+      "address": null,
+      "stationsTypes": [
+       "TRAIN_STATION"
+      ],
+      "iataCode": null,
+      "stationUrl": "https://regiojet.com//timetables-and-stops/stops/7998876003.html",
+      "stationTimeZoneCode": "Europe/Warsaw",
+      "wheelChairPlatform": "RJ",
+      "significance": 3,
+      "longitude": 21.00337791442871,
+      "latitude": 52.22914123535156,
+      "imageUrl": "https://brn-ybus-pubapi.sa.cz/resources/station/zastavka_placeholder.png",
+      "cisNumber": null,
+      "sr70Number": null
+     },
+     {
+      "available": true,
+      "id": 7998876004,
+      "name": "East station",
+      "fullname": "Warsaw - East station",
+      "aliases": [
+       "Wschodnia",
+       "Východní nádraží"
+      ],
+      "address": null,
+      "stationsTypes": [
+       "TRAIN_STATION"
+      ],
+      "iataCode": null,
+      "stationUrl": "https://regiojet.com//timetables-and-stops/stops/7998876004.html",
+      "stationTimeZoneCode": "Europe/Warsaw",
+      "wheelChairPlatform": "RJ",
+      "significance": 2,
+      "longitude": 21.05135726928711,
+      "latitude": 52.25224304199219,
+      "imageUrl": "https://brn-ybus-pubapi.sa.cz/resources/station/zastavka_placeholder.png",
+      "cisNumber": null,
+      "sr70Number": null
+     },
+     {
+      "available": true,
+      "id": 8160861001,
+      "name": "Gdańsk station",
+      "fullname": "Warsaw - Gdańsk station",
+      "aliases": [
+       "Gdańska"
+      ],
+      "address": null,
+      "stationsTypes": [
+       "TRAIN_STATION"
+      ],
+      "iataCode": null,
+      "stationUrl": "https://regiojet.com//timetables-and-stops/stops/8160861001.html",
+      "stationTimeZoneCode": "Europe/Warsaw",
+      "wheelChairPlatform": null,
+      "significance": 1,
+      "longitude": 20.994579315185547,
+      "latitude": 52.258567810058594,
+      "imageUrl": null,
+      "cisNumber": null,
+      "sr70Number": null
+     },
+     {
+      "available": true,
+      "id": 7998876002,
+      "name": "West station",
+      "fullname": "Warsaw - West station",
+      "aliases": [
+       "Západní nádraží",
+       "Zachodnia"
+      ],
+      "address": null,
+      "stationsTypes": [
+       "TRAIN_STATION"
+      ],
+      "iataCode": null,
+      "stationUrl": "https://regiojet.com//timetables-and-stops/stops/7998876002.html",
+      "stationTimeZoneCode": "Europe/Warsaw",
+      "wheelChairPlatform": "RJ",
+      "significance": 1,
+      "longitude": 20.96556854248047,
+      "latitude": 52.21944046020508,
+      "imageUrl": "https://brn-ybus-pubapi.sa.cz/resources/station/zastavka_placeholder.png",
+      "cisNumber": null,
+      "sr70Number": null
+     }
+    ]
+   }
+  ]
+ }
+]

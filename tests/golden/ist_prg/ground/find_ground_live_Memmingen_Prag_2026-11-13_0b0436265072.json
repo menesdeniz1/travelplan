@@ -1,0 +1,73 @@
+{
+  "provider": "ground",
+  "method": "find_ground_live",
+  "params": {
+    "date_str": "2026-11-13",
+    "dest": "Prag",
+    "from_coord": [
+      47.9881,
+      10.2382
+    ],
+    "origin": "Memmingen",
+    "to_coord": [
+      50.0875,
+      14.4214
+    ]
+  },
+  "response": [
+    {
+      "origin_station": "Memmingen",
+      "dest_station": "Prag",
+      "departure_time": "12:35",
+      "arrival_time": "19:20",
+      "duration_mins": 405,
+      "price_try": 1893.48,
+      "operator": "FlixBus",
+      "mode": "bus",
+      "date": "2026-11-13",
+      "is_estimated": false,
+      "price_eur": 33.98,
+      "price_is_estimated": false,
+      "source": "flixbus",
+      "origin_station_name": "Memmingen central bus station",
+      "dest_station_name": "Prague (Main Station)",
+      "price_from_try": null
+    },
+    {
+      "origin_station": "Memmingen",
+      "dest_station": "Prag",
+      "departure_time": "12:35",
+      "arrival_time": "19:30",
+      "duration_mins": 415,
+      "price_try": 1893.48,
+      "operator": "FlixBus",
+      "mode": "bus",
+      "date": "2026-11-13",
+      "is_estimated": false,
+      "price_eur": 33.98,
+      "price_is_estimated": false,
+      "source": "flixbus",
+      "origin_station_name": "Memmingen central bus station",
+      "dest_station_name": "Prague (Central Bus Station Florenc)",
+      "price_from_try": null
+    },
+    {
+      "origin_station": "Memmingen",
+      "dest_station": "Prag",
+      "departure_time": "21:15",
+      "arrival_time": "07:00",
+      "duration_mins": 585,
+      "price_try": 2394.43,
+      "operator": "FlixBus",
+      "mode": "bus",
+      "date": "2026-11-13",
+      "is_estimated": false,
+      "price_eur": 42.97,
+      "price_is_estimated": false,
+      "source": "flixbus",
+      "origin_station_name": "Memmingen central bus station",
+      "dest_station_name": "Prague (Main Station)",
+      "price_from_try": null
+    }
+  ]
+}

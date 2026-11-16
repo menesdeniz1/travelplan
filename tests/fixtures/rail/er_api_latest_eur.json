@@ -1,0 +1,12 @@
+{
+ "result": "success",
+ "provider": "https://www.exchangerate-api.com",
+ "base_code": "EUR",
+ "time_last_update_utc": "Sun, 18 Oct 2026 00:02:31 +0000",
+ "rates": {
+  "TRY": 55.678069,
+  "CZK": 24.329023,
+  "HUF": 363.154094,
+  "PLN": 4.368417
+ }
+}

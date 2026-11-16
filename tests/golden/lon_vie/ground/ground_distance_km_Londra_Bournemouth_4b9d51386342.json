@@ -1,0 +1,17 @@
+{
+  "provider": "ground",
+  "method": "ground_distance_km",
+  "params": {
+    "from_coord": [
+      51.5074,
+      -0.1278
+    ],
+    "from_place": "Londra",
+    "to_coord": [
+      50.7805,
+      -1.8396
+    ],
+    "to_place": "Bournemouth"
+  },
+  "response": 180.24021437395834
+}

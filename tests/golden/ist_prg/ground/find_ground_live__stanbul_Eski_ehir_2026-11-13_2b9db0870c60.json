@@ -1,0 +1,73 @@
+{
+  "provider": "ground",
+  "method": "find_ground_live",
+  "params": {
+    "date_str": "2026-11-13",
+    "dest": "Eskişehir",
+    "from_coord": [
+      41.0082,
+      28.9784
+    ],
+    "origin": "İstanbul",
+    "to_coord": [
+      39.8116,
+      30.5193
+    ]
+  },
+  "response": [
+    {
+      "origin_station": "İstanbul",
+      "dest_station": "Eskişehir",
+      "departure_time": "18:15",
+      "arrival_time": "23:15",
+      "duration_mins": 300,
+      "price_try": 1051.5,
+      "operator": "Kamil Koç",
+      "mode": "bus",
+      "date": "2026-11-13",
+      "is_estimated": false,
+      "price_eur": 18.87,
+      "price_is_estimated": false,
+      "source": "flixbus",
+      "origin_station_name": "İstanbul Dudullu",
+      "dest_station_name": "Eskişehir bus station",
+      "price_from_try": null
+    },
+    {
+      "origin_station": "İstanbul",
+      "dest_station": "Eskişehir",
+      "departure_time": "23:30",
+      "arrival_time": "06:25",
+      "duration_mins": 415,
+      "price_try": 1102.76,
+      "operator": "Kamil Koç",
+      "mode": "bus",
+      "date": "2026-11-13",
+      "is_estimated": false,
+      "price_eur": 19.79,
+      "price_is_estimated": false,
+      "source": "flixbus",
+      "origin_station_name": "İstanbul Esenler",
+      "dest_station_name": "Eskişehir bus station",
+      "price_from_try": null
+    },
+    {
+      "origin_station": "İstanbul",
+      "dest_station": "Eskişehir",
+      "departure_time": "23:50",
+      "arrival_time": "06:25",
+      "duration_mins": 395,
+      "price_try": 1102.76,
+      "operator": "Kamil Koç",
+      "mode": "bus",
+      "date": "2026-11-13",
+      "is_estimated": false,
+      "price_eur": 19.79,
+      "price_is_estimated": false,
+      "source": "flixbus",
+      "origin_station_name": "İstanbul Alibeyköy",
+      "dest_station_name": "Eskişehir bus station",
+      "price_from_try": null
+    }
+  ]
+}

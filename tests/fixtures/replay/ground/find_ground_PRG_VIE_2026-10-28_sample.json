@@ -1,0 +1,33 @@
+{
+  "provider": "ground",
+  "method": "find_ground",
+  "params": {
+    "allow_estimate": true,
+    "date_str": "2026-10-28",
+    "dest": "VIE",
+    "from_coord": null,
+    "max_results": 10,
+    "origin": "PRG",
+    "to_coord": null
+  },
+  "response": [
+    {
+      "arrival_time": "12:45",
+      "date": "2026-10-28",
+      "departure_time": "08:15",
+      "dest_station": "VIE",
+      "dest_station_name": "Wien Hbf",
+      "duration_mins": 270,
+      "is_estimated": false,
+      "mode": "train",
+      "operator": "RegioJet",
+      "origin_station": "PRG",
+      "origin_station_name": "Praha hl.n.",
+      "price_eur": 18.5,
+      "price_from_try": null,
+      "price_is_estimated": false,
+      "price_try": 680.0,
+      "source": "live"
+    }
+  ]
+}

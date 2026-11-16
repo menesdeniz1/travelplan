@@ -1,0 +1,17 @@
+{
+  "provider": "ground",
+  "method": "ground_distance_km",
+  "params": {
+    "from_coord": [
+      41.0082,
+      28.9784
+    ],
+    "from_place": "İstanbul",
+    "to_coord": [
+      40.1377,
+      26.4268
+    ],
+    "to_place": "Çanakkale"
+  },
+  "response": 295.297811189222
+}

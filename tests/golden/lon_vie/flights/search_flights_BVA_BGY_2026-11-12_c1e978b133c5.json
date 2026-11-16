@@ -1,0 +1,30 @@
+{
+  "provider": "flights",
+  "method": "search_flights",
+  "params": {
+    "departure_date": "2026-11-12",
+    "destination": "BGY",
+    "origin": "BVA",
+    "return_date": null,
+    "trip_type": "oneway"
+  },
+  "response": [
+    {
+      "source": "Google Flights (Canlı)",
+      "airline": "Ryanair",
+      "times": "13:10 – 14:40",
+      "duration": "1 sa. 30 dk.",
+      "airports": "BVA ➔ BGY",
+      "stops": "Aktarmasız",
+      "stops_count": 0,
+      "is_direct": true,
+      "layover_info": "",
+      "total_price_try": 1891.0,
+      "currency": "TRY",
+      "trip_type": "Tek Yön",
+      "badge": "⚡ Aktarmasız / En Hızlı",
+      "google_flights_url": "https://www.google.com/travel/flights?q=one-way%20flights%20from%20BVA%20to%20BGY%20on%202026-11-12&hl=tr&gl=tr&curr=TRY",
+      "observed_at": "2026-10-22T12:31:04+00:00"
+    }
+  ]
+}

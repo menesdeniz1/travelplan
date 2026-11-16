@@ -1,0 +1,17 @@
+{
+  "provider": "ground",
+  "method": "ground_distance_km",
+  "params": {
+    "from_coord": [
+      48.2085,
+      16.3731
+    ],
+    "from_place": "Viyana",
+    "to_coord": [
+      50.1098,
+      22.0242
+    ],
+    "to_place": "Jasionka"
+  },
+  "response": 577.4477015281427
+}

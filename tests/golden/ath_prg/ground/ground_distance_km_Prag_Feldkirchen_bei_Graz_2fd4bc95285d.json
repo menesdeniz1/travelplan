@@ -1,0 +1,17 @@
+{
+  "provider": "ground",
+  "method": "ground_distance_km",
+  "params": {
+    "from_coord": [
+      50.0875,
+      14.4214
+    ],
+    "from_place": "Prag",
+    "to_coord": [
+      46.9911,
+      15.4396
+    ],
+    "to_place": "Feldkirchen bei Graz"
+  },
+  "response": 440.4512562043789
+}

@@ -1,0 +1,20 @@
+{
+  "provider": "ground",
+  "method": "find_ground",
+  "params": {
+    "allow_estimate": true,
+    "date_str": "2026-11-13",
+    "dest": "Viyana",
+    "from_coord": [
+      50.0777,
+      19.7848
+    ],
+    "max_results": 12,
+    "origin": "Balice",
+    "to_coord": [
+      48.2085,
+      16.3731
+    ]
+  },
+  "response": []
+}

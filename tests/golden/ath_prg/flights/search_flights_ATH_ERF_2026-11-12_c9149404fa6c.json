@@ -1,0 +1,12 @@
+{
+  "provider": "flights",
+  "method": "search_flights",
+  "params": {
+    "departure_date": "2026-11-12",
+    "destination": "ERF",
+    "origin": "ATH",
+    "return_date": null,
+    "trip_type": "oneway"
+  },
+  "response": []
+}

@@ -1,0 +1,17 @@
+{
+  "provider": "ground",
+  "method": "ground_distance_km",
+  "params": {
+    "from_coord": [
+      51.5074,
+      -0.1278
+    ],
+    "from_place": "Londra",
+    "to_coord": [
+      47.1532,
+      -1.6107
+    ],
+    "to_place": "Nantes"
+  },
+  "response": 619.8982939784589
+}

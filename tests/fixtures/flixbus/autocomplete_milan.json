@@ -1,0 +1,53 @@
+[
+ {
+  "score": 63.100864,
+  "country": "it",
+  "has_train_station": false,
+  "district": "Lombardy",
+  "name": "Milan",
+  "legacy_id": 1194,
+  "subdivision_code": null,
+  "location": {
+   "lat": 45.48812,
+   "lon": 9.199735
+  },
+  "timezone_offset_seconds": 7200,
+  "id": "40ddcc6e-8646-11e6-9066-549f350fcb0c",
+  "stations": null,
+  "is_flixbus_city": true
+ },
+ {
+  "score": 23.183193,
+  "country": "it",
+  "has_train_station": false,
+  "district": "Lombardy",
+  "name": "Milan Malpensa Airport",
+  "legacy_id": 10778,
+  "subdivision_code": null,
+  "location": {
+   "lat": 45.627388,
+   "lon": 8.712595
+  },
+  "timezone_offset_seconds": 7200,
+  "id": "40e324e7-8646-11e6-9066-549f350fcb0c",
+  "stations": null,
+  "is_flixbus_city": true
+ },
+ {
+  "score": 21.196371,
+  "country": "it",
+  "has_train_station": false,
+  "district": "Emilia-Romagna",
+  "name": "Milano Marittima",
+  "legacy_id": 22878,
+  "subdivision_code": null,
+  "location": {
+   "lat": 44.2804496,
+   "lon": 12.3492511
+  },
+  "timezone_offset_seconds": 7200,
+  "id": "d6085ba6-58c0-4545-a44d-f1308e826167",
+  "stations": null,
+  "is_flixbus_city": true
+ }
+]

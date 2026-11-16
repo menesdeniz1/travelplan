@@ -1,0 +1,250 @@
+{
+ "response_uuid": "90acb598-1a52-47d4-a4fa-ef8ec299d0fb",
+ "trips": [
+  {
+   "departure_city_id": "99c50ec5-3ecb-11ea-8017-02437075395e",
+   "arrival_city_id": "40e09335-8646-11e6-9066-549f350fcb0c",
+   "date": "2026-11-05T00:00:00+03:00",
+   "means_of_transport": [
+    "bus"
+   ],
+   "departure": {
+    "earliest_date": "2026-11-05T11:00:00+03:00",
+    "latest_date": "2026-11-05T23:00:00+03:00",
+    "stations": [
+     "9b6a8316-3ecb-11ea-8017-02437075395e"
+    ]
+   },
+   "arrival": {
+    "earliest_date": "2026-11-05T18:30:00+02:00",
+    "latest_date": "2026-11-06T07:00:00+02:00",
+    "stations": [
+     "dcc1910a-9603-11e6-9066-549f350fcb0c"
+    ]
+   },
+   "results": {
+    "direct:e9f63e00-64ac-44fa-987d-4339080044c1:9b6a8316-3ecb-11ea-8017-02437075395e:dcc1910a-9603-11e6-9066-549f350fcb0c": {
+     "uid": "direct:e9f63e00-64ac-44fa-987d-4339080044c1:9b6a8316-3ecb-11ea-8017-02437075395e:dcc1910a-9603-11e6-9066-549f350fcb0c",
+     "status": "available",
+     "transfer_type": "Direct",
+     "transfer_type_key": "direct",
+     "provider": "flixbus",
+     "departure": {
+      "date": "2026-11-05T11:00:00+03:00",
+      "city_id": "99c50ec5-3ecb-11ea-8017-02437075395e",
+      "station_id": "9b6a8316-3ecb-11ea-8017-02437075395e"
+     },
+     "arrival": {
+      "date": "2026-11-05T18:30:00+02:00",
+      "city_id": "40e09335-8646-11e6-9066-549f350fcb0c",
+      "station_id": "dcc1910a-9603-11e6-9066-549f350fcb0c"
+     },
+     "duration": {
+      "hours": 8,
+      "minutes": 30
+     },
+     "price": {
+      "total": 37,
+      "original": 37,
+      "average": 37,
+      "total_with_platform_fee": 37.99,
+      "average_with_platform_fee": 37.99
+     },
+     "remaining": {
+      "seats_left_at_price": null,
+      "seats": null,
+      "bike_slots": 0,
+      "capacity": "high"
+     },
+     "available": {
+      "seats": 52,
+      "bike_slots": 0
+     },
+     "legs": [
+      {
+       "ride_id": "e9f63e00-64ac-44fa-987d-4339080044c1",
+       "departure": {
+        "date": "2026-11-05T11:00:00+03:00",
+        "city_id": "99c50ec5-3ecb-11ea-8017-02437075395e",
+        "station_id": "9b6a8316-3ecb-11ea-8017-02437075395e"
+       },
+       "arrival": {
+        "date": "2026-11-05T18:30:00+02:00",
+        "city_id": "40e09335-8646-11e6-9066-549f350fcb0c",
+        "station_id": "dcc1910a-9603-11e6-9066-549f350fcb0c"
+       },
+       "means_of_transport": "bus",
+       "amenities": [
+        "WIFI",
+        "POWER_SOCKETS"
+       ],
+       "is_marketplace": false,
+       "operator_id": "kamilkoc",
+       "brand_id": "ae1a154e-3da8-4031-ac12-d1fa41730eae",
+       "sub_brand_id": null,
+       "vehicle_details": [],
+       "layout_configuration": [
+        {
+         "column_layout": "TWO_TWO",
+         "deck": 0
+        }
+       ],
+       "cheapest_seat": "SEATER",
+       "seat_types": [
+        {
+         "seat_type_key": "SEATER",
+         "seat_type": "SEATER"
+        }
+       ]
+      }
+     ],
+     "messages": {
+      "from": "100 yıllık deneyimimizle, her yolculukta konforu yaşatıyor; bir asırdır yollarda sizinle, yol arkadaşınız olmaya devam ediyoruz. \r\nPeron : 98-99"
+     },
+     "restrictions": {
+      "sale_restriction": false,
+      "info_title": "",
+      "info_title_hint": "",
+      "info_message": "",
+      "bikes_allowed": true,
+      "wheelchair_status": "unknown"
+     },
+     "intermediate_stations_count": 0
+    },
+    "direct:728bb7c2-77f3-4d75-9134-948fc2c5c004:9b6a8316-3ecb-11ea-8017-02437075395e:dcc1910a-9603-11e6-9066-549f350fcb0c": {
+     "uid": "direct:728bb7c2-77f3-4d75-9134-948fc2c5c004:9b6a8316-3ecb-11ea-8017-02437075395e:dcc1910a-9603-11e6-9066-549f350fcb0c",
+     "status": "available",
+     "transfer_type": "Direct",
+     "transfer_type_key": "direct",
+     "provider": "flixbus",
+     "departure": {
+      "date": "2026-11-05T23:00:00+03:00",
+      "city_id": "99c50ec5-3ecb-11ea-8017-02437075395e",
+      "station_id": "9b6a8316-3ecb-11ea-8017-02437075395e"
+     },
+     "arrival": {
+      "date": "2026-11-06T07:00:00+02:00",
+      "city_id": "40e09335-8646-11e6-9066-549f350fcb0c",
+      "station_id": "dcc1910a-9603-11e6-9066-549f350fcb0c"
+     },
+     "duration": {
+      "hours": 9,
+      "minutes": 0
+     },
+     "price": {
+      "total": 37,
+      "original": 37,
+      "average": 37,
+      "total_with_platform_fee": 37.99,
+      "average_with_platform_fee": 37.99
+     },
+     "remaining": {
+      "seats_left_at_price": null,
+      "seats": null,
+      "bike_slots": 0,
+      "capacity": "high"
+     },
+     "available": {
+      "seats": 44,
+      "bike_slots": 0
+     },
+     "legs": [
+      {
+       "ride_id": "728bb7c2-77f3-4d75-9134-948fc2c5c004",
+       "departure": {
+        "date": "2026-11-05T23:00:00+03:00",
+        "city_id": "99c50ec5-3ecb-11ea-8017-02437075395e",
+        "station_id": "9b6a8316-3ecb-11ea-8017-02437075395e"
+       },
+       "arrival": {
+        "date": "2026-11-06T07:00:00+02:00",
+        "city_id": "40e09335-8646-11e6-9066-549f350fcb0c",
+        "station_id": "dcc1910a-9603-11e6-9066-549f350fcb0c"
+       },
+       "means_of_transport": "bus",
+       "amenities": [
+        "WIFI",
+        "POWER_SOCKETS"
+       ],
+       "is_marketplace": false,
+       "operator_id": "kamilkoc",
+       "brand_id": "ae1a154e-3da8-4031-ac12-d1fa41730eae",
+       "sub_brand_id": null,
+       "vehicle_details": [],
+       "layout_configuration": [
+        {
+         "column_layout": "TWO_TWO",
+         "deck": 0
+        }
+       ],
+       "cheapest_seat": "SEATER",
+       "seat_types": [
+        {
+         "seat_type_key": "SEATER",
+         "seat_type": "SEATER"
+        }
+       ]
+      }
+     ],
+     "messages": {
+      "from": "100 yıllık deneyimimizle, her yolculukta konforu yaşatıyor; bir asırdır yollarda sizinle, yol arkadaşınız olmaya devam ediyoruz. \r\nPeron : 98-99"
+     },
+     "restrictions": {
+      "sale_restriction": false,
+      "info_title": "",
+      "info_title_hint": "",
+      "info_message": "",
+      "bikes_allowed": true,
+      "wheelchair_status": "unknown"
+     },
+     "intermediate_stations_count": 0
+    }
+   }
+  }
+ ],
+ "operators": {
+  "kamilkoc": {
+   "label": "KAMİL KOÇ OTOBÜSLERİ A.Ş.",
+   "key": "kamilkoc",
+   "id": "kamilkoc"
+  }
+ },
+ "brands": {
+  "ae1a154e-3da8-4031-ac12-d1fa41730eae": {
+   "name": "Kamil Koç",
+   "type": "core"
+  }
+ },
+ "cities": {
+  "40e09335-8646-11e6-9066-549f350fcb0c": {
+   "name": "Sofia",
+   "slug": "sofia",
+   "legacy_id": 5348,
+   "id": "40e09335-8646-11e6-9066-549f350fcb0c"
+  },
+  "99c50ec5-3ecb-11ea-8017-02437075395e": {
+   "name": "İstanbul Avrupa",
+   "slug": "istanbul-avrupa",
+   "legacy_id": 40151,
+   "id": "99c50ec5-3ecb-11ea-8017-02437075395e"
+  }
+ },
+ "stations": {
+  "dcc1910a-9603-11e6-9066-549f350fcb0c": {
+   "id": "dcc1910a-9603-11e6-9066-549f350fcb0c",
+   "legacy_id": 6148,
+   "name": "Sofia",
+   "slug": "sofia",
+   "is_train": false,
+   "importance": 100
+  },
+  "9b6a8316-3ecb-11ea-8017-02437075395e": {
+   "id": "9b6a8316-3ecb-11ea-8017-02437075395e",
+   "legacy_id": 48041,
+   "name": "İstanbul Esenler",
+   "slug": "esenler-bus-station",
+   "is_train": false,
+   "importance": 5
+  }
+ }
+}

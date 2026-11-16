@@ -1,0 +1,18 @@
+{
+  "provider": "ground",
+  "method": "find_ground_live",
+  "params": {
+    "date_str": "2026-11-12",
+    "dest": "Kavala",
+    "from_coord": [
+      37.9755,
+      23.7348
+    ],
+    "origin": "Atina",
+    "to_coord": [
+      40.9133,
+      24.6192
+    ]
+  },
+  "response": []
+}

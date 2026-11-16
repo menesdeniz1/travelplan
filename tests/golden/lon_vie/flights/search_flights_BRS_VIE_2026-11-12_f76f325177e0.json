@@ -1,0 +1,47 @@
+{
+  "provider": "flights",
+  "method": "search_flights",
+  "params": {
+    "departure_date": "2026-11-12",
+    "destination": "VIE",
+    "origin": "BRS",
+    "return_date": null,
+    "trip_type": "oneway"
+  },
+  "response": [
+    {
+      "source": "Google Flights (Canlı)",
+      "airline": "easyJet",
+      "times": "17:00 – 20:15",
+      "duration": "2 sa. 15 dk.",
+      "airports": "BRS ➔ VIE",
+      "stops": "Aktarmasız",
+      "stops_count": 0,
+      "is_direct": true,
+      "layover_info": "",
+      "total_price_try": 6671.0,
+      "currency": "TRY",
+      "trip_type": "Tek Yön",
+      "badge": "⚡ Aktarmasız / En Hızlı",
+      "google_flights_url": "https://www.google.com/travel/flights?q=one-way%20flights%20from%20BRS%20to%20VIE%20on%202026-11-12&hl=tr&gl=tr&curr=TRY",
+      "observed_at": "2026-10-22T12:29:45+00:00"
+    },
+    {
+      "source": "Google Flights (Canlı)",
+      "airline": "KLM",
+      "times": "17:35 – 22:50",
+      "duration": "4 sa. 15 dk.",
+      "airports": "BRS ➔ VIE",
+      "stops": "1 aktarma",
+      "stops_count": 1,
+      "is_direct": false,
+      "layover_info": "1 sa. 10 dk. AMS (Amsterdam)",
+      "total_price_try": 11302.0,
+      "currency": "TRY",
+      "trip_type": "Tek Yön",
+      "badge": null,
+      "google_flights_url": "https://www.google.com/travel/flights?q=one-way%20flights%20from%20BRS%20to%20VIE%20on%202026-11-12&hl=tr&gl=tr&curr=TRY",
+      "observed_at": "2026-10-22T12:29:45+00:00"
+    }
+  ]
+}

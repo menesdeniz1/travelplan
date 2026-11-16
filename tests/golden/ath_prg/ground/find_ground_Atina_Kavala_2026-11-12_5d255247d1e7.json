@@ -1,0 +1,57 @@
+{
+  "provider": "ground",
+  "method": "find_ground",
+  "params": {
+    "allow_estimate": true,
+    "date_str": "2026-11-12",
+    "dest": "Kavala",
+    "from_coord": [
+      37.9755,
+      23.7348
+    ],
+    "max_results": 12,
+    "origin": "Atina",
+    "to_coord": [
+      40.9133,
+      24.6192
+    ]
+  },
+  "response": [
+    {
+      "origin_station": "Atina",
+      "dest_station": "Kavala",
+      "departure_time": "18:00",
+      "arrival_time": "23:55",
+      "duration_mins": 355,
+      "price_try": 1635.48,
+      "operator": "Tahmini tren/otobüs",
+      "mode": "bus",
+      "date": "2026-11-12",
+      "is_estimated": true,
+      "price_eur": 29.35,
+      "price_is_estimated": true,
+      "source": "estimate",
+      "origin_station_name": null,
+      "dest_station_name": null,
+      "price_from_try": null
+    },
+    {
+      "origin_station": "Atina",
+      "dest_station": "Kavala",
+      "departure_time": "20:00",
+      "arrival_time": "01:55",
+      "duration_mins": 355,
+      "price_try": 1635.48,
+      "operator": "Tahmini tren/otobüs",
+      "mode": "bus",
+      "date": "2026-11-12",
+      "is_estimated": true,
+      "price_eur": 29.35,
+      "price_is_estimated": true,
+      "source": "estimate",
+      "origin_station_name": null,
+      "dest_station_name": null,
+      "price_from_try": null
+    }
+  ]
+}

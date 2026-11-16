@@ -1,0 +1,17 @@
+{
+  "provider": "ground",
+  "method": "ground_distance_km",
+  "params": {
+    "from_coord": [
+      50.0875,
+      14.4214
+    ],
+    "from_place": "Prag",
+    "to_coord": [
+      52.4511,
+      20.6518
+    ],
+    "to_place": "Nowy Dwór Mazowiecki"
+  },
+  "response": 633.3088360212108
+}

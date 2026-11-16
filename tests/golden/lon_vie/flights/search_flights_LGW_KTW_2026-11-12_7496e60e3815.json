@@ -1,0 +1,81 @@
+{
+  "provider": "flights",
+  "method": "search_flights",
+  "params": {
+    "departure_date": "2026-11-12",
+    "destination": "KTW",
+    "origin": "LGW",
+    "return_date": null,
+    "trip_type": "oneway"
+  },
+  "response": [
+    {
+      "source": "Google Flights (Canlı)",
+      "airline": "SWISS, LOT",
+      "times": "09:00 – 14:15+1",
+      "duration": "28 sa. 15 dk.",
+      "airports": "LGW ➔ KTW",
+      "stops": "2 aktarma",
+      "stops_count": 2,
+      "is_direct": false,
+      "layover_info": "",
+      "total_price_try": 13675.0,
+      "currency": "TRY",
+      "trip_type": "Tek Yön",
+      "badge": "🏷️ En Uygun Fiyat",
+      "google_flights_url": "https://www.google.com/travel/flights?q=one-way%20flights%20from%20LGW%20to%20KTW%20on%202026-11-12&hl=tr&gl=tr&curr=TRY",
+      "observed_at": "2026-10-22T12:27:57+00:00"
+    },
+    {
+      "source": "Google Flights (Canlı)",
+      "airline": "SWISS, LOT",
+      "times": "18:40 – 14:15+1",
+      "duration": "18 sa. 35 dk.",
+      "airports": "LGW ➔ KTW",
+      "stops": "2 aktarma",
+      "stops_count": 2,
+      "is_direct": false,
+      "layover_info": "",
+      "total_price_try": 16284.0,
+      "currency": "TRY",
+      "trip_type": "Tek Yön",
+      "badge": null,
+      "google_flights_url": "https://www.google.com/travel/flights?q=one-way%20flights%20from%20LGW%20to%20KTW%20on%202026-11-12&hl=tr&gl=tr&curr=TRY",
+      "observed_at": "2026-10-22T12:27:57+00:00"
+    },
+    {
+      "source": "Google Flights (Canlı)",
+      "airline": "TAP Air Portugal, LOT",
+      "times": "16:40 – 14:15+1",
+      "duration": "20 sa. 35 dk.",
+      "airports": "LGW ➔ KTW",
+      "stops": "2 aktarma",
+      "stops_count": 2,
+      "is_direct": false,
+      "layover_info": "",
+      "total_price_try": 22059.0,
+      "currency": "TRY",
+      "trip_type": "Tek Yön",
+      "badge": null,
+      "google_flights_url": "https://www.google.com/travel/flights?q=one-way%20flights%20from%20LGW%20to%20KTW%20on%202026-11-12&hl=tr&gl=tr&curr=TRY",
+      "observed_at": "2026-10-22T12:27:57+00:00"
+    },
+    {
+      "source": "Google Flights (Canlı)",
+      "airline": "SWISS, LOT",
+      "times": "09:00 – 23:40",
+      "duration": "13 sa. 40 dk.",
+      "airports": "LGW ➔ KTW",
+      "stops": "2 aktarma",
+      "stops_count": 2,
+      "is_direct": false,
+      "layover_info": "",
+      "total_price_try": 31199.0,
+      "currency": "TRY",
+      "trip_type": "Tek Yön",
+      "badge": null,
+      "google_flights_url": "https://www.google.com/travel/flights?q=one-way%20flights%20from%20LGW%20to%20KTW%20on%202026-11-12&hl=tr&gl=tr&curr=TRY",
+      "observed_at": "2026-10-22T12:27:57+00:00"
+    }
+  ]
+}

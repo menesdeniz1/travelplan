@@ -1,0 +1,37 @@
+{
+  "provider": "ground",
+  "method": "find_ground_live",
+  "params": {
+    "date_str": "2026-11-13",
+    "dest": "Thessaloniki",
+    "from_coord": [
+      41.0082,
+      28.9784
+    ],
+    "origin": "İstanbul",
+    "to_coord": [
+      40.5193,
+      22.97
+    ]
+  },
+  "response": [
+    {
+      "origin_station": "İstanbul",
+      "dest_station": "Thessaloniki",
+      "departure_time": "23:00",
+      "arrival_time": "12:25",
+      "duration_mins": 865,
+      "price_try": 2812.91,
+      "operator": "Kamil Koç / FlixBus",
+      "mode": "bus",
+      "date": "2026-11-13",
+      "is_estimated": false,
+      "price_eur": 50.48,
+      "price_is_estimated": false,
+      "source": "flixbus",
+      "origin_station_name": "İstanbul Esenler",
+      "dest_station_name": "Thessaloniki train station",
+      "price_from_try": null
+    }
+  ]
+}

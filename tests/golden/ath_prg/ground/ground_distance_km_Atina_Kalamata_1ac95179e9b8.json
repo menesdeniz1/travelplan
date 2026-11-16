@@ -1,0 +1,17 @@
+{
+  "provider": "ground",
+  "method": "ground_distance_km",
+  "params": {
+    "from_coord": [
+      37.9755,
+      23.7348
+    ],
+    "from_place": "Atina",
+    "to_coord": [
+      37.0683,
+      22.0255
+    ],
+    "to_place": "Kalamata"
+  },
+  "response": 226.72304391893417
+}

@@ -1,0 +1,64 @@
+{
+  "provider": "flights",
+  "method": "search_flights",
+  "params": {
+    "departure_date": "2026-11-13",
+    "destination": "KTW",
+    "origin": "IST",
+    "return_date": null,
+    "trip_type": "oneway"
+  },
+  "response": [
+    {
+      "source": "Google Flights (Canlı)",
+      "airline": "LOT",
+      "times": "18:30 – 23:40",
+      "duration": "7 sa. 10 dk.",
+      "airports": "IST ➔ KTW",
+      "stops": "1 aktarma",
+      "stops_count": 1,
+      "is_direct": false,
+      "layover_info": "3 sa. 45 dk. WAW (Varşova)",
+      "total_price_try": 10294.0,
+      "currency": "TRY",
+      "trip_type": "Tek Yön",
+      "badge": "🏷️ En Uygun Fiyat",
+      "google_flights_url": "https://www.google.com/travel/flights?q=one-way%20flights%20from%20IST%20to%20KTW%20on%202026-11-13&hl=tr&gl=tr&curr=TRY",
+      "observed_at": "2026-10-22T12:09:20+00:00"
+    },
+    {
+      "source": "Google Flights (Canlı)",
+      "airline": "Turkish Airlines, LOT",
+      "times": "08:10 – 11:20",
+      "duration": "5 sa. 10 dk.",
+      "airports": "IST ➔ KTW",
+      "stops": "1 aktarma",
+      "stops_count": 1,
+      "is_direct": false,
+      "layover_info": "1 sa. 50 dk. WAW (Varşova)",
+      "total_price_try": 16403.0,
+      "currency": "TRY",
+      "trip_type": "Tek Yön",
+      "badge": null,
+      "google_flights_url": "https://www.google.com/travel/flights?q=one-way%20flights%20from%20IST%20to%20KTW%20on%202026-11-13&hl=tr&gl=tr&curr=TRY",
+      "observed_at": "2026-10-22T12:09:20+00:00"
+    },
+    {
+      "source": "Google Flights (Canlı)",
+      "airline": "Lufthansa, LOT",
+      "times": "19:05 – 14:15+1",
+      "duration": "21 sa. 10 dk.",
+      "airports": "IST ➔ KTW",
+      "stops": "2 aktarma",
+      "stops_count": 2,
+      "is_direct": false,
+      "layover_info": "",
+      "total_price_try": 30453.0,
+      "currency": "TRY",
+      "trip_type": "Tek Yön",
+      "badge": null,
+      "google_flights_url": "https://www.google.com/travel/flights?q=one-way%20flights%20from%20IST%20to%20KTW%20on%202026-11-13&hl=tr&gl=tr&curr=TRY",
+      "observed_at": "2026-10-22T12:09:20+00:00"
+    }
+  ]
+}

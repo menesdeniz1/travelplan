@@ -1,0 +1,57 @@
+{
+  "provider": "ground",
+  "method": "find_ground",
+  "params": {
+    "allow_estimate": true,
+    "date_str": "2026-11-12",
+    "dest": "Leeds, West Yorkshire",
+    "from_coord": [
+      51.5074,
+      -0.1278
+    ],
+    "max_results": 12,
+    "origin": "Londra",
+    "to_coord": [
+      53.8659,
+      -1.6606
+    ]
+  },
+  "response": [
+    {
+      "origin_station": "Londra",
+      "dest_station": "Leeds, West Yorkshire",
+      "departure_time": "18:00",
+      "arrival_time": "23:02",
+      "duration_mins": 302,
+      "price_try": 1374.14,
+      "operator": "Tahmini tren/otobüs",
+      "mode": "bus",
+      "date": "2026-11-12",
+      "is_estimated": true,
+      "price_eur": 24.66,
+      "price_is_estimated": true,
+      "source": "estimate",
+      "origin_station_name": null,
+      "dest_station_name": null,
+      "price_from_try": null
+    },
+    {
+      "origin_station": "Londra",
+      "dest_station": "Leeds, West Yorkshire",
+      "departure_time": "20:00",
+      "arrival_time": "01:02",
+      "duration_mins": 302,
+      "price_try": 1374.14,
+      "operator": "Tahmini tren/otobüs",
+      "mode": "bus",
+      "date": "2026-11-12",
+      "is_estimated": true,
+      "price_eur": 24.66,
+      "price_is_estimated": true,
+      "source": "estimate",
+      "origin_station_name": null,
+      "dest_station_name": null,
+      "price_from_try": null
+    }
+  ]
+}
